@@ -1,0 +1,24 @@
+module casiilaTest();
+logic counter;
+logic[3:0] label;
+logic rst;
+logic player;
+logic select;
+logic [3:0] next_state);
+
+
+casilla c1(counter, label, rst, player, select, next_state);
+
+
+initial begin
+	
+	
+	counter=0;
+	label=0111;
+	rst=0;#10;
+	player=1;
+	select=1;
+
+end
+
+endmodule

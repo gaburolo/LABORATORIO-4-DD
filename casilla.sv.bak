@@ -1,0 +1,18 @@
+module casilla(input logic counter, input logic[3:0] label, input logic rst, input logic player, input logic select,
+					output logic [3:0] next_state);
+
+	always_ff @(posedge clk or negedge RST)
+		if (!RST) actual_state <= 4'b0000;
+		else actual_state <= next_state;
+		
+		
+	always_comb begin
+		case (actual_state)
+			4'b0000: if(select) next_state <= label;else next_state = 4'b0000;
+			
+			
+		endcase 
+	end	
+		
+
+endmodule
