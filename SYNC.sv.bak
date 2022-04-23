@@ -1,0 +1,50 @@
+.define ESQ_SUP_X0 320+7
+.define ESQ_SUP_Y0 130+7
+
+.define ESQ_SUP_X1 395+7
+.define ESQ_SUP_Y1 130+7
+
+.define ESQ_SUP_X2 470+7
+.define ESQ_SUP_Y2 130+7
+
+.define ESQ_SUP_X3 545+7
+.define ESQ_SUP_Y3 130+7
+
+
+.define ESQ_SUP_X4 320+7
+.define ESQ_SUP_Y4 205+7
+
+.define ESQ_SUP_X5 395+7
+.define ESQ_SUP_Y5 205+7
+
+.define ESQ_SUP_X6 470+7
+.define ESQ_SUP_Y6 205+7
+
+.define ESQ_SUP_X7 545+7
+.define ESQ_SUP_Y7 205+7
+
+
+.define ESQ_SUP_X8 320+7
+.define ESQ_SUP_Y8 280+7
+
+.define ESQ_SUP_X9 395+7
+.define ESQ_SUP_Y9 280+7
+
+.define ESQ_SUP_X10 470+7
+.define ESQ_SUP_Y10 280+7
+
+.define ESQ_SUP_X11 545+7
+.define ESQ_SUP_Y11 280+7
+
+
+.define ESQ_SUP_X12 320+7
+.define ESQ_SUP_Y12 355+7
+
+.define ESQ_SUP_X13 395+7
+.define ESQ_SUP_Y13 355+7
+
+.define ESQ_SUP_X14 470+7
+.define ESQ_SUP_Y14 355+7
+
+.define ESQ_SUP_X15 545+7
+.define ESQ_SUP_Y15 355+7

@@ -1,0 +1,114 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/simulation/modelsim
+vdividerClock
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1650685074
+!i10b 1
+!s100 b4JfYdR48;j50khKL57kl3
+IP6dVW;_8gFTl30H6e8Q_]1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 dividerClock_sv_unit
+S1
+R0
+w1650678284
+8C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/dividerClock.sv
+FC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/dividerClock.sv
+L0 1
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1650685074.000000
+!s107 C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/dividerClock.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4|C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/dividerClock.sv|
+!i113 1
+Z6 o-sv -work work
+Z7 !s92 -sv -work work {+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4}
+Z8 tCvgOpt 0
+ndivider@clock
+vSYNC
+R1
+R2
+!i10b 1
+!s100 DaHN@^OC2@PZPYk`Va]OL2
+IcG2`m3D<U?8R4?dZc[U0`1
+R3
+!s105 SYNC_sv_unit
+S1
+R0
+w1650681514
+8C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/SYNC.sv
+FC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/SYNC.sv
+L0 60
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/SYNC.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4|C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/SYNC.sv|
+!i113 1
+R6
+R7
+R8
+n@s@y@n@c
+vVGA
+R1
+R2
+!i10b 1
+!s100 o80k6hm8>R4WLj1:ZL;WY0
+Id4c5e9ag58?@<`:jo^JC=0
+R3
+!s105 VGA_sv_unit
+S1
+R0
+w1650681204
+8C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/VGA.sv
+FC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/VGA.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/VGA.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4|C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/VGA.sv|
+!i113 1
+R6
+R7
+R8
+n@v@g@a
+vVGAtest
+R1
+!s110 1650685075
+!i10b 1
+!s100 8a2NY<]ACAiCY48TU[LJd1
+IE8R1C@;o@?]c6]kbzh4:G1
+R3
+!s105 VGAtest_sv_unit
+S1
+R0
+w1650684996
+8C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/VGAtest.sv
+FC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/VGAtest.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/VGAtest.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4|C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/VGAtest.sv|
+!i113 1
+R6
+R7
+R8
+n@v@g@atest
