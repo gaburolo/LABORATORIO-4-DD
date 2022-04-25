@@ -85,7 +85,7 @@ module SYNC(
 	always @(posedge VGA_CLK_IN)
 		begin
 			if(counter_x < 799)
-				counter_x <= counter_x+1;
+				counter_x <= counter_x + 1;
 			else
 				counter_x <= 0;
 		end
@@ -95,7 +95,7 @@ module SYNC(
 			if(counter_x == 799)
 				begin
 					if(counter_y < 525)
-						counter_y <= counter_y+1;
+						counter_y <= counter_y + 1;
 					else
 						counter_y <= 0;
 				end
@@ -111,9 +111,53 @@ module SYNC(
 				{r_red,r_green,r_blue} <= `WHITE;
 			end
 		
-		if((315 < counter_x && counter_x < 620) || (125 < counter_y && counter_y < 130))//margen
+		else if((315 < counter_x && counter_x < 620) && (125 < counter_y && counter_y < 130))//margen
 			begin 
 				{r_red,r_green,r_blue} <= `BLUE;
+			end
+			
+		else if((315 < counter_x && counter_x < 620) && (200 < counter_y && counter_y < 205))//Linea horizontal
+			begin 
+				{r_red,r_green,r_blue} <= `BLUE;
+			end
+		else if((315 < counter_x && counter_x < 620) && (275 < counter_y && counter_y < 280))//Linea horizontal
+			begin 
+				{r_red,r_green,r_blue} <= `BLUE;
+			end
+		else if((315 < counter_x && counter_x < 620) && (350 < counter_y && counter_y < 355))//Linea horizontal
+			begin 
+				{r_red,r_green,r_blue} <= `BLUE;
+			end
+		else if((315 < counter_x && counter_x < 620) && (425 < counter_y && counter_y < 430))//margen horizontal
+			begin 
+				{r_red,r_green,r_blue} <= `BLUE;
+			end
+		else
+			begin
+				if(315 <= counter_x && counter_x < 320)//margen vertical
+					begin 
+						{r_red,r_green,r_blue} <= `BLUE;
+					end
+				else if(390 <= counter_x && counter_x < 395)//Linea vertical
+					begin 
+						{r_red,r_green,r_blue} <= `BLUE;
+					end
+				else if(465 <= counter_x && counter_x < 470)//Linea vertical
+					begin 
+						{r_red,r_green,r_blue} <= `BLUE;
+					end
+				else if(540 <= counter_x && counter_x < 545)//Linea vertical
+					begin 
+						{r_red,r_green,r_blue} <= `BLUE;
+					end
+				else if(615 <= counter_x && counter_x < 620)//margen vertical
+					begin 
+						{r_red,r_green,r_blue} <= `BLUE;
+					end
+				else 
+					begin
+					{r_red,r_green,r_blue} <= `WHITE;
+					end
 			end
 		//Faltan partes
 	end
@@ -123,8 +167,8 @@ module SYNC(
 	
 	assign VGA_CLK_OUT = VGA_CLK_IN;
 	
-	assign o_red = (counter_x > 144 && counter_x <= 783 && counter_x > 35 && counter_x <= 514)? r_red:8'h00;
-	assign o_blue = (counter_x > 144 && counter_x <= 783 && counter_x > 35 && counter_x <= 514)? r_blue:8'h00;
-	assign o_green = (counter_x > 144 && counter_x <= 783 && counter_x > 35 && counter_x <= 514)? r_green:8'h00;
+	assign o_red = (counter_x > 144 && counter_x <= 783 && counter_y > 35 && counter_y <= 514)? r_red:8'h00;
+	assign o_blue = (counter_x > 144 && counter_x <= 783 && counter_y > 35 && counter_y <= 514)? r_blue:8'h00;
+	assign o_green = (counter_x > 144 && counter_x <= 783 && counter_y > 35 && counter_y <= 514)? r_green:8'h00;
 	
 endmodule

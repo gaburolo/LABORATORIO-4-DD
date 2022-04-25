@@ -9,7 +9,7 @@ module dividerClock(ci, co);
 		begin
 			counter <= counter + 28'd1;
 			if(counter >=(DIVISOR-1))
-			counter <= 28'd0;
+				counter <= 28'd0;
 			co <=(counter<DIVISOR/2)?1'b1:1'b0;
 		end
 	
