@@ -41,15 +41,45 @@ module move(
 	casilla ca3(.clk_Temp(clk),.counter(counter === 2), .label(4'b0011), 
 					.rst(rst), .player(player), .select(select), 
 					.par(par), .new_state(c3));
-	casilla ca4(.clk_Temp(clk),.counter(counter === 3), .label(4'b0100), 
+	casilla ca4(.clk_Temp(clk),.counter(counter === 3), .label(4'b0100),
 					.rst(rst), .player(player), .select(select), 
 					.par(par), .new_state(c4));
-	casilla ca5(.clk_Temp(clk),.counter(counter === 4), .label(4'b0101), 
+	casilla ca5(.clk_Temp(clk),.counter(counter === 4), .label(4'b0101),
 					.rst(rst), .player(player), .select(select), 
 					.par(par), .new_state(c5));
 	casilla ca6(.clk_Temp(clk),.counter(counter === 5), .label(4'b0110), 
 					.rst(rst), .player(player), .select(select), 
 					.par(par), .new_state(c6));
+	casilla ca7(.clk_Temp(clk),.counter(counter === 6), .label(4'b0111), 
+					.rst(rst), .player(player), .select(select), 
+					.par(par), .new_state(c7));
+	casilla ca8(.clk_Temp(clk),.counter(counter === 7), .label(4'b1000), 
+					.rst(rst), .player(player), .select(select), 
+					.par(par), .new_state(c8));
+	casilla ca9(.clk_Temp(clk),.counter(counter === 8), .label(4'b0110), 
+					.rst(rst), .player(player), .select(select), 
+					.par(par), .new_state(c9));
+	casilla ca10(.clk_Temp(clk),.counter(counter === 9), .label(4'b0011), 
+					.rst(rst), .player(player), .select(select), 
+					.par(par), .new_state(c10));
+	casilla ca11(.clk_Temp(clk),.counter(counter === 10), .label(4'b0111), 
+					.rst(rst), .player(player), .select(select), 
+					.par(par), .new_state(c11));
+	casilla ca12(.clk_Temp(clk),.counter(counter === 11), .label(4'b0100), 
+					.rst(rst), .player(player), .select(select), 
+					.par(par), .new_state(c12));
+	casilla ca13(.clk_Temp(clk),.counter(counter === 12), .label(4'b1000), 
+					.rst(rst), .player(player), .select(select), 
+					.par(par), .new_state(c13));
+	casilla ca14(.clk_Temp(clk),.counter(counter === 13), .label(4'b0001), 
+					.rst(rst), .player(player), .select(select), 
+					.par(par), .new_state(c14));
+	casilla ca15(.clk_Temp(clk),.counter(counter === 14), .label(4'b0101), 
+					.rst(rst), .player(player), .select(select), 
+					.par(par), .new_state(c15));
+	casilla ca16(.clk_Temp(clk),.counter(counter === 15), .label(4'b0010), 
+					.rst(rst), .player(player), .select(select), 
+					.par(par), .new_state(c16));
 	
 	
 	
@@ -62,9 +92,14 @@ always_ff @(posedge (move) or negedge rst)
 		else
 		begin
 			if(!finish) begin
-				if (counter > 5) counter <= 0;
-				//else if(stop_timer) counter <= random;
+				if (counter > 15) counter <= 0;
+				//aqui
 				else counter <= counter + 1;
 			end
 		end
 endmodule
+
+
+
+
+//else if(stop_timer) counter <= random;

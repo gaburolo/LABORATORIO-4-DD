@@ -60,7 +60,8 @@ module moveTest();
 		clk=0;
 		#5;
 		clk=1;#5;clk=0;
-		move = 1;
+		move = 1;//1
+		#5;
 		clk=1;#5;clk=0;
 		#5;
 		move = 0;
@@ -70,10 +71,64 @@ module moveTest();
 		clk=1;#5;clk=0;
 		#5;
 		select= 0;
-		move = 1;
+		move = 1;//2
 		clk=1;#5;clk=0;
 		#5;
 		move = 0;
+		clk=1;#5;clk=0;
+		#5;
+		move = 1;//3
+		clk=1;#5;clk=0;
+		#5;
+		move = 0;
+		clk=1;#5;clk=0;
+		
+		#5;
+		move = 1;//4
+		clk=1;#5;clk=0;
+		#5;
+		move = 0;
+		clk=1;#5;clk=0;
+		
+		#5;
+		move = 1;//5
+		clk=1;#5;clk=0;
+		#5;
+		move = 0;
+		clk=1;#5;clk=0;
+		
+		#5;
+		move = 1;//6
+		clk=1;#5;clk=0;
+		#5;
+		move = 0;
+		clk=1;#5;clk=0;
+		
+		
+		#5;
+		move = 1;//7
+		clk=1;#5;clk=0;
+		#5;
+		move = 0;
+		clk=1;#5;clk=0;
+		
+		#5;
+		move = 1;//8
+		clk=1;#5;clk=0;
+		#5;
+		move = 0;
+		clk=1;#5;clk=0;
+		
+		
+		#5;
+		move = 1;//9
+		clk=1;#5;clk=0;
+		#5;
+		move = 0;
+		clk=1;#5;clk=0;
+		#5;
+		
+		select = 1;
 		clk=1;#5;clk=0;
 		#5;
 		$stop;

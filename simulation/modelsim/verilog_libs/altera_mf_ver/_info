@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/simulation/modelsim
 va_graycounter
-Z1 !s110 1650938515
+Z1 !s110 1650950049
 !i10b 1
 !s100 7RL@7]^Mkb[^0^A4A<DHg3
 IGm[l0nCoQQX>GKo:Ub1V:2
@@ -23,7 +23,7 @@ Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1650938514.000000
+Z7 !s108 1650950047.000000
 Z8 !s107 c:/intelfpga_lite/21.1/quartus/eda/sim_lib/altera_mf.v|
 Z9 !s90 -reportprogress|300|-vlog01compat|-work|altera_mf_ver|c:/intelfpga_lite/21.1/quartus/eda/sim_lib/altera_mf.v|
 !i113 1
@@ -240,7 +240,7 @@ R9
 R10
 R11
 valtaccumulate
-Z12 !s110 1650938514
+Z12 !s110 1650950048
 !i10b 1
 !s100 ]J^>>M@KIe6:;k?@cL6jK0
 I=e<zWgBcTbj9MDBM>a_?g3
@@ -579,7 +579,7 @@ R9
 R10
 R11
 valtmult_accum
-R12
+R1
 !i10b 1
 !s100 DiYBWLQQ0V7IkzHZ9PD3z0
 I_]hSHc0;ad8Nn[mUk>JN92
@@ -705,7 +705,7 @@ R9
 R10
 R11
 valtsource_probe
-Z13 !s110 1650938516
+R1
 !i10b 1
 !s100 KQ?M2Jc4^@;XBJRANEANe0
 IQeeIfSG@@Rm^GW^mTk0B]0
@@ -1575,7 +1575,7 @@ R9
 R10
 R11
 vsld_virtual_jtag_basic
-R13
+R1
 !i10b 1
 !s100 4=QY<mcj^X^`A]];EEmFH3
 IY`i5io7D_Pe?gAMPlN6=[0

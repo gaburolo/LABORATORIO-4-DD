@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Experimento
-Mon Apr 25 20:00:24 2022
+Mon Apr 25 23:13:40 2022
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -14,16 +14,26 @@ Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Port Connectivity Checks: "casilla:ca6"
- 10. Port Connectivity Checks: "casilla:ca5"
- 11. Port Connectivity Checks: "casilla:ca4"
- 12. Port Connectivity Checks: "casilla:ca3"
- 13. Port Connectivity Checks: "casilla:ca2"
- 14. Port Connectivity Checks: "casilla:ca1"
- 15. Post-Synthesis Netlist Statistics for Top Partition
- 16. Elapsed Time Per Partition
- 17. Analysis & Synthesis Messages
- 18. Analysis & Synthesis Suppressed Messages
+  9. Port Connectivity Checks: "casilla:ca16"
+ 10. Port Connectivity Checks: "casilla:ca15"
+ 11. Port Connectivity Checks: "casilla:ca14"
+ 12. Port Connectivity Checks: "casilla:ca13"
+ 13. Port Connectivity Checks: "casilla:ca12"
+ 14. Port Connectivity Checks: "casilla:ca11"
+ 15. Port Connectivity Checks: "casilla:ca10"
+ 16. Port Connectivity Checks: "casilla:ca9"
+ 17. Port Connectivity Checks: "casilla:ca8"
+ 18. Port Connectivity Checks: "casilla:ca7"
+ 19. Port Connectivity Checks: "casilla:ca6"
+ 20. Port Connectivity Checks: "casilla:ca5"
+ 21. Port Connectivity Checks: "casilla:ca4"
+ 22. Port Connectivity Checks: "casilla:ca3"
+ 23. Port Connectivity Checks: "casilla:ca2"
+ 24. Port Connectivity Checks: "casilla:ca1"
+ 25. Post-Synthesis Netlist Statistics for Top Partition
+ 26. Elapsed Time Per Partition
+ 27. Analysis & Synthesis Messages
+ 28. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -50,13 +60,13 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Apr 25 20:00:24 2022       ;
+; Analysis & Synthesis Status     ; Successful - Mon Apr 25 23:13:40 2022       ;
 ; Quartus Prime Version           ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                   ; Experimento                                 ;
 ; Top-level Entity Name           ; move                                        ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 32                                          ;
+; Total registers                 ; 72                                          ;
 ; Total pins                      ; 76                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
@@ -189,25 +199,25 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 34        ;
+; Estimate of Logic utilization (ALMs needed) ; 113       ;
 ;                                             ;           ;
-; Combinational ALUT usage for logic          ; 43        ;
+; Combinational ALUT usage for logic          ; 161       ;
 ;     -- 7 input functions                    ; 0         ;
-;     -- 6 input functions                    ; 24        ;
-;     -- 5 input functions                    ; 1         ;
-;     -- 4 input functions                    ; 8         ;
-;     -- <=3 input functions                  ; 10        ;
+;     -- 6 input functions                    ; 64        ;
+;     -- 5 input functions                    ; 15        ;
+;     -- 4 input functions                    ; 44        ;
+;     -- <=3 input functions                  ; 38        ;
 ;                                             ;           ;
-; Dedicated logic registers                   ; 32        ;
+; Dedicated logic registers                   ; 72        ;
 ;                                             ;           ;
 ; I/O pins                                    ; 76        ;
 ;                                             ;           ;
 ; Total DSP Blocks                            ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; rst~input ;
-; Maximum fan-out                             ; 32        ;
-; Total fan-out                               ; 410       ;
-; Average fan-out                             ; 1.81      ;
+; Maximum fan-out                             ; 72        ;
+; Total fan-out                               ; 1090      ;
+; Average fan-out                             ; 2.83      ;
 +---------------------------------------------+-----------+
 
 
@@ -216,13 +226,23 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; |move                      ; 43 (17)             ; 32 (8)                    ; 0                 ; 0          ; 76   ; 0            ; |move               ;             ;              ;
-;    |casilla:ca1|           ; 4 (4)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca1   ; casilla     ; work         ;
-;    |casilla:ca2|           ; 5 (5)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca2   ; casilla     ; work         ;
-;    |casilla:ca3|           ; 4 (4)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca3   ; casilla     ; work         ;
-;    |casilla:ca4|           ; 4 (4)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca4   ; casilla     ; work         ;
-;    |casilla:ca5|           ; 4 (4)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca5   ; casilla     ; work         ;
-;    |casilla:ca6|           ; 5 (5)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca6   ; casilla     ; work         ;
+; |move                      ; 161 (22)            ; 72 (8)                    ; 0                 ; 0          ; 76   ; 0            ; |move               ;             ;              ;
+;    |casilla:ca10|          ; 9 (9)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca10  ; casilla     ; work         ;
+;    |casilla:ca11|          ; 10 (10)             ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca11  ; casilla     ; work         ;
+;    |casilla:ca12|          ; 10 (10)             ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca12  ; casilla     ; work         ;
+;    |casilla:ca13|          ; 9 (9)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca13  ; casilla     ; work         ;
+;    |casilla:ca14|          ; 9 (9)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca14  ; casilla     ; work         ;
+;    |casilla:ca15|          ; 10 (10)             ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca15  ; casilla     ; work         ;
+;    |casilla:ca16|          ; 11 (11)             ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca16  ; casilla     ; work         ;
+;    |casilla:ca1|           ; 7 (7)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca1   ; casilla     ; work         ;
+;    |casilla:ca2|           ; 8 (8)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca2   ; casilla     ; work         ;
+;    |casilla:ca3|           ; 5 (5)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca3   ; casilla     ; work         ;
+;    |casilla:ca4|           ; 8 (8)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca4   ; casilla     ; work         ;
+;    |casilla:ca5|           ; 7 (7)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca5   ; casilla     ; work         ;
+;    |casilla:ca6|           ; 8 (8)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca6   ; casilla     ; work         ;
+;    |casilla:ca7|           ; 8 (8)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca7   ; casilla     ; work         ;
+;    |casilla:ca8|           ; 8 (8)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca8   ; casilla     ; work         ;
+;    |casilla:ca9|           ; 12 (12)             ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca9   ; casilla     ; work         ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -232,14 +252,119 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 32    ;
+; Total registers                              ; 72    ;
 ; Number of registers using Synchronous Clear  ; 8     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 32    ;
+; Number of registers using Asynchronous Clear ; 72    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++-----------------------------------------------+
+; Port Connectivity Checks: "casilla:ca16"      ;
++-------------+-------+----------+--------------+
+; Port        ; Type  ; Severity ; Details      ;
++-------------+-------+----------+--------------+
+; label[3..2] ; Input ; Info     ; Stuck at GND ;
+; label[1]    ; Input ; Info     ; Stuck at VCC ;
+; label[0]    ; Input ; Info     ; Stuck at GND ;
++-------------+-------+----------+--------------+
+
+
++--------------------------------------------+
+; Port Connectivity Checks: "casilla:ca15"   ;
++----------+-------+----------+--------------+
+; Port     ; Type  ; Severity ; Details      ;
++----------+-------+----------+--------------+
+; label[3] ; Input ; Info     ; Stuck at GND ;
+; label[2] ; Input ; Info     ; Stuck at VCC ;
+; label[1] ; Input ; Info     ; Stuck at GND ;
+; label[0] ; Input ; Info     ; Stuck at VCC ;
++----------+-------+----------+--------------+
+
+
++-----------------------------------------------+
+; Port Connectivity Checks: "casilla:ca14"      ;
++-------------+-------+----------+--------------+
+; Port        ; Type  ; Severity ; Details      ;
++-------------+-------+----------+--------------+
+; label[3..1] ; Input ; Info     ; Stuck at GND ;
+; label[0]    ; Input ; Info     ; Stuck at VCC ;
++-------------+-------+----------+--------------+
+
+
++-----------------------------------------------+
+; Port Connectivity Checks: "casilla:ca13"      ;
++-------------+-------+----------+--------------+
+; Port        ; Type  ; Severity ; Details      ;
++-------------+-------+----------+--------------+
+; label[2..0] ; Input ; Info     ; Stuck at GND ;
+; label[3]    ; Input ; Info     ; Stuck at VCC ;
++-------------+-------+----------+--------------+
+
+
++-----------------------------------------------+
+; Port Connectivity Checks: "casilla:ca12"      ;
++-------------+-------+----------+--------------+
+; Port        ; Type  ; Severity ; Details      ;
++-------------+-------+----------+--------------+
+; label[1..0] ; Input ; Info     ; Stuck at GND ;
+; label[3]    ; Input ; Info     ; Stuck at GND ;
+; label[2]    ; Input ; Info     ; Stuck at VCC ;
++-------------+-------+----------+--------------+
+
+
++-----------------------------------------------+
+; Port Connectivity Checks: "casilla:ca11"      ;
++-------------+-------+----------+--------------+
+; Port        ; Type  ; Severity ; Details      ;
++-------------+-------+----------+--------------+
+; label[2..0] ; Input ; Info     ; Stuck at VCC ;
+; label[3]    ; Input ; Info     ; Stuck at GND ;
++-------------+-------+----------+--------------+
+
+
++-----------------------------------------------+
+; Port Connectivity Checks: "casilla:ca10"      ;
++-------------+-------+----------+--------------+
+; Port        ; Type  ; Severity ; Details      ;
++-------------+-------+----------+--------------+
+; label[1..0] ; Input ; Info     ; Stuck at VCC ;
+; label[3..2] ; Input ; Info     ; Stuck at GND ;
++-------------+-------+----------+--------------+
+
+
++-----------------------------------------------+
+; Port Connectivity Checks: "casilla:ca9"       ;
++-------------+-------+----------+--------------+
+; Port        ; Type  ; Severity ; Details      ;
++-------------+-------+----------+--------------+
+; label[2..1] ; Input ; Info     ; Stuck at VCC ;
+; label[3]    ; Input ; Info     ; Stuck at GND ;
+; label[0]    ; Input ; Info     ; Stuck at GND ;
++-------------+-------+----------+--------------+
+
+
++-----------------------------------------------+
+; Port Connectivity Checks: "casilla:ca8"       ;
++-------------+-------+----------+--------------+
+; Port        ; Type  ; Severity ; Details      ;
++-------------+-------+----------+--------------+
+; label[2..0] ; Input ; Info     ; Stuck at GND ;
+; label[3]    ; Input ; Info     ; Stuck at VCC ;
++-------------+-------+----------+--------------+
+
+
++-----------------------------------------------+
+; Port Connectivity Checks: "casilla:ca7"       ;
++-------------+-------+----------+--------------+
+; Port        ; Type  ; Severity ; Details      ;
++-------------+-------+----------+--------------+
+; label[2..0] ; Input ; Info     ; Stuck at VCC ;
+; label[3]    ; Input ; Info     ; Stuck at GND ;
++-------------+-------+----------+--------------+
 
 
 +-----------------------------------------------+
@@ -314,22 +439,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 32                          ;
-;     CLR               ; 24                          ;
+; arriav_ff             ; 72                          ;
+;     CLR               ; 64                          ;
 ;     CLR SCLR          ; 8                           ;
-; arriav_lcell_comb     ; 46                          ;
+; arriav_lcell_comb     ; 165                         ;
 ;     arith             ; 8                           ;
 ;         1 data inputs ; 8                           ;
-;     normal            ; 38                          ;
-;         0 data inputs ; 1                           ;
-;         1 data inputs ; 4                           ;
-;         4 data inputs ; 8                           ;
-;         5 data inputs ; 1                           ;
-;         6 data inputs ; 24                          ;
+;     normal            ; 157                         ;
+;         1 data inputs ; 8                           ;
+;         2 data inputs ; 14                          ;
+;         3 data inputs ; 12                          ;
+;         4 data inputs ; 44                          ;
+;         5 data inputs ; 15                          ;
+;         6 data inputs ; 64                          ;
 ; boundary_port         ; 76                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 4.00                        ;
-; Average LUT depth     ; 2.29                        ;
+; Max LUT depth         ; 3.00                        ;
+; Average LUT depth     ; 2.27                        ;
 +-----------------------+-----------------------------+
 
 
@@ -348,7 +474,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Mon Apr 25 20:00:13 2022
+    Info: Processing started: Mon Apr 25 23:13:26 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Experimento -c Experimento
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -375,72 +501,21 @@ Warning (10236): Verilog HDL Implicit Net warning at VGA.sv(13): created implici
 Warning (10236): Verilog HDL Implicit Net warning at VGAtest.sv(13): created implicit net for "clk" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/VGAtest.sv Line: 13
 Warning (10236): Verilog HDL Implicit Net warning at VGAtest.sv(13): created implicit net for "clk2" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/VGAtest.sv Line: 13
 Info (12127): Elaborating entity "move" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at move.sv(67): truncated value with size 32 to match size of target (8) File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv Line: 67
-Warning (10034): Output port "c7" at move.sv(12) has no driver File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv Line: 12
-Warning (10034): Output port "c8" at move.sv(13) has no driver File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv Line: 13
-Warning (10034): Output port "c9" at move.sv(14) has no driver File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv Line: 14
-Warning (10034): Output port "c10" at move.sv(15) has no driver File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv Line: 15
-Warning (10034): Output port "c11" at move.sv(16) has no driver File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv Line: 16
-Warning (10034): Output port "c12" at move.sv(17) has no driver File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv Line: 17
-Warning (10034): Output port "c13" at move.sv(18) has no driver File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv Line: 18
-Warning (10034): Output port "c14" at move.sv(19) has no driver File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv Line: 19
-Warning (10034): Output port "c15" at move.sv(20) has no driver File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv Line: 20
-Warning (10034): Output port "c16" at move.sv(21) has no driver File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv Line: 21
+Warning (10230): Verilog HDL assignment warning at move.sv(97): truncated value with size 32 to match size of target (8) File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv Line: 97
 Info (12128): Elaborating entity "casilla" for hierarchy "casilla:ca1" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv Line: 37
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "c7[0]" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv Line: 12
-    Warning (13410): Pin "c7[1]" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv Line: 12
-    Warning (13410): Pin "c7[2]" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv Line: 12
-    Warning (13410): Pin "c7[3]" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv Line: 12
-    Warning (13410): Pin "c8[0]" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv Line: 13
-    Warning (13410): Pin "c8[1]" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv Line: 13
-    Warning (13410): Pin "c8[2]" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv Line: 13
-    Warning (13410): Pin "c8[3]" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv Line: 13
-    Warning (13410): Pin "c9[0]" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv Line: 14
-    Warning (13410): Pin "c9[1]" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv Line: 14
-    Warning (13410): Pin "c9[2]" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv Line: 14
-    Warning (13410): Pin "c9[3]" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv Line: 14
-    Warning (13410): Pin "c10[0]" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv Line: 15
-    Warning (13410): Pin "c10[1]" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv Line: 15
-    Warning (13410): Pin "c10[2]" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv Line: 15
-    Warning (13410): Pin "c10[3]" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv Line: 15
-    Warning (13410): Pin "c11[0]" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv Line: 16
-    Warning (13410): Pin "c11[1]" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv Line: 16
-    Warning (13410): Pin "c11[2]" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv Line: 16
-    Warning (13410): Pin "c11[3]" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv Line: 16
-    Warning (13410): Pin "c12[0]" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv Line: 17
-    Warning (13410): Pin "c12[1]" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv Line: 17
-    Warning (13410): Pin "c12[2]" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv Line: 17
-    Warning (13410): Pin "c12[3]" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv Line: 17
-    Warning (13410): Pin "c13[0]" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv Line: 18
-    Warning (13410): Pin "c13[1]" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv Line: 18
-    Warning (13410): Pin "c13[2]" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv Line: 18
-    Warning (13410): Pin "c13[3]" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv Line: 18
-    Warning (13410): Pin "c14[0]" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv Line: 19
-    Warning (13410): Pin "c14[1]" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv Line: 19
-    Warning (13410): Pin "c14[2]" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv Line: 19
-    Warning (13410): Pin "c14[3]" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv Line: 19
-    Warning (13410): Pin "c15[0]" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv Line: 20
-    Warning (13410): Pin "c15[1]" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv Line: 20
-    Warning (13410): Pin "c15[2]" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv Line: 20
-    Warning (13410): Pin "c15[3]" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv Line: 20
-    Warning (13410): Pin "c16[0]" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv Line: 21
-    Warning (13410): Pin "c16[1]" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv Line: 21
-    Warning (13410): Pin "c16[2]" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv Line: 21
-    Warning (13410): Pin "c16[3]" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv Line: 21
 Info (286030): Timing-Driven Synthesis is running
 Info (144001): Generated suppressed messages file C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/output_files/Experimento.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 141 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 297 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 72 output pins
-    Info (21061): Implemented 65 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 57 warnings
-    Info: Peak virtual memory: 4812 megabytes
-    Info: Processing ended: Mon Apr 25 20:00:24 2022
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:24
+    Info (21061): Implemented 221 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 4813 megabytes
+    Info: Processing ended: Mon Apr 25 23:13:40 2022
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:28
 
 
 +------------------------------------------+

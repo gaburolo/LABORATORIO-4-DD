@@ -10,7 +10,7 @@ cModel Technology
 Z0 dC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/simulation/modelsim
 vcasilla
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1650938533
+Z2 !s110 1650950071
 !i10b 1
 !s100 @3=8j76ThW`>`X9fkDGgh2
 IPQSl84d:U]UadTYVGd@^Z2
@@ -26,7 +26,7 @@ Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z5 !s108 1650938533.000000
+Z5 !s108 1650950071.000000
 !s107 C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/casilla.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4|C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/casilla.sv|
 !i113 1
@@ -37,13 +37,13 @@ vmove
 R1
 R2
 !i10b 1
-!s100 O9_b@Y5I?Se>mcB]Z6]]i0
-I[NJZ<47CBFJOGfD;oT[Ze0
+!s100 M@]W685SUg[ZEBaSlZNeQ2
+Ilk3Cf9KD>BL<<IGa93flW3
 R3
 !s105 move_sv_unit
 S1
 R0
-w1650936707
+w1650949570
 8C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv
 FC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv
 L0 1
@@ -60,15 +60,15 @@ R7
 R8
 vmoveTest
 R1
-!s110 1650938534
+R2
 !i10b 1
-!s100 @50ADXkOK59N7c>YWn8Y^3
-IoY>ETX[niYF47Q>Pm<KoF3
+!s100 R`Xb6M@bRc?cGEKL@c1]:3
+I29?K^;;dA[]G0=5:=``8;0
 R3
 !s105 moveTest_sv_unit
 S1
 R0
-w1650938408
+w1650950005
 8C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/moveTest.sv
 FC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/moveTest.sv
 L0 1

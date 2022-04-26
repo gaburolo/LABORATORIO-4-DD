@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Mon Apr 25 20:00:24 2022
+Analysis & Synthesis Status : Successful - Mon Apr 25 23:13:40 2022
 Quartus Prime Version : 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 Revision Name : Experimento
 Top-level Entity Name : move
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 32
+Total registers : 72
 Total pins : 76
 Total virtual pins : 0
 Total block memory bits : 0
