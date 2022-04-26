@@ -10,15 +10,15 @@ cModel Technology
 Z0 dC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/simulation/modelsim
 vcasilla
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1650747709
+Z2 !s110 1650938533
 !i10b 1
-!s100 UmaQ_ZY9cNobigC?g=M7H3
-I0OYR1cmmC]a_[3b@e>b:G1
+!s100 @3=8j76ThW`>`X9fkDGgh2
+IPQSl84d:U]UadTYVGd@^Z2
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 !s105 casilla_sv_unit
 S1
 R0
-w1650746752
+w1650938205
 8C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/casilla.sv
 FC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/casilla.sv
 L0 1
@@ -26,36 +26,61 @@ Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z5 !s108 1650747709.000000
+Z5 !s108 1650938533.000000
 !s107 C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/casilla.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4|C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/casilla.sv|
 !i113 1
 Z6 o-sv -work work
 Z7 !s92 -sv -work work {+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4}
 Z8 tCvgOpt 0
-vcasillaTest
+vmove
 R1
 R2
 !i10b 1
-!s100 N8IXk?hXio0eDiE7WgG@^1
-I_Yjm2GB12Q7fcFQm:2SkF3
+!s100 O9_b@Y5I?Se>mcB]Z6]]i0
+I[NJZ<47CBFJOGfD;oT[Ze0
 R3
-!s105 casillaTest_sv_unit
+!s105 move_sv_unit
 S1
 R0
-w1650747623
-8C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/casillaTest.sv
-FC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/casillaTest.sv
+w1650936707
+8C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv
+FC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv
 L0 1
 R4
 r1
 !s85 0
 31
 R5
-!s107 C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/casillaTest.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4|C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/casillaTest.sv|
+!s107 C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4|C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv|
 !i113 1
 R6
 R7
 R8
-ncasilla@test
+vmoveTest
+R1
+!s110 1650938534
+!i10b 1
+!s100 @50ADXkOK59N7c>YWn8Y^3
+IoY>ETX[niYF47Q>Pm<KoF3
+R3
+!s105 moveTest_sv_unit
+S1
+R0
+w1650938408
+8C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/moveTest.sv
+FC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/moveTest.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/moveTest.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4|C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/moveTest.sv|
+!i113 1
+R6
+R7
+R8
+nmove@test
