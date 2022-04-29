@@ -49,16 +49,16 @@ module moveTest();
 	//always #PERIOD clk=~clk;
 	initial begin 
 		
-		// 0)
-		//  | | 
-		//  | |
-		//  | |
 		
+		rst=0;
+		#5;
 		move = 0;
 		rst = 1;
 		select = 0;
 		clk=0;
+		
 		#5;
+		
 		clk=1;#5;clk=0;
 		move = 1;//1
 		#5;
@@ -131,6 +131,13 @@ module moveTest();
 		select = 1;
 		clk=1;#5;clk=0;
 		#5;
+		
+		select= 0;//2
+		clk=1;#5;clk=0;
+		clk=1;#5;clk=0;
+		clk=1;#5;clk=0;
+		clk=1;#5;clk=0;
+		
 		$stop;
 	end
 endmodule

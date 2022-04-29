@@ -51,7 +51,7 @@
 
 
 `define WHITE 24'hFFFFFF
-`define BLUE 24'h264653
+`define BLUE 24'h0000FF
 
 `define GREEN 24'h00FF00
 `define PURPLE 24'hCC99FF
@@ -122,7 +122,7 @@ module SYNC(
 			end
 		else if((315 < counter_x && counter_x < 620) && (275 < counter_y && counter_y < 280))//Linea horizontal
 			begin 
-				{r_red,r_green,r_blue} <= `BLUE;
+				{r_red,r_green,r_blue} <= `BLUE;//cambio
 			end
 		else if((315 < counter_x && counter_x < 620) && (350 < counter_y && counter_y < 355))//Linea horizontal
 			begin 

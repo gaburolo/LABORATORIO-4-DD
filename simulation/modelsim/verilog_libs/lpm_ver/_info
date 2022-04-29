@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/simulation/modelsim
 vlpm_abs
-Z1 !s110 1650950046
+Z1 !s110 1651206938
 !i10b 1
 !s100 O9i<YS?ECZC8XU2m2T>HQ0
 IPA?QJ0Fgj]5ZaDCz:^EZN2
@@ -23,7 +23,7 @@ Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1650950046.000000
+Z7 !s108 1651206937.000000
 Z8 !s107 c:/intelfpga_lite/21.1/quartus/eda/sim_lib/220model.v|
 Z9 !s90 -reportprogress|300|-vlog01compat|-work|lpm_ver|c:/intelfpga_lite/21.1/quartus/eda/sim_lib/220model.v|
 !i113 1
@@ -156,7 +156,7 @@ R9
 R10
 R11
 vlpm_constant
-R1
+Z12 !s110 1651206937
 !i10b 1
 !s100 FkMf<gh?_E[^916k78`m>1
 IMd6XI]>^B95B]m5ZC3Y061
@@ -219,7 +219,7 @@ R9
 R10
 R11
 vLPM_DEVICE_FAMILIES
-R1
+R12
 !i10b 1
 !s100 TGKoG^3^z?D6`1MdGNBbF2
 IiVOg^g0_JMj`L[fb00oSa3
@@ -388,7 +388,7 @@ R9
 R10
 R11
 vLPM_HINT_EVALUATION
-R1
+R12
 !i10b 1
 !s100 `WKMS]SM@JbIe0gCi<3f82
 Iz8GZWYUWP=OhLWY>`;chO0
@@ -473,7 +473,7 @@ R9
 R10
 R11
 vLPM_MEMORY_INITIALIZATION
-R1
+R12
 !i10b 1
 !s100 DR_SV_J4fzH0gTOLESO6;1
 IAL`]a9<UY1F;kQkhE1i?J3

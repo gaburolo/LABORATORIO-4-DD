@@ -45,8 +45,10 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
+vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 4 {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/MemoryGame.sv}
 vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 4 {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/casilla.sv}
 vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 4 {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv}
+vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 4 {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/memTurn.sv}
 
 vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 4 {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/moveTest.sv}
 

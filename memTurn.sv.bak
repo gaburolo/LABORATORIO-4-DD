@@ -1,0 +1,15 @@
+module memTurn(input logic select, input logic player, output logic x);
+	always_ff @(posedge (select) or negedge rst)
+		if(rst === 1'b0) counter <= 0;
+		else
+		begin
+			if (counter > 2) 
+				begin
+					x=01;
+					counter <= 0;
+				end
+				//aqui
+			else counter <= counter + 1;
+		end
+
+endmodule

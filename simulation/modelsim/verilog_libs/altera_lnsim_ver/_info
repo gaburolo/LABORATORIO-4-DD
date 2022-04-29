@@ -10,7 +10,7 @@ cModel Technology
 Z0 dC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/simulation/modelsim
 valtera_arriav_pll
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1650950052
+Z2 !s110 1651206944
 !i10b 1
 !s100 =P7CDUZSG9W8kBfd_h_CR2
 Ib>[6RHXQ`z]04FOY[Al]02
@@ -26,7 +26,7 @@ Z8 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z9 !s108 1650950051.000000
+Z9 !s108 1651206943.000000
 Z10 !s107 c:/intelfpga_lite/21.1/quartus/eda/sim_lib/altera_lnsim.sv|
 Z11 !s90 -reportprogress|300|-sv|-work|altera_lnsim_ver|c:/intelfpga_lite/21.1/quartus/eda/sim_lib/altera_lnsim.sv|
 !i113 1
@@ -82,7 +82,7 @@ R12
 R13
 Xaltera_generic_pll_functions
 R1
-Z14 !s110 1650950051
+Z14 !s110 1651206943
 !i10b 1
 !s100 mD8bbQ0]E6AUDh:Z`2gV<3
 I3ECBk2AOHC2nUhc:hQMCD1
@@ -129,7 +129,7 @@ R12
 R13
 valtera_iopll_rotation_lcells
 R1
-Z15 !s110 1650950053
+Z15 !s110 1651206945
 !i10b 1
 !s100 e4c;jYV0<f;]zJeBoP4SJ0
 IUaV:l3?[NN]D^X09=:JP=0
@@ -298,7 +298,7 @@ R12
 R13
 valtera_pll_reconfig_tasks
 R1
-R2
+R14
 !i10b 1
 !s100 6Y]K7z27@cfSeONmWWeXR0
 IFf7[zMj<mO_?m2=Ni2@A;3
@@ -394,7 +394,7 @@ R12
 R13
 vama_adder_function
 R1
-R2
+R14
 !i10b 1
 !s100 6QMdalan?zoeg6gl8=[dL0
 I1jJlWz02APl_@EM`GQIdO1
@@ -418,7 +418,7 @@ R12
 R13
 vama_chainout_adder_accumulator_function
 R1
-R2
+R14
 !i10b 1
 !s100 57QR;AnJ]o9_oP@P^`<`_3
 IMJh9cHlg5R1L>@;CDV:in3
@@ -514,7 +514,7 @@ R12
 R13
 vama_latency_function
 R1
-R2
+R14
 !i10b 1
 !s100 I[Z@R1Ao0izQW<FMg3>[22
 ILW3SaeRK]TQh<EHgX8VVA3
@@ -538,7 +538,7 @@ R12
 R13
 vama_multiplier_function
 R1
-R2
+R14
 !i10b 1
 !s100 PnJ2SG;7f9S9LA_G45McK1
 IF;RigE@2DEC4PIo:oj0VZ1
@@ -562,7 +562,7 @@ R12
 R13
 vama_preadder_function
 R1
-R2
+R14
 !i10b 1
 !s100 j^04kGPXC[@hlfj@n^TDm3
 I2PG?[zU2LWASh_zBk4FJ62
@@ -634,7 +634,7 @@ R12
 R13
 vama_scanchain
 R1
-R2
+R14
 !i10b 1
 !s100 Odk2P<15ERAUMI2>3njlR1
 IQ;C<?lCV`7ihMPPK0EcBK3
@@ -682,7 +682,7 @@ R12
 R13
 vama_systolic_adder_function
 R1
-R2
+R14
 !i10b 1
 !s100 ?Pi9_Q0zT0UKEf1m=U:LX1
 IHcAkdn;HLJjZA7m18RV=M1
@@ -1093,7 +1093,7 @@ R13
 Xfourteennm_iopll_functions
 R1
 R16
-R2
+R15
 !i10b 1
 !s100 kaR4]:ZK<EIL33lZNjP5a2
 Im2NS^`ZI1Z50i00^5SDjM3
@@ -1118,7 +1118,7 @@ vfourteennm_simple_iopll
 R1
 R16
 Z17 DXx4 work 26 fourteennm_iopll_functions 0 22 m2NS^`ZI1Z50i00^5SDjM3
-R2
+R15
 !i10b 1
 !s100 hUFD^T@=5=`=PjmWJZ17I1
 I8mQ;S6@^LHIO19Q5zP1We3
@@ -1144,7 +1144,7 @@ vfourteennm_sub_iopll
 R1
 R16
 R17
-R2
+R15
 !i10b 1
 !s100 44bPaXLn<SXYU^09>MN6a0
 I8FQ`F<JTMRii[oiY<B5>c2

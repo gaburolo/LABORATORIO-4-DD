@@ -28,9 +28,22 @@ module move(
 	logic par;
 	logic finish;
 	
-	assign player=1;
+	//assign player=1;
 	assign par=0;
-	assign finish=0;
+	//assign finish=0;
+	logic [1:0] x;
+	
+	memTurn mt(.clk(clk), .rst(rst), .select(select),  .player(player), .x(x));
+	
+	MemoryGame game(
+		.clk(clk),
+		.rst(rst),
+		.x(x),
+		.endState(finish),
+		.player(player)
+	);
+	
+	
 
 	casilla ca1(.clk_Temp(clk),.counter(counter === 0), .label(4'b0001), 
 					.rst(rst), .player(player), .select(select), 
@@ -84,10 +97,10 @@ module move(
 	
 	
 
+	
 
 
-
-always_ff @(posedge (move) or negedge rst)
+	always_ff @(posedge (move) or negedge rst)
 		if(rst === 1'b0) counter <= 0;
 		else
 		begin
@@ -97,6 +110,7 @@ always_ff @(posedge (move) or negedge rst)
 				else counter <= counter + 1;
 			end
 		end
+	
 endmodule
 
 

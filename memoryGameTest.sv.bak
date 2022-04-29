@@ -1,0 +1,40 @@
+module memoryGameTest();
+logic clk;
+logic rst; 
+logic [1:0] x; 
+logic[2:0] y;
+
+
+
+
+MemoryGame m1(.clk(clk), .rst(rst), .x(x), .y(y));
+
+initial begin
+clk=0:
+rst=0;
+#5;
+rst=1;
+clk=1;#5;
+rst=0;
+clk=0;#5;
+
+x=01;
+clk=1;#5;clk=0;#5;
+
+x=01;
+clk=1;#5;clk=0;#5;
+
+x=10;
+clk=1;#5;clk=0;#5;
+
+rst=1;
+clk=1;#5;
+rst=0;
+clk=0;#5;
+
+x=01;
+clk=1;#5;clk=0;#5;
+x=11;
+clk=1;#5;clk=0;#5;
+end
+endmodule

@@ -1,0 +1,20 @@
+module turnTest();
+logic select;
+logic player;
+output logic x;
+
+memTurn m1(.select(select), .player(player), .x(x));
+initial begin
+select=0;
+player=0;
+x=00;
+#10;
+
+select=1;
+#10;
+select=0;
+#10;
+select=1;
+#10;
+end
+endmodule

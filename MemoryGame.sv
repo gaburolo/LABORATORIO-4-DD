@@ -1,13 +1,13 @@
-module MemoryGame (input logic clk,input logic rst, input logic [1:0] x, output logic[2:0] y);
+module MemoryGame (input logic clk,input logic rst, input logic [1:0] x, output logic endState, output logic player);
 
 
 	logic [2:0] estadoActual, estadoSiguiente;
 
 	// lógica del estado actual (secuencial)
 	
-	always_ff @(posedge clk or posedge rst)
-		if (rst) 
-			estadoActual=0;
+	always_ff @(posedge clk or negedge rst)
+		if (!rst) 
+			estadoActual=3'b000;
 		else
 			estadoActual=estadoSiguiente;
 			
@@ -31,10 +31,13 @@ module MemoryGame (input logic clk,input logic rst, input logic [1:0] x, output 
 			endcase
 			3'b010: estadoSiguiente=3'b010;//cambio
 			3'b011: estadoSiguiente=3'b011;//cambio
-			3'b100: estadoSiguiente=3'b000;//cambio
-			default: estadoSiguiente=2'b000;
+			3'b100: estadoSiguiente=3'b100;//cambio
+			default: estadoSiguiente=3'b000;
 		endcase
 	// Lógica de las salidas
-	//assign y= estadoSiguiente;
+	
 	end
+	assign endState = (estadoActual == 3'b010) || (estadoActual == 3'b011) || (estadoActual == 3'b100);
+	assign player = (estadoActual == 3'b001);
+	
 endmodule
