@@ -19,7 +19,8 @@ module move(
 	output logic [3:0] c14,
 	output logic [3:0] c15,
 	output logic [3:0] c16,
-	output byte counter = 0
+	output byte counter = 0,
+	output logic [3:0] state
 	//output logic stop_timer,
 	//output byte won_play [2:0]
 	);
@@ -33,7 +34,8 @@ module move(
 	//assign finish=0;
 	logic [1:0] x;
 	
-	
+	byte counterJ1 = 0; // Win cond
+	byte counterJ2 = 0; // Win cond
 	
 	MemoryGame game(
 		.clk(clk),
@@ -48,10 +50,10 @@ module move(
 	casilla ca1(.clk_Temp(clk),.counter(counter === 0), .label(4'b0001), 
 					.rst(rst), .player(player), .select(select), 
 					.par(par), .new_state(c1));
-	casilla ca2(.clk_Temp(clk),.counter(counter === 1), .label(4'b0010), 
+	casilla ca2(.clk_Temp(clk),.counter(counter === 1), .label(4'b0011), 
 					.rst(rst), .player(player), .select(select), 
 					.par(par), .new_state(c2));
-	casilla ca3(.clk_Temp(clk),.counter(counter === 2), .label(4'b0011), 
+	casilla ca3(.clk_Temp(clk),.counter(counter === 2), .label(4'b0010), 
 					.rst(rst), .player(player), .select(select), 
 					.par(par), .new_state(c3));
 	casilla ca4(.clk_Temp(clk),.counter(counter === 3), .label(4'b0100),
@@ -98,13 +100,11 @@ module move(
 	
 	emptyC eC(.counter(counter),.c1(c1),.c2(c2),.c3(c3),.c4(c4), .c5(c5),
 	.c6(c6), .c7(c7), .c8(c8),	.c9(c9),	.c10(c10), .c11(c11), .c12(c12), 
-	.c13(c13), .c14(c14), .c15(c15), .c16(c16), .empty(empty)
-	//,state(state)
+	.c13(c13), .c14(c14), .c15(c15), .c16(c16), .empty(empty), .state(state)
 	);
 	
-	memTurn mt(.clk(clk), .rst(rst), .select(select)
-	//, .state(state)
-	, .empty(empty),  .player(player), .x(x));
+	memTurn mt(.clk(clk), .rst(rst), .select(select), .state(state), .empty(empty),
+	.player(player), .x(x), .counterJ1(counterJ1), .counterJ2(counterJ2));
 
 	always_ff @(posedge (move) or negedge rst)
 		if(rst === 1'b0) counter <= 0;

@@ -14,37 +14,38 @@ module emptyC(input byte counter,input logic [3:0] c1,
 	input logic [3:0] c14,
 	input logic [3:0] c15,
 	input logic [3:0] c16, output logic empty
-	//,output logic[3;0] state
+	,output logic[3:0] state
 	);
 
 	
-	logic [3:0] state = 4'b0000;
+	logic [3:0] currentState = 4'b0000;
 	
 	always_comb begin
 		case (counter)
-			0:state=c1;
-			1:state=c2;
-			2:state=c3;
-			3:state=c4;
-			4:state=c5;
-			5:state=c6;
-			6:state=c7;
-			7:state=c8;
-			8:state=c9;
-			9:state=c10;
-			10:state=c11;
-			11:state=c12;
-			12:state=c13;
-			13:state=c14;
-			14:state=c15;
-			15:state=c16;
-			default:state=4'b1001;
+			0:currentState=c1;
+			1:currentState=c2;
+			2:currentState=c3;
+			3:currentState=c4;
+			4:currentState=c5;
+			5:currentState=c6;
+			6:currentState=c7;
+			7:currentState=c8;
+			8:currentState=c9;
+			9:currentState=c10;
+			10:currentState=c11;
+			11:currentState=c12;
+			12:currentState=c13;
+			13:currentState=c14;
+			14:currentState=c15;
+			15:currentState=c16;
+			default:currentState=4'b1001;
 		endcase 
 	end	
 	
 	
-	assign empty = (state === 4'b0000) || (state === 4'b1111);
+	assign empty = (currentState === 4'b0000) || (currentState === 4'b1111);
 
+	assign state = currentState;
 	
 	
 	

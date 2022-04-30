@@ -1,6 +1,6 @@
 |move
-clk => clk.IN18
-rst => rst.IN18
+clk => clk.IN17
+rst => rst.IN17
 move => counter[0]~reg0.CLK
 move => counter[1]~reg0.CLK
 move => counter[2]~reg0.CLK
@@ -9,7 +9,7 @@ move => counter[4]~reg0.CLK
 move => counter[5]~reg0.CLK
 move => counter[6]~reg0.CLK
 move => counter[7]~reg0.CLK
-select => select.IN17
+select => select.IN16
 c1[0] << casilla:ca1.new_state
 c1[1] << casilla:ca1.new_state
 c1[2] << casilla:ca1.new_state
@@ -82,6 +82,10 @@ counter[4] << counter[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 counter[5] << counter[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 counter[6] << counter[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 counter[7] << counter[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+state[0] << emptyC:eC.state[0]
+state[1] << emptyC:eC.state[1]
+state[2] << emptyC:eC.state[2]
+state[3] << emptyC:eC.state[3]
 
 
 |move|MemoryGame:game
@@ -991,9 +995,29 @@ c16[1] => Selector2.IN33
 c16[2] => Selector1.IN33
 c16[3] => Selector0.IN33
 empty <= empty.DB_MAX_OUTPUT_PORT_TYPE
+state[0] <= Selector3.DB_MAX_OUTPUT_PORT_TYPE
+state[1] <= Selector2.DB_MAX_OUTPUT_PORT_TYPE
+state[2] <= Selector1.DB_MAX_OUTPUT_PORT_TYPE
+state[3] <= Selector0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |move|memTurn:mt
+clk => counterJ2[0]~reg0.CLK
+clk => counterJ2[1]~reg0.CLK
+clk => counterJ2[2]~reg0.CLK
+clk => counterJ2[3]~reg0.CLK
+clk => counterJ2[4]~reg0.CLK
+clk => counterJ2[5]~reg0.CLK
+clk => counterJ2[6]~reg0.CLK
+clk => counterJ2[7]~reg0.CLK
+clk => counterJ1[0]~reg0.CLK
+clk => counterJ1[1]~reg0.CLK
+clk => counterJ1[2]~reg0.CLK
+clk => counterJ1[3]~reg0.CLK
+clk => counterJ1[4]~reg0.CLK
+clk => counterJ1[5]~reg0.CLK
+clk => counterJ1[6]~reg0.CLK
+clk => counterJ1[7]~reg0.CLK
 clk => counter[0].CLK
 clk => counter[1].CLK
 clk => counter[2].CLK
@@ -1002,8 +1026,25 @@ clk => counter[4].CLK
 clk => counter[5].CLK
 clk => counter[6].CLK
 clk => counter[7].CLK
+clk => v1.CLK
 clk => x[0]~reg0.CLK
 clk => x[1]~reg0.CLK
+rst => counterJ2[0]~reg0.ACLR
+rst => counterJ2[1]~reg0.ACLR
+rst => counterJ2[2]~reg0.ACLR
+rst => counterJ2[3]~reg0.ACLR
+rst => counterJ2[4]~reg0.ACLR
+rst => counterJ2[5]~reg0.ACLR
+rst => counterJ2[6]~reg0.ACLR
+rst => counterJ2[7]~reg0.ACLR
+rst => counterJ1[0]~reg0.ACLR
+rst => counterJ1[1]~reg0.ACLR
+rst => counterJ1[2]~reg0.ACLR
+rst => counterJ1[3]~reg0.ACLR
+rst => counterJ1[4]~reg0.ACLR
+rst => counterJ1[5]~reg0.ACLR
+rst => counterJ1[6]~reg0.ACLR
+rst => counterJ1[7]~reg0.ACLR
 rst => counter[0].ACLR
 rst => counter[1].ACLR
 rst => counter[2].ACLR
@@ -1014,10 +1055,47 @@ rst => counter[6].ACLR
 rst => counter[7].ACLR
 rst => x[1]~reg0.ENA
 rst => x[0]~reg0.ENA
+rst => v1.ENA
 select => always0.IN0
+state[0] => always0.IN1
+state[0] => v1.DATAB
+state[1] => ~NO_FANOUT~
+state[2] => ~NO_FANOUT~
+state[3] => ~NO_FANOUT~
 empty => always0.IN1
-player => ~NO_FANOUT~
+player => counterJ1.OUTPUTSELECT
+player => counterJ1.OUTPUTSELECT
+player => counterJ1.OUTPUTSELECT
+player => counterJ1.OUTPUTSELECT
+player => counterJ1.OUTPUTSELECT
+player => counterJ1.OUTPUTSELECT
+player => counterJ1.OUTPUTSELECT
+player => counterJ1.OUTPUTSELECT
+player => counterJ2.OUTPUTSELECT
+player => counterJ2.OUTPUTSELECT
+player => counterJ2.OUTPUTSELECT
+player => counterJ2.OUTPUTSELECT
+player => counterJ2.OUTPUTSELECT
+player => counterJ2.OUTPUTSELECT
+player => counterJ2.OUTPUTSELECT
+player => counterJ2.OUTPUTSELECT
 x[0] <= x[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 x[1] <= x[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+counterJ1[0] <= counterJ1[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+counterJ1[1] <= counterJ1[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+counterJ1[2] <= counterJ1[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+counterJ1[3] <= counterJ1[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+counterJ1[4] <= counterJ1[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+counterJ1[5] <= counterJ1[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+counterJ1[6] <= counterJ1[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+counterJ1[7] <= counterJ1[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+counterJ2[0] <= counterJ2[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+counterJ2[1] <= counterJ2[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+counterJ2[2] <= counterJ2[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+counterJ2[3] <= counterJ2[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+counterJ2[4] <= counterJ2[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+counterJ2[5] <= counterJ2[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+counterJ2[6] <= counterJ2[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+counterJ2[7] <= counterJ2[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
