@@ -27,13 +27,13 @@ module move(
 	
 	logic par;
 	logic finish;
-	
+	logic empty;
 	//assign player=1;
 	assign par=0;
 	//assign finish=0;
 	logic [1:0] x;
 	
-	memTurn mt(.clk(clk), .rst(rst), .select(select),  .player(player), .x(x));
+	
 	
 	MemoryGame game(
 		.clk(clk),
@@ -96,9 +96,15 @@ module move(
 	
 	
 	
-
+	emptyC eC(.counter(counter),.c1(c1),.c2(c2),.c3(c3),.c4(c4), .c5(c5),
+	.c6(c6), .c7(c7), .c8(c8),	.c9(c9),	.c10(c10), .c11(c11), .c12(c12), 
+	.c13(c13), .c14(c14), .c15(c15), .c16(c16), .empty(empty)
+	//,state(state)
+	);
 	
-
+	memTurn mt(.clk(clk), .rst(rst), .select(select)
+	//, .state(state)
+	, .empty(empty),  .player(player), .x(x));
 
 	always_ff @(posedge (move) or negedge rst)
 		if(rst === 1'b0) counter <= 0;

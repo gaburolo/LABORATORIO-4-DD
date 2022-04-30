@@ -71,6 +71,12 @@ module moveTest();
 		clk=1;#5;clk=0;
 		#5;
 		select= 0;
+		clk=1;#5;clk=0;
+		#5;
+		select= 1;
+		clk=1;#5;clk=0;
+		#5;
+		select=0;
 		move = 1;//2
 		clk=1;#5;clk=0;
 		#5;

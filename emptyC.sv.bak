@@ -1,0 +1,5 @@
+module emptyC(input logic [3:0] state, output logic empty);
+	
+	assign empty = (state === 4'b0000) || (state === 4'b1111);
+
+endmodule

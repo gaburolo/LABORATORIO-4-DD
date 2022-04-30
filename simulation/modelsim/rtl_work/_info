@@ -10,15 +10,15 @@ cModel Technology
 Z0 dC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/simulation/modelsim
 vcasilla
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1651206960
+Z2 !s110 1651341980
 !i10b 1
-!s100 @3=8j76ThW`>`X9fkDGgh2
-IPQSl84d:U]UadTYVGd@^Z2
+!s100 N:SOJHfWKAMQ;g=?H_?2>2
+ITY64Z`W0LzKe0S[YLK]Be2
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 !s105 casilla_sv_unit
 S1
 R0
-w1650938205
+w1651338193
 8C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/casilla.sv
 FC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/casilla.sv
 L0 1
@@ -26,13 +26,65 @@ Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z5 !s108 1651206960.000000
+Z5 !s108 1651341980.000000
 !s107 C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/casilla.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4|C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/casilla.sv|
 !i113 1
 Z6 o-sv -work work
 Z7 !s92 -sv -work work {+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4}
 Z8 tCvgOpt 0
+vcasillaTest
+R1
+R2
+!i10b 1
+!s100 L30:>hS?9O76Sh014HCVe2
+ImQfClj4a6ZMJl@zR6IF[m2
+R3
+!s105 casillaTest_sv_unit
+S1
+R0
+w1650935211
+8C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/casillaTest.sv
+FC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/casillaTest.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/casillaTest.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4|C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/casillaTest.sv|
+!i113 1
+R6
+R7
+R8
+ncasilla@test
+vemptyC
+R1
+R2
+!i10b 1
+!s100 L]XaMZ?0jHh=zONRSgmb<2
+IeF[E6jIL7?0fI55]=gN@n1
+R3
+!s105 emptyC_sv_unit
+S1
+R0
+w1651339391
+8C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/emptyC.sv
+FC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/emptyC.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/emptyC.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4|C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/emptyC.sv|
+!i113 1
+R6
+R7
+R8
+nempty@c
 vMemoryGame
 R1
 R2
@@ -51,7 +103,7 @@ R4
 r1
 !s85 0
 31
-R5
+!s108 1651341979.000000
 !s107 C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/MemoryGame.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4|C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/MemoryGame.sv|
 !i113 1
@@ -63,13 +115,13 @@ vmemTurn
 R1
 R2
 !i10b 1
-!s100 JFMe91bh<`fzljB`EHDWQ2
-IghCYZC5l4G<0R79l5DPP92
+!s100 J7J]^fVR`S>?@ToBFcJHh0
+Ii8H6_i3CWPZ8M9n@kU8i50
 R3
 !s105 memTurn_sv_unit
 S1
 R0
-w1651206619
+w1651341928
 8C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/memTurn.sv
 FC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/memTurn.sv
 L0 1
@@ -89,13 +141,13 @@ vmove
 R1
 R2
 !i10b 1
-!s100 j[>:zZ8XN]KNm;L5MMQ[`1
-ID`mVc]=Z2C7]b:k;o`d2K1
+!s100 EUPW>PRj^b[1eIQe_ET;U0
+IAUnZLJhONbA<R7hAKzZaM3
 R3
 !s105 move_sv_unit
 S1
 R0
-w1651206784
+w1651339778
 8C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv
 FC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv
 L0 1
@@ -110,29 +162,3 @@ R5
 R6
 R7
 R8
-vmoveTest
-R1
-R2
-!i10b 1
-!s100 kWLB5=<U?HN8L9KJnlhQT3
-IRA2a]ZmA1i=z?kK9UdQXi2
-R3
-!s105 moveTest_sv_unit
-S1
-R0
-w1651205280
-8C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/moveTest.sv
-FC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/moveTest.sv
-L0 1
-R4
-r1
-!s85 0
-31
-R5
-!s107 C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/moveTest.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4|C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/moveTest.sv|
-!i113 1
-R6
-R7
-R8
-nmove@test

@@ -49,10 +49,11 @@ vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Tal
 vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 4 {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/casilla.sv}
 vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 4 {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv}
 vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 4 {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/memTurn.sv}
+vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 4 {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/emptyC.sv}
 
-vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 4 {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/moveTest.sv}
+vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 4 {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/casillaTest.sv}
 
-vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  moveTest
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  casillaTest
 
 add wave *
 view structure

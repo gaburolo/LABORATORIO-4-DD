@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Experimento
-Thu Apr 28 22:33:20 2022
+Sat Apr 30 12:32:30 2022
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -17,26 +17,27 @@ Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
   9. Registers Removed During Synthesis
  10. Removed Registers Triggering Further Register Optimizations
  11. General Register Statistics
- 12. Port Connectivity Checks: "casilla:ca16"
- 13. Port Connectivity Checks: "casilla:ca15"
- 14. Port Connectivity Checks: "casilla:ca14"
- 15. Port Connectivity Checks: "casilla:ca13"
- 16. Port Connectivity Checks: "casilla:ca12"
- 17. Port Connectivity Checks: "casilla:ca11"
- 18. Port Connectivity Checks: "casilla:ca10"
- 19. Port Connectivity Checks: "casilla:ca9"
- 20. Port Connectivity Checks: "casilla:ca8"
- 21. Port Connectivity Checks: "casilla:ca7"
- 22. Port Connectivity Checks: "casilla:ca6"
- 23. Port Connectivity Checks: "casilla:ca5"
- 24. Port Connectivity Checks: "casilla:ca4"
- 25. Port Connectivity Checks: "casilla:ca3"
- 26. Port Connectivity Checks: "casilla:ca2"
- 27. Port Connectivity Checks: "casilla:ca1"
- 28. Post-Synthesis Netlist Statistics for Top Partition
- 29. Elapsed Time Per Partition
- 30. Analysis & Synthesis Messages
- 31. Analysis & Synthesis Suppressed Messages
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Port Connectivity Checks: "casilla:ca16"
+ 14. Port Connectivity Checks: "casilla:ca15"
+ 15. Port Connectivity Checks: "casilla:ca14"
+ 16. Port Connectivity Checks: "casilla:ca13"
+ 17. Port Connectivity Checks: "casilla:ca12"
+ 18. Port Connectivity Checks: "casilla:ca11"
+ 19. Port Connectivity Checks: "casilla:ca10"
+ 20. Port Connectivity Checks: "casilla:ca9"
+ 21. Port Connectivity Checks: "casilla:ca8"
+ 22. Port Connectivity Checks: "casilla:ca7"
+ 23. Port Connectivity Checks: "casilla:ca6"
+ 24. Port Connectivity Checks: "casilla:ca5"
+ 25. Port Connectivity Checks: "casilla:ca4"
+ 26. Port Connectivity Checks: "casilla:ca3"
+ 27. Port Connectivity Checks: "casilla:ca2"
+ 28. Port Connectivity Checks: "casilla:ca1"
+ 29. Post-Synthesis Netlist Statistics for Top Partition
+ 30. Elapsed Time Per Partition
+ 31. Analysis & Synthesis Messages
+ 32. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -63,7 +64,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Apr 28 22:33:20 2022       ;
+; Analysis & Synthesis Status     ; Successful - Sat Apr 30 12:32:30 2022       ;
 ; Quartus Prime Version           ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                   ; Experimento                                 ;
 ; Top-level Entity Name           ; move                                        ;
@@ -196,34 +197,35 @@ https://fpgasoftware.intel.com/eula.
 ; casilla.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/casilla.sv    ;         ;
 ; move.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv       ;         ;
 ; memTurn.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/memTurn.sv    ;         ;
+; emptyC.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/emptyC.sv     ;         ;
 +----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary             ;
-+---------------------------------------------+-----------+
-; Resource                                    ; Usage     ;
-+---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 86        ;
-;                                             ;           ;
-; Combinational ALUT usage for logic          ; 108       ;
-;     -- 7 input functions                    ; 0         ;
-;     -- 6 input functions                    ; 64        ;
-;     -- 5 input functions                    ; 18        ;
-;     -- 4 input functions                    ; 3         ;
-;     -- <=3 input functions                  ; 23        ;
-;                                             ;           ;
-; Dedicated logic registers                   ; 83        ;
-;                                             ;           ;
-; I/O pins                                    ; 76        ;
-;                                             ;           ;
-; Total DSP Blocks                            ; 0         ;
-;                                             ;           ;
-; Maximum fan-out node                        ; rst~input ;
-; Maximum fan-out                             ; 83        ;
-; Total fan-out                               ; 956       ;
-; Average fan-out                             ; 2.79      ;
-+---------------------------------------------+-----------+
++------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                ;
++---------------------------------------------+--------------+
+; Resource                                    ; Usage        ;
++---------------------------------------------+--------------+
+; Estimate of Logic utilization (ALMs needed) ; 181          ;
+;                                             ;              ;
+; Combinational ALUT usage for logic          ; 263          ;
+;     -- 7 input functions                    ; 0            ;
+;     -- 6 input functions                    ; 98           ;
+;     -- 5 input functions                    ; 31           ;
+;     -- 4 input functions                    ; 74           ;
+;     -- <=3 input functions                  ; 60           ;
+;                                             ;              ;
+; Dedicated logic registers                   ; 83           ;
+;                                             ;              ;
+; I/O pins                                    ; 76           ;
+;                                             ;              ;
+; Total DSP Blocks                            ; 0            ;
+;                                             ;              ;
+; Maximum fan-out node                        ; select~input ;
+; Maximum fan-out                             ; 88           ;
+; Total fan-out                               ; 1607         ;
+; Average fan-out                             ; 3.23         ;
++---------------------------------------------+--------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -231,25 +233,26 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name   ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------+-------------+--------------+
-; |move                      ; 108 (26)            ; 83 (8)                    ; 0                 ; 0          ; 76   ; 0            ; |move                 ;             ;              ;
+; |move                      ; 263 (28)            ; 83 (8)                    ; 0                 ; 0          ; 76   ; 0            ; |move                 ;             ;              ;
 ;    |MemoryGame:game|       ; 3 (3)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |move|MemoryGame:game ; MemoryGame  ; work         ;
-;    |casilla:ca10|          ; 4 (4)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca10    ; casilla     ; work         ;
-;    |casilla:ca11|          ; 4 (4)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca11    ; casilla     ; work         ;
-;    |casilla:ca12|          ; 4 (4)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca12    ; casilla     ; work         ;
-;    |casilla:ca13|          ; 4 (4)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca13    ; casilla     ; work         ;
-;    |casilla:ca14|          ; 4 (4)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca14    ; casilla     ; work         ;
-;    |casilla:ca15|          ; 4 (4)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca15    ; casilla     ; work         ;
-;    |casilla:ca16|          ; 5 (5)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca16    ; casilla     ; work         ;
-;    |casilla:ca1|           ; 4 (4)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca1     ; casilla     ; work         ;
-;    |casilla:ca2|           ; 5 (5)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca2     ; casilla     ; work         ;
-;    |casilla:ca3|           ; 4 (4)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca3     ; casilla     ; work         ;
-;    |casilla:ca4|           ; 4 (4)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca4     ; casilla     ; work         ;
-;    |casilla:ca5|           ; 4 (4)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca5     ; casilla     ; work         ;
-;    |casilla:ca6|           ; 5 (5)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca6     ; casilla     ; work         ;
-;    |casilla:ca7|           ; 4 (4)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca7     ; casilla     ; work         ;
-;    |casilla:ca8|           ; 4 (4)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca8     ; casilla     ; work         ;
-;    |casilla:ca9|           ; 5 (5)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca9     ; casilla     ; work         ;
-;    |memTurn:mt|            ; 11 (11)             ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |move|memTurn:mt      ; memTurn     ; work         ;
+;    |casilla:ca10|          ; 9 (9)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca10    ; casilla     ; work         ;
+;    |casilla:ca11|          ; 12 (12)             ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca11    ; casilla     ; work         ;
+;    |casilla:ca12|          ; 10 (10)             ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca12    ; casilla     ; work         ;
+;    |casilla:ca13|          ; 9 (9)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca13    ; casilla     ; work         ;
+;    |casilla:ca14|          ; 9 (9)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca14    ; casilla     ; work         ;
+;    |casilla:ca15|          ; 10 (10)             ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca15    ; casilla     ; work         ;
+;    |casilla:ca16|          ; 11 (11)             ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca16    ; casilla     ; work         ;
+;    |casilla:ca1|           ; 10 (10)             ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca1     ; casilla     ; work         ;
+;    |casilla:ca2|           ; 11 (11)             ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca2     ; casilla     ; work         ;
+;    |casilla:ca3|           ; 10 (10)             ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca3     ; casilla     ; work         ;
+;    |casilla:ca4|           ; 9 (9)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca4     ; casilla     ; work         ;
+;    |casilla:ca5|           ; 10 (10)             ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca5     ; casilla     ; work         ;
+;    |casilla:ca6|           ; 9 (9)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca6     ; casilla     ; work         ;
+;    |casilla:ca7|           ; 12 (12)             ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca7     ; casilla     ; work         ;
+;    |casilla:ca8|           ; 7 (7)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca8     ; casilla     ; work         ;
+;    |casilla:ca9|           ; 12 (12)             ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca9     ; casilla     ; work         ;
+;    |emptyC:eC|             ; 59 (59)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |move|emptyC:eC       ; emptyC      ; work         ;
+;    |memTurn:mt|            ; 13 (13)             ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |move|memTurn:mt      ; memTurn     ; work         ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -299,13 +302,22 @@ Encoding Type:  One-Hot
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
 ; Total registers                              ; 83    ;
-; Number of registers using Synchronous Clear  ; 17    ;
+; Number of registers using Synchronous Clear  ; 16    ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 82    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 19    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; 17:1               ; 4 bits    ; 44 LEs        ; 44 LEs               ; 0 LEs                  ; No         ; |move|emptyC:eC|Selector0  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
 
 +-----------------------------------------------+
@@ -486,22 +498,23 @@ Encoding Type:  One-Hot
 +-----------------------+-----------------------------+
 ; arriav_ff             ; 83                          ;
 ;     CLR               ; 64                          ;
+;     ENA               ; 1                           ;
 ;     ENA CLR           ; 2                           ;
 ;     ENA CLR SCLR      ; 16                          ;
-;     ENA SCLR          ; 1                           ;
-; arriav_lcell_comb     ; 112                         ;
+; arriav_lcell_comb     ; 267                         ;
 ;     arith             ; 16                          ;
 ;         1 data inputs ; 16                          ;
-;     normal            ; 96                          ;
+;     normal            ; 251                         ;
 ;         1 data inputs ; 10                          ;
-;         2 data inputs ; 1                           ;
-;         4 data inputs ; 3                           ;
-;         5 data inputs ; 18                          ;
-;         6 data inputs ; 64                          ;
+;         2 data inputs ; 13                          ;
+;         3 data inputs ; 25                          ;
+;         4 data inputs ; 74                          ;
+;         5 data inputs ; 31                          ;
+;         6 data inputs ; 98                          ;
 ; boundary_port         ; 76                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 4.00                        ;
-; Average LUT depth     ; 2.19                        ;
+; Max LUT depth         ; 6.00                        ;
+; Average LUT depth     ; 4.17                        ;
 +-----------------------+-----------------------------+
 
 
@@ -510,7 +523,7 @@ Encoding Type:  One-Hot
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -520,7 +533,7 @@ Encoding Type:  One-Hot
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Thu Apr 28 22:33:06 2022
+    Info: Processing started: Sat Apr 30 12:32:16 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Experimento -c Experimento
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -548,30 +561,33 @@ Info (12021): Found 1 design units, including 1 entities, in source file memturn
     Info (12023): Found entity 1: memTurn File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/memTurn.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file turntest.sv
     Info (12023): Found entity 1: turnTest File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/turnTest.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file emptyc.sv
+    Info (12023): Found entity 1: emptyC File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/emptyC.sv Line: 1
 Warning (10236): Verilog HDL Implicit Net warning at VGA.sv(9): created implicit net for "sync" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/VGA.sv Line: 9
 Warning (10236): Verilog HDL Implicit Net warning at VGA.sv(13): created implicit net for "clk2" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/VGA.sv Line: 13
 Warning (10236): Verilog HDL Implicit Net warning at VGAtest.sv(13): created implicit net for "clk" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/VGAtest.sv Line: 13
 Warning (10236): Verilog HDL Implicit Net warning at VGAtest.sv(13): created implicit net for "clk2" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/VGAtest.sv Line: 13
 Info (12127): Elaborating entity "move" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at move.sv(110): truncated value with size 32 to match size of target (8) File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv Line: 110
-Info (12128): Elaborating entity "memTurn" for hierarchy "memTurn:mt" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv Line: 36
-Warning (10230): Verilog HDL assignment warning at memTurn.sv(14): truncated value with size 32 to match size of target (8) File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/memTurn.sv Line: 14
+Warning (10230): Verilog HDL assignment warning at move.sv(116): truncated value with size 32 to match size of target (8) File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv Line: 116
 Info (12128): Elaborating entity "MemoryGame" for hierarchy "MemoryGame:game" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv Line: 44
 Info (12128): Elaborating entity "casilla" for hierarchy "casilla:ca1" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv Line: 50
+Info (12128): Elaborating entity "emptyC" for hierarchy "emptyC:eC" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv Line: 103
+Info (12128): Elaborating entity "memTurn" for hierarchy "memTurn:mt" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv Line: 107
+Warning (10230): Verilog HDL assignment warning at memTurn.sv(18): truncated value with size 32 to match size of target (8) File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/memTurn.sv Line: 18
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 5 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/output_files/Experimento.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 244 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 399 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 72 output pins
-    Info (21061): Implemented 168 logic cells
+    Info (21061): Implemented 323 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
     Info: Peak virtual memory: 4810 megabytes
-    Info: Processing ended: Thu Apr 28 22:33:20 2022
+    Info: Processing ended: Sat Apr 30 12:32:30 2022
     Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:28
+    Info: Total CPU time (on all processors): 00:00:27
 
 
 +------------------------------------------+

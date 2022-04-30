@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/simulation/modelsim
 vlpm_abs
-Z1 !s110 1651206938
+Z1 !s110 1651341957
 !i10b 1
 !s100 O9i<YS?ECZC8XU2m2T>HQ0
 IPA?QJ0Fgj]5ZaDCz:^EZN2
@@ -23,7 +23,7 @@ Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1651206937.000000
+Z7 !s108 1651341956.000000
 Z8 !s107 c:/intelfpga_lite/21.1/quartus/eda/sim_lib/220model.v|
 Z9 !s90 -reportprogress|300|-vlog01compat|-work|lpm_ver|c:/intelfpga_lite/21.1/quartus/eda/sim_lib/220model.v|
 !i113 1
@@ -51,7 +51,7 @@ R9
 R10
 R11
 vlpm_and
-R1
+Z12 !s110 1651341956
 !i10b 1
 !s100 =VzM;OhZJQ@Wjl;2UNDFd0
 I9Ul=@c]Ki15hS:j>zT00V2
@@ -93,7 +93,7 @@ R9
 R10
 R11
 vlpm_bustri
-R1
+R12
 !i10b 1
 !s100 J0ek53f5aGEe08O]9M7g41
 IIFZk^]hFOB;0ZRhQVGEel2
@@ -156,7 +156,7 @@ R9
 R10
 R11
 vlpm_constant
-Z12 !s110 1651206937
+R12
 !i10b 1
 !s100 FkMf<gh?_E[^916k78`m>1
 IMd6XI]>^B95B]m5ZC3Y061
@@ -431,7 +431,7 @@ R9
 R10
 R11
 vlpm_inv
-R1
+R12
 !i10b 1
 !s100 ^?DV;oC5m>1zlEkCWIQzM1
 IQIcNBU`BjImUBDWFR[f0^0
@@ -516,7 +516,7 @@ R9
 R10
 R11
 vlpm_mux
-R1
+R12
 !i10b 1
 !s100 27TaUnFLk_F<gH`najTXL3
 Id<IJD1a4bSe7DEC95RcbC0
@@ -537,7 +537,7 @@ R9
 R10
 R11
 vlpm_or
-R1
+R12
 !i10b 1
 !s100 PVk12KKE0fG4m[5a;LJV22
 ILh:LdB_`7XY<:@d<:0^BP2
@@ -684,7 +684,7 @@ R9
 R10
 R11
 vlpm_xor
-R1
+R12
 !i10b 1
 !s100 5BXY01B<ogg>d2@mk^Kmo0
 Ic8V<BR0CMX?>C=nb13lz?2

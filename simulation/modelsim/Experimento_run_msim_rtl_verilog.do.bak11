@@ -49,6 +49,7 @@ vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Tal
 vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 4 {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/casilla.sv}
 vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 4 {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/move.sv}
 vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 4 {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/memTurn.sv}
+vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 4 {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/emptyC.sv}
 
 vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 4 {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/moveTest.sv}
 

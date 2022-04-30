@@ -14,15 +14,8 @@ module casilla(input logic clk_Temp, input logic counter, input logic[3:0] label
 	always_comb begin
 		case (actual_state)
 			4'b0000: if(counter) new_state = 4'b1111;else new_state = 4'b0000;//sirve para probar si se toma la casilla adecuada
-			4'b1111: if(select) new_state <= label;else if(!counter) new_state = 4'b0000; else new_state = 4'b1111;
-			label:if(par) begin 
-					case(player)
-						0: new_state=4'b1001;
-						1: new_state=4'b1010;
-					endcase
-				end
-				else new_state=label;
-				
+			4'b1111: if(select) new_state <= label;else if(!counter) new_state = 4'b0000; else new_state = 4'b1111;//Esta en casilla
+			label:if(par) new_state=4'b0000;else new_state=label;//Asigno el valor predeterminado
 			4'b1001: new_state=4'b1001;
 			4'b1010: new_state=4'b1010;
 			
