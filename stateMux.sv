@@ -39,11 +39,10 @@ module stateMux(input byte counter,input logic [3:0] c1,
 			14:currentState=c15;
 			15:currentState=c16;
 			default:currentState=4'b1001;
-		endcase 
+		endcase
 	end	
 	
 	
-	assign empty = (currentState === 4'b0000) || (currentState === 4'b1111);
 
 	assign state = currentState;
 	

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Experimento
-Sat Apr 30 20:01:09 2022
+Sat Apr 30 21:30:48 2022
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -18,7 +18,7 @@ Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
  10. Removed Registers Triggering Further Register Optimizations
  11. General Register Statistics
  12. Multiplexer Restructuring Statistics (Restructuring Performed)
- 13. Port Connectivity Checks: "memTurn:mt"
+ 13. Port Connectivity Checks: "emptyC:eC"
  14. Port Connectivity Checks: "casilla:ca16"
  15. Port Connectivity Checks: "casilla:ca15"
  16. Port Connectivity Checks: "casilla:ca14"
@@ -65,13 +65,13 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sat Apr 30 20:01:09 2022       ;
+; Analysis & Synthesis Status     ; Successful - Sat Apr 30 21:30:48 2022       ;
 ; Quartus Prime Version           ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                   ; Experimento                                 ;
 ; Top-level Entity Name           ; move                                        ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 83                                          ;
+; Total registers                 ; 51                                          ;
 ; Total pins                      ; 80                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
@@ -177,56 +177,57 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 12          ;
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 12          ;
+; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-12        ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                   ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                               ; Library ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------------------+---------+
-; MemoryGame.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/MemoryGame.sv ;         ;
-; casilla.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/casilla.sv    ;         ;
-; move.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/move.sv       ;         ;
-; memTurn.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/memTurn.sv    ;         ;
-; emptyC.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/emptyC.sv     ;         ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                        ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                    ; Library ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------+---------+
+; MemoryGame.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/MemoryGame.sv ;         ;
+; casilla.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/casilla.sv    ;         ;
+; move.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/move.sv       ;         ;
+; memTurn.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/memTurn.sv    ;         ;
+; emptyC.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/emptyC.sv     ;         ;
+; stateMux.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/stateMux.sv   ;         ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------+---------+
 
 
-+------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                ;
-+---------------------------------------------+--------------+
-; Resource                                    ; Usage        ;
-+---------------------------------------------+--------------+
-; Estimate of Logic utilization (ALMs needed) ; 182          ;
-;                                             ;              ;
-; Combinational ALUT usage for logic          ; 263          ;
-;     -- 7 input functions                    ; 0            ;
-;     -- 6 input functions                    ; 101          ;
-;     -- 5 input functions                    ; 27           ;
-;     -- 4 input functions                    ; 76           ;
-;     -- <=3 input functions                  ; 59           ;
-;                                             ;              ;
-; Dedicated logic registers                   ; 83           ;
-;                                             ;              ;
-; I/O pins                                    ; 80           ;
-;                                             ;              ;
-; Total DSP Blocks                            ; 0            ;
-;                                             ;              ;
-; Maximum fan-out node                        ; select~input ;
-; Maximum fan-out                             ; 88           ;
-; Total fan-out                               ; 1617         ;
-; Average fan-out                             ; 3.20         ;
-+---------------------------------------------+--------------+
++---------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                   ;
++---------------------------------------------+-----------------+
+; Resource                                    ; Usage           ;
++---------------------------------------------+-----------------+
+; Estimate of Logic utilization (ALMs needed) ; 86              ;
+;                                             ;                 ;
+; Combinational ALUT usage for logic          ; 121             ;
+;     -- 7 input functions                    ; 0               ;
+;     -- 6 input functions                    ; 51              ;
+;     -- 5 input functions                    ; 32              ;
+;     -- 4 input functions                    ; 7               ;
+;     -- <=3 input functions                  ; 31              ;
+;                                             ;                 ;
+; Dedicated logic registers                   ; 51              ;
+;                                             ;                 ;
+; I/O pins                                    ; 80              ;
+;                                             ;                 ;
+; Total DSP Blocks                            ; 0               ;
+;                                             ;                 ;
+; Maximum fan-out node                        ; counter[2]~reg0 ;
+; Maximum fan-out                             ; 53              ;
+; Total fan-out                               ; 904             ;
+; Average fan-out                             ; 2.72            ;
++---------------------------------------------+-----------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -234,26 +235,27 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name   ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------+-------------+--------------+
-; |move                      ; 263 (29)            ; 83 (8)                    ; 0                 ; 0          ; 80   ; 0            ; |move                 ;             ;              ;
+; |move                      ; 121 (24)            ; 51 (8)                    ; 0                 ; 0          ; 80   ; 0            ; |move                 ;             ;              ;
 ;    |MemoryGame:game|       ; 3 (3)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |move|MemoryGame:game ; MemoryGame  ; work         ;
-;    |casilla:ca10|          ; 9 (9)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca10    ; casilla     ; work         ;
-;    |casilla:ca11|          ; 12 (12)             ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca11    ; casilla     ; work         ;
-;    |casilla:ca12|          ; 10 (10)             ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca12    ; casilla     ; work         ;
-;    |casilla:ca13|          ; 10 (10)             ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca13    ; casilla     ; work         ;
-;    |casilla:ca14|          ; 9 (9)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca14    ; casilla     ; work         ;
-;    |casilla:ca15|          ; 10 (10)             ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca15    ; casilla     ; work         ;
-;    |casilla:ca16|          ; 11 (11)             ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca16    ; casilla     ; work         ;
-;    |casilla:ca1|           ; 9 (9)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca1     ; casilla     ; work         ;
-;    |casilla:ca2|           ; 9 (9)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca2     ; casilla     ; work         ;
-;    |casilla:ca3|           ; 12 (12)             ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca3     ; casilla     ; work         ;
-;    |casilla:ca4|           ; 10 (10)             ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca4     ; casilla     ; work         ;
-;    |casilla:ca5|           ; 6 (6)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca5     ; casilla     ; work         ;
-;    |casilla:ca6|           ; 12 (12)             ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca6     ; casilla     ; work         ;
-;    |casilla:ca7|           ; 12 (12)             ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca7     ; casilla     ; work         ;
-;    |casilla:ca8|           ; 9 (9)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca8     ; casilla     ; work         ;
-;    |casilla:ca9|           ; 11 (11)             ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca9     ; casilla     ; work         ;
-;    |emptyC:eC|             ; 57 (57)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |move|emptyC:eC       ; emptyC      ; work         ;
+;    |casilla:ca10|          ; 3 (3)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca10    ; casilla     ; work         ;
+;    |casilla:ca11|          ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca11    ; casilla     ; work         ;
+;    |casilla:ca12|          ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca12    ; casilla     ; work         ;
+;    |casilla:ca13|          ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca13    ; casilla     ; work         ;
+;    |casilla:ca14|          ; 3 (3)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca14    ; casilla     ; work         ;
+;    |casilla:ca15|          ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca15    ; casilla     ; work         ;
+;    |casilla:ca16|          ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca16    ; casilla     ; work         ;
+;    |casilla:ca1|           ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca1     ; casilla     ; work         ;
+;    |casilla:ca2|           ; 3 (3)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca2     ; casilla     ; work         ;
+;    |casilla:ca3|           ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca3     ; casilla     ; work         ;
+;    |casilla:ca4|           ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca4     ; casilla     ; work         ;
+;    |casilla:ca5|           ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca5     ; casilla     ; work         ;
+;    |casilla:ca6|           ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca6     ; casilla     ; work         ;
+;    |casilla:ca7|           ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca7     ; casilla     ; work         ;
+;    |casilla:ca8|           ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca8     ; casilla     ; work         ;
+;    |casilla:ca9|           ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca9     ; casilla     ; work         ;
+;    |emptyC:eC|             ; 41 (41)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |move|emptyC:eC       ; emptyC      ; work         ;
 ;    |memTurn:mt|            ; 13 (13)             ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |move|memTurn:mt      ; memTurn     ; work         ;
+;    |stateMux:st|           ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |move|stateMux:st     ; stateMux    ; work         ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -272,19 +274,41 @@ Encoding Type:  One-Hot
 +------------------+------------------+------------------+------------------+------------------+------------------+
 
 
-+--------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                             ;
-+---------------------------------------+----------------------------------------+
-; Register name                         ; Reason for Removal                     ;
-+---------------------------------------+----------------------------------------+
-; memTurn:mt|x[1]                       ; Stuck at GND due to stuck port data_in ;
-; MemoryGame:game|estadoActual~4        ; Lost fanout                            ;
-; MemoryGame:game|estadoActual~5        ; Lost fanout                            ;
-; MemoryGame:game|estadoActual.100      ; Lost fanout                            ;
-; MemoryGame:game|estadoActual.010      ; Lost fanout                            ;
-; MemoryGame:game|estadoActual.011      ; Lost fanout                            ;
-; Total Number of Removed Registers = 6 ;                                        ;
-+---------------------------------------+----------------------------------------+
++-----------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                ;
++----------------------------------------+------------------------------------------+
+; Register name                          ; Reason for Removal                       ;
++----------------------------------------+------------------------------------------+
+; casilla:ca1|actual_state[2,3]          ; Merged with casilla:ca1|actual_state[1]  ;
+; casilla:ca2|actual_state[3]            ; Merged with casilla:ca2|actual_state[2]  ;
+; casilla:ca2|actual_state[1]            ; Merged with casilla:ca2|actual_state[0]  ;
+; casilla:ca3|actual_state[2,3]          ; Merged with casilla:ca3|actual_state[0]  ;
+; casilla:ca4|actual_state[1,3]          ; Merged with casilla:ca4|actual_state[0]  ;
+; casilla:ca6|actual_state[3]            ; Merged with casilla:ca6|actual_state[0]  ;
+; casilla:ca6|actual_state[2]            ; Merged with casilla:ca6|actual_state[1]  ;
+; casilla:ca7|actual_state[1,2]          ; Merged with casilla:ca7|actual_state[0]  ;
+; casilla:ca8|actual_state[1,2]          ; Merged with casilla:ca8|actual_state[0]  ;
+; casilla:ca15|actual_state[3]           ; Merged with casilla:ca15|actual_state[1] ;
+; casilla:ca15|actual_state[2]           ; Merged with casilla:ca15|actual_state[0] ;
+; casilla:ca16|actual_state[2,3]         ; Merged with casilla:ca16|actual_state[0] ;
+; casilla:ca5|actual_state[3]            ; Merged with casilla:ca5|actual_state[1]  ;
+; casilla:ca5|actual_state[2]            ; Merged with casilla:ca5|actual_state[0]  ;
+; casilla:ca9|actual_state[3]            ; Merged with casilla:ca9|actual_state[0]  ;
+; casilla:ca9|actual_state[2]            ; Merged with casilla:ca9|actual_state[1]  ;
+; casilla:ca10|actual_state[3]           ; Merged with casilla:ca10|actual_state[2] ;
+; casilla:ca10|actual_state[1]           ; Merged with casilla:ca10|actual_state[0] ;
+; casilla:ca11|actual_state[1,2]         ; Merged with casilla:ca11|actual_state[0] ;
+; casilla:ca12|actual_state[1,3]         ; Merged with casilla:ca12|actual_state[0] ;
+; casilla:ca13|actual_state[1,2]         ; Merged with casilla:ca13|actual_state[0] ;
+; casilla:ca14|actual_state[2,3]         ; Merged with casilla:ca14|actual_state[1] ;
+; memTurn:mt|x[1]                        ; Stuck at GND due to stuck port data_in   ;
+; MemoryGame:game|estadoActual~4         ; Lost fanout                              ;
+; MemoryGame:game|estadoActual~5         ; Lost fanout                              ;
+; MemoryGame:game|estadoActual.100       ; Lost fanout                              ;
+; MemoryGame:game|estadoActual.010       ; Lost fanout                              ;
+; MemoryGame:game|estadoActual.011       ; Lost fanout                              ;
+; Total Number of Removed Registers = 38 ;                                          ;
++----------------------------------------+------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------+
@@ -302,10 +326,10 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 83    ;
+; Total registers                              ; 51    ;
 ; Number of registers using Synchronous Clear  ; 16    ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 82    ;
+; Number of registers using Asynchronous Clear ; 50    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 19    ;
 ; Number of registers using Preset             ; 0     ;
@@ -317,18 +341,17 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 17:1               ; 4 bits    ; 44 LEs        ; 44 LEs               ; 0 LEs                  ; No         ; |move|emptyC:eC|Selector2  ;
+; 17:1               ; 4 bits    ; 44 LEs        ; 44 LEs               ; 0 LEs                  ; No         ; |move|emptyC:eC|Selector3  ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "memTurn:mt"                                                                              ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; Port      ; Type   ; Severity ; Details                                                                             ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; counterJ1 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; counterJ2 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "emptyC:eC"                                                                                                ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                                                  ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; state ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------+
@@ -507,25 +530,25 @@ Encoding Type:  One-Hot
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 83                          ;
-;     CLR               ; 64                          ;
+; arriav_ff             ; 51                          ;
+;     CLR               ; 32                          ;
 ;     ENA               ; 1                           ;
 ;     ENA CLR           ; 2                           ;
 ;     ENA CLR SCLR      ; 16                          ;
-; arriav_lcell_comb     ; 267                         ;
+; arriav_lcell_comb     ; 121                         ;
 ;     arith             ; 16                          ;
 ;         1 data inputs ; 16                          ;
-;     normal            ; 251                         ;
-;         1 data inputs ; 10                          ;
-;         2 data inputs ; 14                          ;
-;         3 data inputs ; 23                          ;
-;         4 data inputs ; 76                          ;
-;         5 data inputs ; 27                          ;
-;         6 data inputs ; 101                         ;
+;     normal            ; 105                         ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 4                           ;
+;         3 data inputs ; 9                           ;
+;         4 data inputs ; 7                           ;
+;         5 data inputs ; 32                          ;
+;         6 data inputs ; 51                          ;
 ; boundary_port         ; 80                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 6.00                        ;
-; Average LUT depth     ; 4.14                        ;
+; Max LUT depth         ; 5.00                        ;
+; Average LUT depth     ; 3.52                        ;
 +-----------------------+-----------------------------+
 
 
@@ -544,75 +567,77 @@ Encoding Type:  One-Hot
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Sat Apr 30 20:01:03 2022
+    Info: Processing started: Sat Apr 30 21:30:35 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Experimento -c Experimento
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file memorygame.sv
-    Info (12023): Found entity 1: MemoryGame File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/MemoryGame.sv Line: 1
+    Info (12023): Found entity 1: MemoryGame File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/MemoryGame.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file sync.sv
-    Info (12023): Found entity 1: SYNC File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/SYNC.sv Line: 60
+    Info (12023): Found entity 1: SYNC File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/SYNC.sv Line: 60
 Info (12021): Found 1 design units, including 1 entities, in source file dividerclock.sv
-    Info (12023): Found entity 1: dividerClock File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/dividerClock.sv Line: 1
+    Info (12023): Found entity 1: dividerClock File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/dividerClock.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file vga.sv
-    Info (12023): Found entity 1: VGA File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/VGA.sv Line: 1
+    Info (12023): Found entity 1: VGA File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/VGA.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file vgatest.sv
-    Info (12023): Found entity 1: VGAtest File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/VGAtest.sv Line: 1
+    Info (12023): Found entity 1: VGAtest File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/VGAtest.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file casilla.sv
-    Info (12023): Found entity 1: casilla File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/casilla.sv Line: 1
+    Info (12023): Found entity 1: casilla File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/casilla.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file casillatest.sv
-    Info (12023): Found entity 1: casillaTest File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/casillaTest.sv Line: 1
+    Info (12023): Found entity 1: casillaTest File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/casillaTest.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file move.sv
-    Info (12023): Found entity 1: move File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/move.sv Line: 1
+    Info (12023): Found entity 1: move File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/move.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file movetest.sv
-    Info (12023): Found entity 1: moveTest File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/moveTest.sv Line: 1
+    Info (12023): Found entity 1: moveTest File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/moveTest.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file memorygametest.sv
-    Info (12023): Found entity 1: memoryGameTest File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/memoryGameTest.sv Line: 1
+    Info (12023): Found entity 1: memoryGameTest File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/memoryGameTest.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file memturn.sv
-    Info (12023): Found entity 1: memTurn File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/memTurn.sv Line: 1
+    Info (12023): Found entity 1: memTurn File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/memTurn.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file turntest.sv
-    Info (12023): Found entity 1: turnTest File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/turnTest.sv Line: 1
+    Info (12023): Found entity 1: turnTest File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/turnTest.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file emptyc.sv
-    Info (12023): Found entity 1: emptyC File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/emptyC.sv Line: 1
+    Info (12023): Found entity 1: emptyC File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/emptyC.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file statemux.sv
-    Info (12023): Found entity 1: stateMux File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/stateMux.sv Line: 1
-Warning (10236): Verilog HDL Implicit Net warning at VGA.sv(9): created implicit net for "sync" File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/VGA.sv Line: 9
-Warning (10236): Verilog HDL Implicit Net warning at VGA.sv(13): created implicit net for "clk2" File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/VGA.sv Line: 13
-Warning (10236): Verilog HDL Implicit Net warning at VGAtest.sv(13): created implicit net for "clk" File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/VGAtest.sv Line: 13
-Warning (10236): Verilog HDL Implicit Net warning at VGAtest.sv(13): created implicit net for "clk2" File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/VGAtest.sv Line: 13
-Warning (10236): Verilog HDL Implicit Net warning at stateMux.sv(46): created implicit net for "empty" File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/stateMux.sv Line: 46
+    Info (12023): Found entity 1: stateMux File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/stateMux.sv Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at VGA.sv(9): created implicit net for "sync" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/VGA.sv Line: 9
+Warning (10236): Verilog HDL Implicit Net warning at VGA.sv(13): created implicit net for "clk2" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/VGA.sv Line: 13
+Warning (10236): Verilog HDL Implicit Net warning at VGAtest.sv(13): created implicit net for "clk" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/VGAtest.sv Line: 13
+Warning (10236): Verilog HDL Implicit Net warning at VGAtest.sv(13): created implicit net for "clk2" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/VGAtest.sv Line: 13
 Info (12127): Elaborating entity "move" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at move.sv(37): object "counterJ1" assigned a value but never read File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/move.sv Line: 37
-Warning (10036): Verilog HDL or VHDL warning at move.sv(38): object "counterJ2" assigned a value but never read File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/move.sv Line: 38
-Warning (10230): Verilog HDL assignment warning at move.sv(116): truncated value with size 32 to match size of target (8) File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/move.sv Line: 116
-Info (12128): Elaborating entity "MemoryGame" for hierarchy "MemoryGame:game" File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/move.sv Line: 46
-Info (12128): Elaborating entity "casilla" for hierarchy "casilla:ca1" File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/move.sv Line: 52
-Info (12128): Elaborating entity "emptyC" for hierarchy "emptyC:eC" File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/move.sv Line: 104
-Info (12128): Elaborating entity "memTurn" for hierarchy "memTurn:mt" File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/move.sv Line: 107
-Warning (10230): Verilog HDL assignment warning at memTurn.sv(25): truncated value with size 32 to match size of target (2) File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/memTurn.sv Line: 25
-Warning (10230): Verilog HDL assignment warning at memTurn.sv(26): truncated value with size 32 to match size of target (2) File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/memTurn.sv Line: 26
-Warning (10230): Verilog HDL assignment warning at memTurn.sv(32): truncated value with size 32 to match size of target (8) File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/memTurn.sv Line: 32
-Warning (10230): Verilog HDL assignment warning at memTurn.sv(33): truncated value with size 32 to match size of target (8) File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/memTurn.sv Line: 33
-Warning (10230): Verilog HDL assignment warning at memTurn.sv(40): truncated value with size 32 to match size of target (8) File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/memTurn.sv Line: 40
+Warning (10036): Verilog HDL or VHDL warning at move.sv(37): object "counterJ1" assigned a value but never read File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/move.sv Line: 37
+Warning (10036): Verilog HDL or VHDL warning at move.sv(38): object "counterJ2" assigned a value but never read File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/move.sv Line: 38
+Warning (10230): Verilog HDL assignment warning at move.sv(142): truncated value with size 32 to match size of target (8) File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/move.sv Line: 142
+Info (12128): Elaborating entity "MemoryGame" for hierarchy "MemoryGame:game" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/move.sv Line: 67
+Info (12128): Elaborating entity "casilla" for hierarchy "casilla:ca1" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/move.sv Line: 73
+Info (12128): Elaborating entity "emptyC" for hierarchy "emptyC:eC" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/move.sv Line: 125
+Info (12128): Elaborating entity "memTurn" for hierarchy "memTurn:mt" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/move.sv Line: 128
+Warning (10230): Verilog HDL assignment warning at memTurn.sv(21): truncated value with size 8 to match size of target (4) File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/memTurn.sv Line: 21
+Warning (10230): Verilog HDL assignment warning at memTurn.sv(26): truncated value with size 32 to match size of target (2) File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/memTurn.sv Line: 26
+Warning (10230): Verilog HDL assignment warning at memTurn.sv(27): truncated value with size 32 to match size of target (2) File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/memTurn.sv Line: 27
+Warning (10230): Verilog HDL assignment warning at memTurn.sv(33): truncated value with size 32 to match size of target (8) File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/memTurn.sv Line: 33
+Warning (10230): Verilog HDL assignment warning at memTurn.sv(34): truncated value with size 32 to match size of target (8) File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/memTurn.sv Line: 34
+Warning (10230): Verilog HDL assignment warning at memTurn.sv(42): truncated value with size 32 to match size of target (8) File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/memTurn.sv Line: 42
+Info (12128): Elaborating entity "stateMux" for hierarchy "stateMux:st" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/move.sv Line: 133
+Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 5 registers lost all their fanouts during netlist optimizations.
-Info (144001): Generated suppressed messages file C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/output_files/Experimento.map.smsg
+Info (144001): Generated suppressed messages file C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/output_files/Experimento.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 403 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 233 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 76 output pins
-    Info (21061): Implemented 323 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 14 warnings
-    Info: Peak virtual memory: 4875 megabytes
-    Info: Processing ended: Sat Apr 30 20:01:09 2022
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:13
+    Info (21061): Implemented 153 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 15 warnings
+    Info: Peak virtual memory: 4809 megabytes
+    Info: Processing ended: Sat Apr 30 21:30:48 2022
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:29
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/output_files/Experimento.map.smsg.
+The suppressed messages can be found in C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/output_files/Experimento.map.smsg.
 
 

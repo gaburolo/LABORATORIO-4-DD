@@ -37,6 +37,27 @@ module move(
 	byte counterJ1 = 0; // Win cond
 	byte counterJ2 = 0; // Win cond
 	
+	logic [3:0] l1;
+	logic [3:0] l2;
+	logic [3:0] l3;
+	logic [3:0] l4;
+	logic [3:0] l5;
+	logic [3:0] l6;
+	logic [3:0] l7;
+	logic [3:0] l8;
+	logic [3:0] l9;
+	logic [3:0] l10;
+	logic [3:0] l11;
+	logic [3:0] l12;
+	logic [3:0] l13;
+	logic [3:0] l14;
+	logic [3:0] l15;
+	logic [3:0] l16;
+	
+	
+	
+	
+	
 	MemoryGame game(
 		.clk(clk),
 		.rst(rst),
@@ -49,62 +70,67 @@ module move(
 
 	casilla ca1(.clk_Temp(clk),.counter(counter === 0), .label(4'b0001), 
 					.rst(rst), .player(player), .select(select), 
-					.par(par), .new_state(c1));
+					.par(par), .new_state(c1),.label2(l1));
 	casilla ca2(.clk_Temp(clk),.counter(counter === 1), .label(4'b0011), 
 					.rst(rst), .player(player), .select(select), 
-					.par(par), .new_state(c2));
+					.par(par), .new_state(c2),.label2(l2));
 	casilla ca3(.clk_Temp(clk),.counter(counter === 2), .label(4'b0010), 
 					.rst(rst), .player(player), .select(select), 
-					.par(par), .new_state(c3));
+					.par(par), .new_state(c3),.label2(l3));
 	casilla ca4(.clk_Temp(clk),.counter(counter === 3), .label(4'b0100),
 					.rst(rst), .player(player), .select(select), 
-					.par(par), .new_state(c4));
+					.par(par), .new_state(c4),.label2(l4));
 	casilla ca5(.clk_Temp(clk),.counter(counter === 4), .label(4'b0101),
 					.rst(rst), .player(player), .select(select), 
-					.par(par), .new_state(c5));
+					.par(par), .new_state(c5),.label2(l5));
 	casilla ca6(.clk_Temp(clk),.counter(counter === 5), .label(4'b0110), 
 					.rst(rst), .player(player), .select(select), 
-					.par(par), .new_state(c6));
+					.par(par), .new_state(c6),.label2(l6));
 	casilla ca7(.clk_Temp(clk),.counter(counter === 6), .label(4'b0111), 
 					.rst(rst), .player(player), .select(select), 
-					.par(par), .new_state(c7));
+					.par(par), .new_state(c7),.label2(l7));
 	casilla ca8(.clk_Temp(clk),.counter(counter === 7), .label(4'b1000), 
 					.rst(rst), .player(player), .select(select), 
-					.par(par), .new_state(c8));
+					.par(par), .new_state(c8),.label2(l8));
 	casilla ca9(.clk_Temp(clk),.counter(counter === 8), .label(4'b0110), 
 					.rst(rst), .player(player), .select(select), 
-					.par(par), .new_state(c9));
+					.par(par), .new_state(c9),.label2(l9));
 	casilla ca10(.clk_Temp(clk),.counter(counter === 9), .label(4'b0011), 
 					.rst(rst), .player(player), .select(select), 
-					.par(par), .new_state(c10));
+					.par(par), .new_state(c10),.label2(l10));
 	casilla ca11(.clk_Temp(clk),.counter(counter === 10), .label(4'b0111), 
 					.rst(rst), .player(player), .select(select), 
-					.par(par), .new_state(c11));
+					.par(par), .new_state(c11),.label2(l11));
 	casilla ca12(.clk_Temp(clk),.counter(counter === 11), .label(4'b0100), 
 					.rst(rst), .player(player), .select(select), 
-					.par(par), .new_state(c12));
+					.par(par), .new_state(c12),.label2(l12));
 	casilla ca13(.clk_Temp(clk),.counter(counter === 12), .label(4'b1000), 
 					.rst(rst), .player(player), .select(select), 
-					.par(par), .new_state(c13));
+					.par(par), .new_state(c13),.label2(l13));
 	casilla ca14(.clk_Temp(clk),.counter(counter === 13), .label(4'b0001), 
 					.rst(rst), .player(player), .select(select), 
-					.par(par), .new_state(c14));
+					.par(par), .new_state(c14),.label2(l14));
 	casilla ca15(.clk_Temp(clk),.counter(counter === 14), .label(4'b0101), 
 					.rst(rst), .player(player), .select(select), 
-					.par(par), .new_state(c15));
+					.par(par), .new_state(c15),.label2(l15));
 	casilla ca16(.clk_Temp(clk),.counter(counter === 15), .label(4'b0010), 
 					.rst(rst), .player(player), .select(select), 
-					.par(par), .new_state(c16));
+					.par(par), .new_state(c16),.label2(l16));
 	
 	
 	
 	emptyC eC(.counter(counter),.c1(c1),.c2(c2),.c3(c3),.c4(c4), .c5(c5),
 	.c6(c6), .c7(c7), .c8(c8),	.c9(c9),	.c10(c10), .c11(c11), .c12(c12), 
-	.c13(c13), .c14(c14), .c15(c15), .c16(c16), .empty(empty), .state(state)
+	.c13(c13), .c14(c14), .c15(c15), .c16(c16), .empty(empty)
 	);
 	
 	memTurn mt(.clk(clk), .rst(rst), .select(select), .state(state), .empty(empty),
-	.player(player), .x(x), .counterJ1(counterJ1), .counterJ2(counterJ2));
+	.player(player), .x(x));
+	
+	stateMux st(.counter(counter),.c1(l1),.c2(l2),.c3(l3),.c4(l4), .c5(l5),
+	.c6(l6), .c7(l7), .c8(l8),	.c9(l9),	.c10(l10), .c11(l11), .c12(l12), 
+	.c13(l13), .c14(l14), .c15(l15), .c16(l16), .state(state)
+	);
 	
 	always_ff @(posedge (move) or negedge rst)
 		if(rst === 1'b0) counter <= 0;
