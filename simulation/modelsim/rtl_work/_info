@@ -10,7 +10,7 @@ cModel Technology
 Z0 dC:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/simulation/modelsim
 vcasilla
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1651350235
+Z2 !s110 1651370496
 !i10b 1
 !s100 N:SOJHfWKAMQ;g=?H_?2>2
 IW^<aM9Y;AC2b]A8VjAODI3
@@ -18,21 +18,21 @@ Z3 VDg1SIo80bB@j0V0VzS_@n1
 !s105 casilla_sv_unit
 S1
 R0
-Z4 w1651345828
+w1651345828
 8C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/casilla.sv
 FC:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/casilla.sv
 L0 1
-Z5 OV;L;10.5b;63
+Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z6 !s108 1651350235.000000
+Z5 !s108 1651370496.000000
 !s107 C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/casilla.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD|C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/casilla.sv|
 !i113 1
-Z7 o-sv -work work
-Z8 !s92 -sv -work work +incdir+C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD
-Z9 tCvgOpt 0
+Z6 o-sv -work work
+Z7 !s92 -sv -work work +incdir+C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD
+Z8 tCvgOpt 0
 vemptyC
 R1
 R2
@@ -43,21 +43,21 @@ R3
 !s105 emptyC_sv_unit
 S1
 R0
-w1651346444
+w1651367741
 8C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/emptyC.sv
 FC:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/emptyC.sv
 L0 1
-R5
+R4
 r1
 !s85 0
 31
-R6
+R5
 !s107 C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/emptyC.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD|C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/emptyC.sv|
 !i113 1
+R6
 R7
 R8
-R9
 nempty@c
 vMemoryGame
 R1
@@ -73,92 +73,92 @@ w1651339487
 8C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/MemoryGame.sv
 FC:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/MemoryGame.sv
 L0 1
-R5
+R4
 r1
 !s85 0
 31
-R6
+R5
 !s107 C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/MemoryGame.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD|C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/MemoryGame.sv|
 !i113 1
+R6
 R7
 R8
-R9
 n@memory@game
 vmemTurn
 R1
 R2
 !i10b 1
-!s100 dHNc_=WFNa<oWfB322g:[3
-I^]hNRmzG=57=;d>[bFjQn0
+!s100 [9E^SD@EF:_4Ta?4jJdlF2
+IjP5D<GeTjlE@;38Oz9U8c2
 R3
 !s105 memTurn_sv_unit
 S1
 R0
-w1651350055
+w1651370458
 8C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/memTurn.sv
 FC:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/memTurn.sv
 L0 1
-R5
+R4
 r1
 !s85 0
 31
-R6
+R5
 !s107 C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/memTurn.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD|C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/memTurn.sv|
 !i113 1
+R6
 R7
 R8
-R9
 nmem@turn
 vmove
 R1
 R2
 !i10b 1
-!s100 PJ9_<1ZlbOzBfR`=`?;fL0
-IcooFQmc[mFFfWQ_N@aPLZ1
+!s100 UkCh5_5>2a1][M94T7<;<2
+I8G[G;ilAVm1EgYAX02]l51
 R3
 !s105 move_sv_unit
 S1
 R0
-w1651350049
+w1651369390
 8C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/move.sv
 FC:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/move.sv
 L0 1
-R5
+R4
 r1
 !s85 0
 31
-R6
+R5
 !s107 C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/move.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD|C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/move.sv|
 !i113 1
+R6
 R7
 R8
-R9
 vmoveTest
 R1
 R2
 !i10b 1
-!s100 `::S<PfcV_8;cbSamU9:23
-I>M_2VQA0GI]LNmP:MAhS`1
+!s100 m_i=kRHQI^gm<BjG?_>z[0
+I<3zMdZ?S]o@X5@S<GNEDf3
 R3
 !s105 moveTest_sv_unit
 S1
 R0
-R4
+w1651367738
 8C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/moveTest.sv
 FC:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/moveTest.sv
 L0 1
-R5
+R4
 r1
 !s85 0
 31
-R6
+R5
 !s107 C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/moveTest.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD|C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/moveTest.sv|
 !i113 1
+R6
 R7
 R8
-R9
 nmove@test

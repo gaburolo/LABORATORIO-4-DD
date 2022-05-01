@@ -105,13 +105,13 @@ module move(
 	
 	memTurn mt(.clk(clk), .rst(rst), .select(select), .state(state), .empty(empty),
 	.player(player), .x(x), .counterJ1(counterJ1), .counterJ2(counterJ2));
-
+	
 	always_ff @(posedge (move) or negedge rst)
 		if(rst === 1'b0) counter <= 0;
 		else
 		begin
 			if(!finish) begin
-				if (counter > 15) counter <= 0;
+				if (counter >= 15) counter <= 0;
 				//aqui
 				else counter <= counter + 1;
 			end

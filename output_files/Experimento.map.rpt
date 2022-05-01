@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Experimento
-Sat Apr 30 14:21:50 2022
+Sat Apr 30 20:01:09 2022
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sat Apr 30 14:21:50 2022       ;
+; Analysis & Synthesis Status     ; Successful - Sat Apr 30 20:01:09 2022       ;
 ; Quartus Prime Version           ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                   ; Experimento                                 ;
 ; Top-level Entity Name           ; move                                        ;
@@ -207,14 +207,14 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+--------------+
 ; Resource                                    ; Usage        ;
 +---------------------------------------------+--------------+
-; Estimate of Logic utilization (ALMs needed) ; 180          ;
+; Estimate of Logic utilization (ALMs needed) ; 182          ;
 ;                                             ;              ;
-; Combinational ALUT usage for logic          ; 257          ;
+; Combinational ALUT usage for logic          ; 263          ;
 ;     -- 7 input functions                    ; 0            ;
-;     -- 6 input functions                    ; 102          ;
-;     -- 5 input functions                    ; 26           ;
-;     -- 4 input functions                    ; 75           ;
-;     -- <=3 input functions                  ; 54           ;
+;     -- 6 input functions                    ; 101          ;
+;     -- 5 input functions                    ; 27           ;
+;     -- 4 input functions                    ; 76           ;
+;     -- <=3 input functions                  ; 59           ;
 ;                                             ;              ;
 ; Dedicated logic registers                   ; 83           ;
 ;                                             ;              ;
@@ -223,8 +223,8 @@ https://fpgasoftware.intel.com/eula.
 ; Total DSP Blocks                            ; 0            ;
 ;                                             ;              ;
 ; Maximum fan-out node                        ; select~input ;
-; Maximum fan-out                             ; 89           ;
-; Total fan-out                               ; 1599         ;
+; Maximum fan-out                             ; 88           ;
+; Total fan-out                               ; 1617         ;
 ; Average fan-out                             ; 3.20         ;
 +---------------------------------------------+--------------+
 
@@ -234,9 +234,9 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name   ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------+-------------+--------------+
-; |move                      ; 257 (26)            ; 83 (8)                    ; 0                 ; 0          ; 80   ; 0            ; |move                 ;             ;              ;
+; |move                      ; 263 (29)            ; 83 (8)                    ; 0                 ; 0          ; 80   ; 0            ; |move                 ;             ;              ;
 ;    |MemoryGame:game|       ; 3 (3)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |move|MemoryGame:game ; MemoryGame  ; work         ;
-;    |casilla:ca10|          ; 8 (8)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca10    ; casilla     ; work         ;
+;    |casilla:ca10|          ; 9 (9)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca10    ; casilla     ; work         ;
 ;    |casilla:ca11|          ; 12 (12)             ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca11    ; casilla     ; work         ;
 ;    |casilla:ca12|          ; 10 (10)             ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca12    ; casilla     ; work         ;
 ;    |casilla:ca13|          ; 10 (10)             ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca13    ; casilla     ; work         ;
@@ -244,8 +244,8 @@ https://fpgasoftware.intel.com/eula.
 ;    |casilla:ca15|          ; 10 (10)             ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca15    ; casilla     ; work         ;
 ;    |casilla:ca16|          ; 11 (11)             ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca16    ; casilla     ; work         ;
 ;    |casilla:ca1|           ; 9 (9)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca1     ; casilla     ; work         ;
-;    |casilla:ca2|           ; 8 (8)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca2     ; casilla     ; work         ;
-;    |casilla:ca3|           ; 11 (11)             ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca3     ; casilla     ; work         ;
+;    |casilla:ca2|           ; 9 (9)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca2     ; casilla     ; work         ;
+;    |casilla:ca3|           ; 12 (12)             ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca3     ; casilla     ; work         ;
 ;    |casilla:ca4|           ; 10 (10)             ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca4     ; casilla     ; work         ;
 ;    |casilla:ca5|           ; 6 (6)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca5     ; casilla     ; work         ;
 ;    |casilla:ca6|           ; 12 (12)             ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca6     ; casilla     ; work         ;
@@ -512,20 +512,20 @@ Encoding Type:  One-Hot
 ;     ENA               ; 1                           ;
 ;     ENA CLR           ; 2                           ;
 ;     ENA CLR SCLR      ; 16                          ;
-; arriav_lcell_comb     ; 261                         ;
+; arriav_lcell_comb     ; 267                         ;
 ;     arith             ; 16                          ;
 ;         1 data inputs ; 16                          ;
-;     normal            ; 245                         ;
+;     normal            ; 251                         ;
 ;         1 data inputs ; 10                          ;
 ;         2 data inputs ; 14                          ;
-;         3 data inputs ; 18                          ;
-;         4 data inputs ; 75                          ;
-;         5 data inputs ; 26                          ;
-;         6 data inputs ; 102                         ;
+;         3 data inputs ; 23                          ;
+;         4 data inputs ; 76                          ;
+;         5 data inputs ; 27                          ;
+;         6 data inputs ; 101                         ;
 ; boundary_port         ; 80                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 6.00                        ;
-; Average LUT depth     ; 4.16                        ;
+; Average LUT depth     ; 4.14                        ;
 +-----------------------+-----------------------------+
 
 
@@ -544,7 +544,7 @@ Encoding Type:  One-Hot
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Sat Apr 30 14:21:43 2022
+    Info: Processing started: Sat Apr 30 20:01:03 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Experimento -c Experimento
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -574,10 +574,13 @@ Info (12021): Found 1 design units, including 1 entities, in source file turntes
     Info (12023): Found entity 1: turnTest File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/turnTest.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file emptyc.sv
     Info (12023): Found entity 1: emptyC File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/emptyC.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file statemux.sv
+    Info (12023): Found entity 1: stateMux File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/stateMux.sv Line: 1
 Warning (10236): Verilog HDL Implicit Net warning at VGA.sv(9): created implicit net for "sync" File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/VGA.sv Line: 9
 Warning (10236): Verilog HDL Implicit Net warning at VGA.sv(13): created implicit net for "clk2" File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/VGA.sv Line: 13
 Warning (10236): Verilog HDL Implicit Net warning at VGAtest.sv(13): created implicit net for "clk" File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/VGAtest.sv Line: 13
 Warning (10236): Verilog HDL Implicit Net warning at VGAtest.sv(13): created implicit net for "clk2" File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/VGAtest.sv Line: 13
+Warning (10236): Verilog HDL Implicit Net warning at stateMux.sv(46): created implicit net for "empty" File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/stateMux.sv Line: 46
 Info (12127): Elaborating entity "move" for the top level hierarchy
 Warning (10036): Verilog HDL or VHDL warning at move.sv(37): object "counterJ1" assigned a value but never read File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/move.sv Line: 37
 Warning (10036): Verilog HDL or VHDL warning at move.sv(38): object "counterJ2" assigned a value but never read File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/move.sv Line: 38
@@ -586,24 +589,24 @@ Info (12128): Elaborating entity "MemoryGame" for hierarchy "MemoryGame:game" Fi
 Info (12128): Elaborating entity "casilla" for hierarchy "casilla:ca1" File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/move.sv Line: 52
 Info (12128): Elaborating entity "emptyC" for hierarchy "emptyC:eC" File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/move.sv Line: 104
 Info (12128): Elaborating entity "memTurn" for hierarchy "memTurn:mt" File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/move.sv Line: 107
-Warning (10230): Verilog HDL assignment warning at memTurn.sv(20): truncated value with size 4 to match size of target (1) File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/memTurn.sv Line: 20
-Warning (10230): Verilog HDL assignment warning at memTurn.sv(26): truncated value with size 32 to match size of target (8) File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/memTurn.sv Line: 26
-Warning (10230): Verilog HDL assignment warning at memTurn.sv(27): truncated value with size 32 to match size of target (8) File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/memTurn.sv Line: 27
-Warning (10230): Verilog HDL assignment warning at memTurn.sv(31): truncated value with size 32 to match size of target (8) File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/memTurn.sv Line: 31
-Warning (10230): Verilog HDL assignment warning at memTurn.sv(32): truncated value with size 4 to match size of target (1) File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/memTurn.sv Line: 32
+Warning (10230): Verilog HDL assignment warning at memTurn.sv(25): truncated value with size 32 to match size of target (2) File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/memTurn.sv Line: 25
+Warning (10230): Verilog HDL assignment warning at memTurn.sv(26): truncated value with size 32 to match size of target (2) File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/memTurn.sv Line: 26
+Warning (10230): Verilog HDL assignment warning at memTurn.sv(32): truncated value with size 32 to match size of target (8) File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/memTurn.sv Line: 32
+Warning (10230): Verilog HDL assignment warning at memTurn.sv(33): truncated value with size 32 to match size of target (8) File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/memTurn.sv Line: 33
+Warning (10230): Verilog HDL assignment warning at memTurn.sv(40): truncated value with size 32 to match size of target (8) File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/memTurn.sv Line: 40
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 5 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/output_files/Experimento.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 397 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 403 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 76 output pins
-    Info (21061): Implemented 317 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 13 warnings
-    Info: Peak virtual memory: 4871 megabytes
-    Info: Processing ended: Sat Apr 30 14:21:50 2022
-    Info: Elapsed time: 00:00:07
+    Info (21061): Implemented 323 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 14 warnings
+    Info: Peak virtual memory: 4875 megabytes
+    Info: Processing ended: Sat Apr 30 20:01:09 2022
+    Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:13
 
 

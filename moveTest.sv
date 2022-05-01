@@ -47,103 +47,438 @@ module moveTest();
 	);
 	
 	//always #PERIOD clk=~clk;
-	initial begin 
-		
-		
-		rst=0;
-		#5;
-		move = 0;
-		rst = 1;
-		select = 0;
-		clk=0;
-		
-		#5;
-		
-		clk=1;#5;clk=0;
-		move = 1;//1
-		#5;
-		clk=1;#5;clk=0;
-		#5;
-		move = 0;
-		clk=1;#5;clk=0;
-		#5;
-		select = 1;
-		clk=1;#5;clk=0;
-		#5;
-		select= 0;
-		clk=1;#5;clk=0;
-		#5;
-		select= 1;
-		clk=1;#5;clk=0;
-		#5;
-		select=0;
-		move = 1;//2
-		clk=1;#5;clk=0;
-		#5;
-		move = 0;
-		clk=1;#5;clk=0;
-		#5;
-		move = 1;//3
-		clk=1;#5;clk=0;
-		#5;
-		move = 0;
-		clk=1;#5;clk=0;
-		
-		#5;
-		move = 1;//4
-		clk=1;#5;clk=0;
-		#5;
-		move = 0;
-		clk=1;#5;clk=0;
-		
-		#5;
-		move = 1;//5
-		clk=1;#5;clk=0;
-		#5;
-		move = 0;
-		clk=1;#5;clk=0;
-		
-		#5;
-		move = 1;//6
-		clk=1;#5;clk=0;
-		#5;
-		move = 0;
-		clk=1;#5;clk=0;
-		
-		
-		#5;
-		move = 1;//7
-		clk=1;#5;clk=0;
-		#5;
-		move = 0;
-		clk=1;#5;clk=0;
-		
-		#5;
-		move = 1;//8
-		clk=1;#5;clk=0;
-		#5;
-		move = 0;
-		clk=1;#5;clk=0;
-		
-		
-		#5;
-		move = 1;//9
-		clk=1;#5;clk=0;
-		#5;
-		move = 0;
-		clk=1;#5;clk=0;
-		#5;
-		
-		select = 1;
-		clk=1;#5;clk=0;
-		#5;
-		
-		select= 0;//2
-		clk=1;#5;clk=0;
-		clk=1;#5;clk=0;
-		clk=1;#5;clk=0;
-		clk=1;#5;clk=0;
-		
-		$stop;
+	always begin 
+    clk=~clk;#5;
+	end
+	initial begin
+		 clk=0;
+		 rst=1;
+		 clk=0;
+		 #5;
+		 rst=0;
+		 #5;
+		 rst=1;
+		 #5
+		 select=1;
+		 #20;
+		 select=0;
+		 #20;
+		 move=1; // c02
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c03
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c04
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c05
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c06
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c07
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c08
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c09
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c10
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c11
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c12
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c13
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c14
+		 #5;
+		 move=0; 
+		 #5;
+		 select=1;
+		 #10;
+		 
+		 
+		 select=0;
+		 #10;
+		 move=1; // c15
+		 #5;
+		 move=0; 
+		 #5;
+		 select=1;
+		 #10;
+		 select=0;
+		 #10;
+		 move=1; // c16
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c01
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c02
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c03
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c04
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c05
+		 #5;
+		 move=0; 
+		 #5;
+		 select=1;
+		 #10;
+		 
+		 
+		 select=0;
+		 #10;
+		 move=1; // c06
+		 #5;
+		 move=0; 
+		 #5;
+		 select=1;
+		 #10;
+		 select=0;
+		 #10;
+		 move=1; // c07
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c08
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c09
+		 #5;
+		 move=0; 
+		 #5;
+		 select=1;
+		 #10;
+		 
+		 
+		 select=0;
+		 #10;
+		 move=1; // c10
+		 #5;
+		 move=0; 
+		 #5;
+		 select=1;
+		 #10;
+		 select=0;
+		 #10;
+		 move=1; // c11
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c12
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c13
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c14
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c15
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c16
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c01
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c02
+		 #5;
+		 move=0; 
+		 #5;
+		 select=1;
+		 #10;
+		 
+		 
+		 select=0;
+		 #10;
+		 move=1; // c03
+		 #5;
+		 move=0; 
+		 #5;
+		 select=1;
+		 #10;
+		 select=0;
+		 #30;
+		 move=1; // c04
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c05
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c06
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c07
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c08
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c09
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c10
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c11
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c12
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c13
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c14
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c15
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c16
+		 #5;
+		 move=0; 
+		 #5;
+		 select=1;
+		 #10;
+		 
+		 select=0;
+		 #10;
+		 move=1; // c01
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c02
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c03
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c04
+		 #5;
+		 move=0; 
+		 #5;
+		 select=1;
+		 #10;
+		 select=0;
+		 #10;
+		 move=1; // c05
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c06
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c07
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c08
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c09
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c10
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c11
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c12
+		 #5;
+		 move=0; 
+		 #5;
+		 select=1;
+		 #10;
+		 
+		 select=0;
+		 #10;
+		 move=1; // c13
+		 #5;
+		 move=0; 
+		 #5;
+		 select=1;
+		 #10;
+		 select=0;
+		 #10;
+		 move=1; // c14
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c15
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c16
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c01
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c02
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c03
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c04
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c05
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c06
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c07
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c08
+		 #5;
+		 move=0; 
+		 #5;
+		 select=1;
+		 #10;
+		 
+		 select=0;
+		 #10;
+		 move=1; // c09
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c10
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c11
+		 #5;
+		 move=0; 
+		 #5;
+		 select=1;
+		 #10;
+		 select=0;
+		 #10;
+		 move=1; // c12
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c13
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c14
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c15
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c16
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c01
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c02
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c03
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c04
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c05
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c06
+		 #5;
+		 move=0; 
+		 #5;
+		 move=1; // c07
+		 #5;
+		 move=0; 
+		 #5;
+		 select=1;
+		 #10;
+		 select=0;
+		 #120;
+		 $stop;
+
 	end
 endmodule
