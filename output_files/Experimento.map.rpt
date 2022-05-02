@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Experimento
-Sat Apr 30 21:30:48 2022
+Sun May  1 16:11:58 2022
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -13,32 +13,14 @@ Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. State Machine - |move|MemoryGame:game|estadoActual
-  9. Registers Removed During Synthesis
- 10. Removed Registers Triggering Further Register Optimizations
- 11. General Register Statistics
- 12. Multiplexer Restructuring Statistics (Restructuring Performed)
- 13. Port Connectivity Checks: "emptyC:eC"
- 14. Port Connectivity Checks: "casilla:ca16"
- 15. Port Connectivity Checks: "casilla:ca15"
- 16. Port Connectivity Checks: "casilla:ca14"
- 17. Port Connectivity Checks: "casilla:ca13"
- 18. Port Connectivity Checks: "casilla:ca12"
- 19. Port Connectivity Checks: "casilla:ca11"
- 20. Port Connectivity Checks: "casilla:ca10"
- 21. Port Connectivity Checks: "casilla:ca9"
- 22. Port Connectivity Checks: "casilla:ca8"
- 23. Port Connectivity Checks: "casilla:ca7"
- 24. Port Connectivity Checks: "casilla:ca6"
- 25. Port Connectivity Checks: "casilla:ca5"
- 26. Port Connectivity Checks: "casilla:ca4"
- 27. Port Connectivity Checks: "casilla:ca3"
- 28. Port Connectivity Checks: "casilla:ca2"
- 29. Port Connectivity Checks: "casilla:ca1"
- 30. Post-Synthesis Netlist Statistics for Top Partition
- 31. Elapsed Time Per Partition
- 32. Analysis & Synthesis Messages
- 33. Analysis & Synthesis Suppressed Messages
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Parameter Settings for User Entity Instance: dividerClock:cmh
+ 12. Post-Synthesis Netlist Statistics for Top Partition
+ 13. Elapsed Time Per Partition
+ 14. Analysis & Synthesis Messages
+ 15. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -65,14 +47,14 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sat Apr 30 21:30:48 2022       ;
+; Analysis & Synthesis Status     ; Successful - Sun May  1 16:11:58 2022       ;
 ; Quartus Prime Version           ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                   ; Experimento                                 ;
-; Top-level Entity Name           ; move                                        ;
+; Top-level Entity Name           ; VGA                                         ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 51                                          ;
-; Total pins                      ; 80                                          ;
+; Total registers                 ; 70                                          ;
+; Total pins                      ; 34                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -91,7 +73,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
-; Top-level entity name                                                           ; move               ; Experimento        ;
+; Top-level entity name                                                           ; VGA                ; Experimento        ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -189,136 +171,66 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                        ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                    ; Library ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------+---------+
-; MemoryGame.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/MemoryGame.sv ;         ;
-; casilla.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/casilla.sv    ;         ;
-; move.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/move.sv       ;         ;
-; memTurn.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/memTurn.sv    ;         ;
-; emptyC.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/emptyC.sv     ;         ;
-; stateMux.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/stateMux.sv   ;         ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                          ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                      ; Library ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------+---------+
+; SYNC.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/SYNC.sv         ;         ;
+; dividerClock.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/dividerClock.sv ;         ;
+; VGA.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/VGA.sv          ;         ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                   ;
-+---------------------------------------------+-----------------+
-; Resource                                    ; Usage           ;
-+---------------------------------------------+-----------------+
-; Estimate of Logic utilization (ALMs needed) ; 86              ;
-;                                             ;                 ;
-; Combinational ALUT usage for logic          ; 121             ;
-;     -- 7 input functions                    ; 0               ;
-;     -- 6 input functions                    ; 51              ;
-;     -- 5 input functions                    ; 32              ;
-;     -- 4 input functions                    ; 7               ;
-;     -- <=3 input functions                  ; 31              ;
-;                                             ;                 ;
-; Dedicated logic registers                   ; 51              ;
-;                                             ;                 ;
-; I/O pins                                    ; 80              ;
-;                                             ;                 ;
-; Total DSP Blocks                            ; 0               ;
-;                                             ;                 ;
-; Maximum fan-out node                        ; counter[2]~reg0 ;
-; Maximum fan-out                             ; 53              ;
-; Total fan-out                               ; 904             ;
-; Average fan-out                             ; 2.72            ;
-+---------------------------------------------+-----------------+
++-------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                       ;
++---------------------------------------------+---------------------+
+; Resource                                    ; Usage               ;
++---------------------------------------------+---------------------+
+; Estimate of Logic utilization (ALMs needed) ; 179                 ;
+;                                             ;                     ;
+; Combinational ALUT usage for logic          ; 275                 ;
+;     -- 7 input functions                    ; 5                   ;
+;     -- 6 input functions                    ; 77                  ;
+;     -- 5 input functions                    ; 69                  ;
+;     -- 4 input functions                    ; 40                  ;
+;     -- <=3 input functions                  ; 84                  ;
+;                                             ;                     ;
+; Dedicated logic registers                   ; 70                  ;
+;                                             ;                     ;
+; I/O pins                                    ; 34                  ;
+;                                             ;                     ;
+; Total DSP Blocks                            ; 0                   ;
+;                                             ;                     ;
+; Maximum fan-out node                        ; dividerClock:cmh|co ;
+; Maximum fan-out                             ; 42                  ;
+; Total fan-out                               ; 1447                ;
+; Average fan-out                             ; 3.50                ;
++---------------------------------------------+---------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                      ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name   ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------+-------------+--------------+
-; |move                      ; 121 (24)            ; 51 (8)                    ; 0                 ; 0          ; 80   ; 0            ; |move                 ;             ;              ;
-;    |MemoryGame:game|       ; 3 (3)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |move|MemoryGame:game ; MemoryGame  ; work         ;
-;    |casilla:ca10|          ; 3 (3)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca10    ; casilla     ; work         ;
-;    |casilla:ca11|          ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca11    ; casilla     ; work         ;
-;    |casilla:ca12|          ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca12    ; casilla     ; work         ;
-;    |casilla:ca13|          ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca13    ; casilla     ; work         ;
-;    |casilla:ca14|          ; 3 (3)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca14    ; casilla     ; work         ;
-;    |casilla:ca15|          ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca15    ; casilla     ; work         ;
-;    |casilla:ca16|          ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca16    ; casilla     ; work         ;
-;    |casilla:ca1|           ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca1     ; casilla     ; work         ;
-;    |casilla:ca2|           ; 3 (3)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca2     ; casilla     ; work         ;
-;    |casilla:ca3|           ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca3     ; casilla     ; work         ;
-;    |casilla:ca4|           ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca4     ; casilla     ; work         ;
-;    |casilla:ca5|           ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca5     ; casilla     ; work         ;
-;    |casilla:ca6|           ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca6     ; casilla     ; work         ;
-;    |casilla:ca7|           ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca7     ; casilla     ; work         ;
-;    |casilla:ca8|           ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca8     ; casilla     ; work         ;
-;    |casilla:ca9|           ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca9     ; casilla     ; work         ;
-;    |emptyC:eC|             ; 41 (41)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |move|emptyC:eC       ; emptyC      ; work         ;
-;    |memTurn:mt|            ; 13 (13)             ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |move|memTurn:mt      ; memTurn     ; work         ;
-;    |stateMux:st|           ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |move|stateMux:st     ; stateMux    ; work         ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------+-------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                       ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------+--------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name   ; Entity Name  ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------+--------------+--------------+
+; |VGA                       ; 275 (0)             ; 70 (0)                    ; 0                 ; 0          ; 34   ; 0            ; |VGA                  ; VGA          ; work         ;
+;    |SYNC:s1|               ; 240 (240)           ; 41 (41)                   ; 0                 ; 0          ; 0    ; 0            ; |VGA|SYNC:s1          ; SYNC         ; work         ;
+;    |dividerClock:cmh|      ; 35 (35)             ; 29 (29)                   ; 0                 ; 0          ; 0    ; 0            ; |VGA|dividerClock:cmh ; dividerClock ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------+--------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-Encoding Type:  One-Hot
-+-----------------------------------------------------------------------------------------------------------------+
-; State Machine - |move|MemoryGame:game|estadoActual                                                              ;
-+------------------+------------------+------------------+------------------+------------------+------------------+
-; Name             ; estadoActual.011 ; estadoActual.010 ; estadoActual.001 ; estadoActual.000 ; estadoActual.100 ;
-+------------------+------------------+------------------+------------------+------------------+------------------+
-; estadoActual.000 ; 0                ; 0                ; 0                ; 0                ; 0                ;
-; estadoActual.001 ; 0                ; 0                ; 1                ; 1                ; 0                ;
-; estadoActual.010 ; 0                ; 1                ; 0                ; 1                ; 0                ;
-; estadoActual.011 ; 1                ; 0                ; 0                ; 1                ; 0                ;
-; estadoActual.100 ; 0                ; 0                ; 0                ; 1                ; 1                ;
-+------------------+------------------+------------------+------------------+------------------+------------------+
-
-
-+-----------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                ;
-+----------------------------------------+------------------------------------------+
-; Register name                          ; Reason for Removal                       ;
-+----------------------------------------+------------------------------------------+
-; casilla:ca1|actual_state[2,3]          ; Merged with casilla:ca1|actual_state[1]  ;
-; casilla:ca2|actual_state[3]            ; Merged with casilla:ca2|actual_state[2]  ;
-; casilla:ca2|actual_state[1]            ; Merged with casilla:ca2|actual_state[0]  ;
-; casilla:ca3|actual_state[2,3]          ; Merged with casilla:ca3|actual_state[0]  ;
-; casilla:ca4|actual_state[1,3]          ; Merged with casilla:ca4|actual_state[0]  ;
-; casilla:ca6|actual_state[3]            ; Merged with casilla:ca6|actual_state[0]  ;
-; casilla:ca6|actual_state[2]            ; Merged with casilla:ca6|actual_state[1]  ;
-; casilla:ca7|actual_state[1,2]          ; Merged with casilla:ca7|actual_state[0]  ;
-; casilla:ca8|actual_state[1,2]          ; Merged with casilla:ca8|actual_state[0]  ;
-; casilla:ca15|actual_state[3]           ; Merged with casilla:ca15|actual_state[1] ;
-; casilla:ca15|actual_state[2]           ; Merged with casilla:ca15|actual_state[0] ;
-; casilla:ca16|actual_state[2,3]         ; Merged with casilla:ca16|actual_state[0] ;
-; casilla:ca5|actual_state[3]            ; Merged with casilla:ca5|actual_state[1]  ;
-; casilla:ca5|actual_state[2]            ; Merged with casilla:ca5|actual_state[0]  ;
-; casilla:ca9|actual_state[3]            ; Merged with casilla:ca9|actual_state[0]  ;
-; casilla:ca9|actual_state[2]            ; Merged with casilla:ca9|actual_state[1]  ;
-; casilla:ca10|actual_state[3]           ; Merged with casilla:ca10|actual_state[2] ;
-; casilla:ca10|actual_state[1]           ; Merged with casilla:ca10|actual_state[0] ;
-; casilla:ca11|actual_state[1,2]         ; Merged with casilla:ca11|actual_state[0] ;
-; casilla:ca12|actual_state[1,3]         ; Merged with casilla:ca12|actual_state[0] ;
-; casilla:ca13|actual_state[1,2]         ; Merged with casilla:ca13|actual_state[0] ;
-; casilla:ca14|actual_state[2,3]         ; Merged with casilla:ca14|actual_state[1] ;
-; memTurn:mt|x[1]                        ; Stuck at GND due to stuck port data_in   ;
-; MemoryGame:game|estadoActual~4         ; Lost fanout                              ;
-; MemoryGame:game|estadoActual~5         ; Lost fanout                              ;
-; MemoryGame:game|estadoActual.100       ; Lost fanout                              ;
-; MemoryGame:game|estadoActual.010       ; Lost fanout                              ;
-; MemoryGame:game|estadoActual.011       ; Lost fanout                              ;
-; Total Number of Removed Registers = 38 ;                                          ;
-+----------------------------------------+------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                  ;
-+--------------------------------+--------------------+----------------------------------------+
-; Register name                  ; Reason for Removal ; Registers Removed due to This Register ;
-+--------------------------------+--------------------+----------------------------------------+
-; MemoryGame:game|estadoActual~4 ; Lost Fanouts       ; MemoryGame:game|estadoActual.011       ;
-; MemoryGame:game|estadoActual~5 ; Lost Fanouts       ; MemoryGame:game|estadoActual.010       ;
-+--------------------------------+--------------------+----------------------------------------+
++------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                     ;
++---------------------------------------+--------------------------------+
+; Register name                         ; Reason for Removal             ;
++---------------------------------------+--------------------------------+
+; SYNC:s1|r_red[5]                      ; Merged with SYNC:s1|r_red[1]   ;
+; SYNC:s1|r_red[3]                      ; Merged with SYNC:s1|r_red[2]   ;
+; SYNC:s1|r_green[6]                    ; Merged with SYNC:s1|r_green[0] ;
+; Total Number of Removed Registers = 3 ;                                ;
++---------------------------------------+--------------------------------+
 
 
 +------------------------------------------------------+
@@ -326,12 +238,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 51    ;
-; Number of registers using Synchronous Clear  ; 16    ;
+; Total registers                              ; 70    ;
+; Number of registers using Synchronous Clear  ; 48    ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 50    ;
+; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 19    ;
+; Number of registers using Clock Enable       ; 10    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -341,188 +253,27 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 17:1               ; 4 bits    ; 44 LEs        ; 44 LEs               ; 0 LEs                  ; No         ; |move|emptyC:eC|Selector3  ;
+; 20:1               ; 6 bits    ; 78 LEs        ; 78 LEs               ; 0 LEs                  ; Yes        ; |VGA|SYNC:s1|r_blue[0]     ;
+; 22:1               ; 2 bits    ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; Yes        ; |VGA|SYNC:s1|r_red[4]      ;
+; 24:1               ; 3 bits    ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; Yes        ; |VGA|SYNC:s1|r_blue[1]     ;
+; 26:1               ; 7 bits    ; 119 LEs       ; 119 LEs              ; 0 LEs                  ; Yes        ; |VGA|SYNC:s1|r_red[2]      ;
+; 28:1               ; 3 bits    ; 54 LEs        ; 54 LEs               ; 0 LEs                  ; Yes        ; |VGA|SYNC:s1|r_red[7]      ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |VGA|SYNC:s1|r_red         ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |VGA|SYNC:s1|r_red         ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |VGA|SYNC:s1|r_red         ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |VGA|SYNC:s1|r_blue        ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |VGA|SYNC:s1|r_blue        ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "emptyC:eC"                                                                                                ;
-+-------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; Port  ; Type   ; Severity ; Details                                                                                                  ;
-+-------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; state ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-+-------+--------+----------+----------------------------------------------------------------------------------------------------------+
-
-
-+-----------------------------------------------+
-; Port Connectivity Checks: "casilla:ca16"      ;
-+-------------+-------+----------+--------------+
-; Port        ; Type  ; Severity ; Details      ;
-+-------------+-------+----------+--------------+
-; label[3..2] ; Input ; Info     ; Stuck at GND ;
-; label[1]    ; Input ; Info     ; Stuck at VCC ;
-; label[0]    ; Input ; Info     ; Stuck at GND ;
-+-------------+-------+----------+--------------+
-
-
-+--------------------------------------------+
-; Port Connectivity Checks: "casilla:ca15"   ;
-+----------+-------+----------+--------------+
-; Port     ; Type  ; Severity ; Details      ;
-+----------+-------+----------+--------------+
-; label[3] ; Input ; Info     ; Stuck at GND ;
-; label[2] ; Input ; Info     ; Stuck at VCC ;
-; label[1] ; Input ; Info     ; Stuck at GND ;
-; label[0] ; Input ; Info     ; Stuck at VCC ;
-+----------+-------+----------+--------------+
-
-
-+-----------------------------------------------+
-; Port Connectivity Checks: "casilla:ca14"      ;
-+-------------+-------+----------+--------------+
-; Port        ; Type  ; Severity ; Details      ;
-+-------------+-------+----------+--------------+
-; label[3..1] ; Input ; Info     ; Stuck at GND ;
-; label[0]    ; Input ; Info     ; Stuck at VCC ;
-+-------------+-------+----------+--------------+
-
-
-+-----------------------------------------------+
-; Port Connectivity Checks: "casilla:ca13"      ;
-+-------------+-------+----------+--------------+
-; Port        ; Type  ; Severity ; Details      ;
-+-------------+-------+----------+--------------+
-; label[2..0] ; Input ; Info     ; Stuck at GND ;
-; label[3]    ; Input ; Info     ; Stuck at VCC ;
-+-------------+-------+----------+--------------+
-
-
-+-----------------------------------------------+
-; Port Connectivity Checks: "casilla:ca12"      ;
-+-------------+-------+----------+--------------+
-; Port        ; Type  ; Severity ; Details      ;
-+-------------+-------+----------+--------------+
-; label[1..0] ; Input ; Info     ; Stuck at GND ;
-; label[3]    ; Input ; Info     ; Stuck at GND ;
-; label[2]    ; Input ; Info     ; Stuck at VCC ;
-+-------------+-------+----------+--------------+
-
-
-+-----------------------------------------------+
-; Port Connectivity Checks: "casilla:ca11"      ;
-+-------------+-------+----------+--------------+
-; Port        ; Type  ; Severity ; Details      ;
-+-------------+-------+----------+--------------+
-; label[2..0] ; Input ; Info     ; Stuck at VCC ;
-; label[3]    ; Input ; Info     ; Stuck at GND ;
-+-------------+-------+----------+--------------+
-
-
-+-----------------------------------------------+
-; Port Connectivity Checks: "casilla:ca10"      ;
-+-------------+-------+----------+--------------+
-; Port        ; Type  ; Severity ; Details      ;
-+-------------+-------+----------+--------------+
-; label[1..0] ; Input ; Info     ; Stuck at VCC ;
-; label[3..2] ; Input ; Info     ; Stuck at GND ;
-+-------------+-------+----------+--------------+
-
-
-+-----------------------------------------------+
-; Port Connectivity Checks: "casilla:ca9"       ;
-+-------------+-------+----------+--------------+
-; Port        ; Type  ; Severity ; Details      ;
-+-------------+-------+----------+--------------+
-; label[2..1] ; Input ; Info     ; Stuck at VCC ;
-; label[3]    ; Input ; Info     ; Stuck at GND ;
-; label[0]    ; Input ; Info     ; Stuck at GND ;
-+-------------+-------+----------+--------------+
-
-
-+-----------------------------------------------+
-; Port Connectivity Checks: "casilla:ca8"       ;
-+-------------+-------+----------+--------------+
-; Port        ; Type  ; Severity ; Details      ;
-+-------------+-------+----------+--------------+
-; label[2..0] ; Input ; Info     ; Stuck at GND ;
-; label[3]    ; Input ; Info     ; Stuck at VCC ;
-+-------------+-------+----------+--------------+
-
-
-+-----------------------------------------------+
-; Port Connectivity Checks: "casilla:ca7"       ;
-+-------------+-------+----------+--------------+
-; Port        ; Type  ; Severity ; Details      ;
-+-------------+-------+----------+--------------+
-; label[2..0] ; Input ; Info     ; Stuck at VCC ;
-; label[3]    ; Input ; Info     ; Stuck at GND ;
-+-------------+-------+----------+--------------+
-
-
-+-----------------------------------------------+
-; Port Connectivity Checks: "casilla:ca6"       ;
-+-------------+-------+----------+--------------+
-; Port        ; Type  ; Severity ; Details      ;
-+-------------+-------+----------+--------------+
-; label[2..1] ; Input ; Info     ; Stuck at VCC ;
-; label[3]    ; Input ; Info     ; Stuck at GND ;
-; label[0]    ; Input ; Info     ; Stuck at GND ;
-+-------------+-------+----------+--------------+
-
-
-+--------------------------------------------+
-; Port Connectivity Checks: "casilla:ca5"    ;
-+----------+-------+----------+--------------+
-; Port     ; Type  ; Severity ; Details      ;
-+----------+-------+----------+--------------+
-; label[3] ; Input ; Info     ; Stuck at GND ;
-; label[2] ; Input ; Info     ; Stuck at VCC ;
-; label[1] ; Input ; Info     ; Stuck at GND ;
-; label[0] ; Input ; Info     ; Stuck at VCC ;
-+----------+-------+----------+--------------+
-
-
-+-----------------------------------------------+
-; Port Connectivity Checks: "casilla:ca4"       ;
-+-------------+-------+----------+--------------+
-; Port        ; Type  ; Severity ; Details      ;
-+-------------+-------+----------+--------------+
-; label[1..0] ; Input ; Info     ; Stuck at GND ;
-; label[3]    ; Input ; Info     ; Stuck at GND ;
-; label[2]    ; Input ; Info     ; Stuck at VCC ;
-+-------------+-------+----------+--------------+
-
-
-+-----------------------------------------------+
-; Port Connectivity Checks: "casilla:ca3"       ;
-+-------------+-------+----------+--------------+
-; Port        ; Type  ; Severity ; Details      ;
-+-------------+-------+----------+--------------+
-; label[3..2] ; Input ; Info     ; Stuck at GND ;
-; label[1]    ; Input ; Info     ; Stuck at VCC ;
-; label[0]    ; Input ; Info     ; Stuck at GND ;
-+-------------+-------+----------+--------------+
-
-
-+-----------------------------------------------+
-; Port Connectivity Checks: "casilla:ca2"       ;
-+-------------+-------+----------+--------------+
-; Port        ; Type  ; Severity ; Details      ;
-+-------------+-------+----------+--------------+
-; label[1..0] ; Input ; Info     ; Stuck at VCC ;
-; label[3..2] ; Input ; Info     ; Stuck at GND ;
-+-------------+-------+----------+--------------+
-
-
-+-----------------------------------------------+
-; Port Connectivity Checks: "casilla:ca1"       ;
-+-------------+-------+----------+--------------+
-; Port        ; Type  ; Severity ; Details      ;
-+-------------+-------+----------+--------------+
-; label[3..1] ; Input ; Info     ; Stuck at GND ;
-; label[0]    ; Input ; Info     ; Stuck at VCC ;
-; par         ; Input ; Info     ; Stuck at GND ;
-+-------------+-------+----------+--------------+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: dividerClock:cmh   ;
++----------------+------------------------------+-----------------+
+; Parameter Name ; Value                        ; Type            ;
++----------------+------------------------------+-----------------+
+; DIVISOR        ; 0000000000000000000000000010 ; Unsigned Binary ;
++----------------+------------------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +-----------------------------------------------------+
@@ -530,25 +281,26 @@ Encoding Type:  One-Hot
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 51                          ;
-;     CLR               ; 32                          ;
-;     ENA               ; 1                           ;
-;     ENA CLR           ; 2                           ;
-;     ENA CLR SCLR      ; 16                          ;
-; arriav_lcell_comb     ; 121                         ;
-;     arith             ; 16                          ;
-;         1 data inputs ; 16                          ;
-;     normal            ; 105                         ;
+; arriav_ff             ; 70                          ;
+;     ENA SCLR          ; 10                          ;
+;     SCLR              ; 38                          ;
+;     plain             ; 22                          ;
+; arriav_lcell_comb     ; 276                         ;
+;     arith             ; 48                          ;
+;         1 data inputs ; 48                          ;
+;     extend            ; 5                           ;
+;         7 data inputs ; 5                           ;
+;     normal            ; 223                         ;
 ;         1 data inputs ; 2                           ;
-;         2 data inputs ; 4                           ;
-;         3 data inputs ; 9                           ;
-;         4 data inputs ; 7                           ;
-;         5 data inputs ; 32                          ;
-;         6 data inputs ; 51                          ;
-; boundary_port         ; 80                          ;
+;         2 data inputs ; 13                          ;
+;         3 data inputs ; 22                          ;
+;         4 data inputs ; 40                          ;
+;         5 data inputs ; 69                          ;
+;         6 data inputs ; 77                          ;
+; boundary_port         ; 34                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 5.00                        ;
-; Average LUT depth     ; 3.52                        ;
+; Max LUT depth         ; 6.00                        ;
+; Average LUT depth     ; 4.23                        ;
 +-----------------------+-----------------------------+
 
 
@@ -557,7 +309,7 @@ Encoding Type:  One-Hot
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -567,14 +319,14 @@ Encoding Type:  One-Hot
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Sat Apr 30 21:30:35 2022
+    Info: Processing started: Sun May  1 16:11:44 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Experimento -c Experimento
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file memorygame.sv
     Info (12023): Found entity 1: MemoryGame File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/MemoryGame.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file sync.sv
-    Info (12023): Found entity 1: SYNC File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/SYNC.sv Line: 60
+    Info (12023): Found entity 1: SYNC File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/SYNC.sv Line: 15
 Info (12021): Found 1 design units, including 1 entities, in source file dividerclock.sv
     Info (12023): Found entity 1: dividerClock File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/dividerClock.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file vga.sv
@@ -603,35 +355,32 @@ Warning (10236): Verilog HDL Implicit Net warning at VGA.sv(9): created implicit
 Warning (10236): Verilog HDL Implicit Net warning at VGA.sv(13): created implicit net for "clk2" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/VGA.sv Line: 13
 Warning (10236): Verilog HDL Implicit Net warning at VGAtest.sv(13): created implicit net for "clk" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/VGAtest.sv Line: 13
 Warning (10236): Verilog HDL Implicit Net warning at VGAtest.sv(13): created implicit net for "clk2" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/VGAtest.sv Line: 13
-Info (12127): Elaborating entity "move" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at move.sv(37): object "counterJ1" assigned a value but never read File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/move.sv Line: 37
-Warning (10036): Verilog HDL or VHDL warning at move.sv(38): object "counterJ2" assigned a value but never read File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/move.sv Line: 38
-Warning (10230): Verilog HDL assignment warning at move.sv(142): truncated value with size 32 to match size of target (8) File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/move.sv Line: 142
-Info (12128): Elaborating entity "MemoryGame" for hierarchy "MemoryGame:game" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/move.sv Line: 67
-Info (12128): Elaborating entity "casilla" for hierarchy "casilla:ca1" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/move.sv Line: 73
-Info (12128): Elaborating entity "emptyC" for hierarchy "emptyC:eC" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/move.sv Line: 125
-Info (12128): Elaborating entity "memTurn" for hierarchy "memTurn:mt" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/move.sv Line: 128
-Warning (10230): Verilog HDL assignment warning at memTurn.sv(21): truncated value with size 8 to match size of target (4) File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/memTurn.sv Line: 21
-Warning (10230): Verilog HDL assignment warning at memTurn.sv(26): truncated value with size 32 to match size of target (2) File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/memTurn.sv Line: 26
-Warning (10230): Verilog HDL assignment warning at memTurn.sv(27): truncated value with size 32 to match size of target (2) File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/memTurn.sv Line: 27
-Warning (10230): Verilog HDL assignment warning at memTurn.sv(33): truncated value with size 32 to match size of target (8) File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/memTurn.sv Line: 33
-Warning (10230): Verilog HDL assignment warning at memTurn.sv(34): truncated value with size 32 to match size of target (8) File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/memTurn.sv Line: 34
-Warning (10230): Verilog HDL assignment warning at memTurn.sv(42): truncated value with size 32 to match size of target (8) File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/memTurn.sv Line: 42
-Info (12128): Elaborating entity "stateMux" for hierarchy "stateMux:st" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/move.sv Line: 133
-Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (12127): Elaborating entity "VGA" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at VGA.sv(9): object "sync" assigned a value but never read File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/VGA.sv Line: 9
+Info (12128): Elaborating entity "dividerClock" for hierarchy "dividerClock:cmh" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/VGA.sv Line: 13
+Info (12128): Elaborating entity "SYNC" for hierarchy "SYNC:s1" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/VGA.sv Line: 14
+Warning (10230): Verilog HDL assignment warning at SYNC.sv(53): truncated value with size 32 to match size of target (10) File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/SYNC.sv Line: 53
+Warning (10230): Verilog HDL assignment warning at SYNC.sv(63): truncated value with size 32 to match size of target (10) File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/SYNC.sv Line: 63
+Warning (10230): Verilog HDL assignment warning at SYNC.sv(353): truncated value with size 32 to match size of target (1) File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/SYNC.sv Line: 353
+Warning (10230): Verilog HDL assignment warning at SYNC.sv(354): truncated value with size 32 to match size of target (1) File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/SYNC.sv Line: 354
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 5 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/output_files/Experimento.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 233 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 4 input pins
-    Info (21059): Implemented 76 output pins
-    Info (21061): Implemented 153 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 15 warnings
-    Info: Peak virtual memory: 4809 megabytes
-    Info: Processing ended: Sat Apr 30 21:30:48 2022
-    Info: Elapsed time: 00:00:13
+Warning (21074): Design contains 5 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "reset" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/VGA.sv Line: 1
+    Warning (15610): No output dependent on input pin "movimiento[0]" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/VGA.sv Line: 2
+    Warning (15610): No output dependent on input pin "movimiento[1]" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/VGA.sv Line: 2
+    Warning (15610): No output dependent on input pin "movimiento[2]" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/VGA.sv Line: 2
+    Warning (15610): No output dependent on input pin "movimiento[3]" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/VGA.sv Line: 2
+Info (21057): Implemented 309 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 7 input pins
+    Info (21059): Implemented 27 output pins
+    Info (21061): Implemented 275 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 16 warnings
+    Info: Peak virtual memory: 4818 megabytes
+    Info: Processing ended: Sun May  1 16:11:58 2022
+    Info: Elapsed time: 00:00:14
     Info: Total CPU time (on all processors): 00:00:29
 
 

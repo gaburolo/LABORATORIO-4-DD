@@ -18,7 +18,7 @@ module memTurn(input logic clk, input logic rst, input logic select, input logic
 			if (select==1 && empty) 
 				begin
 					if(counter >= 1) begin
-						v2 <= counter;
+						v2 <= state;
 						
 						// Valida si hay un ganador
 						if((counterJ1 + counterJ2) == 8)
