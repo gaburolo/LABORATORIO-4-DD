@@ -58,7 +58,25 @@ module moveTest();
 		 rst=0;
 		 #5;
 		 rst=1;
-		 #5
+		 #5;
+		 select=1;
+		 #20;
+		 select=0;
+		 #20;
+		 move=1; // c02
+		 #5;
+		 move=0; 
+		 #5;
+		 select=1;
+		 #20;
+		 select=0;
+		 #20;
+		 move=1; // c03
+		 #5;
+		 move=0; 
+		 #5;
+		 
+		 $stop;
 		 select=1;
 		 #20;
 		 select=0;
@@ -294,6 +312,7 @@ module moveTest();
 		 select=1;
 		 #10;
 		 
+		 
 		 select=0;
 		 #10;
 		 move=1; // c01
@@ -351,6 +370,7 @@ module moveTest();
 		 select=1;
 		 #10;
 		 
+		 
 		 select=0;
 		 #10;
 		 move=1; // c13
@@ -407,6 +427,7 @@ module moveTest();
 		 #5;
 		 select=1;
 		 #10;
+		 
 		 
 		 select=0;
 		 #10;

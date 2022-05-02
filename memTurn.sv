@@ -1,6 +1,7 @@
-module memTurn(input logic clk, input logic rst, input logic select, input logic [3:0] state, input logic empty,
-	input logic player, output logic[1:0] x);
-	byte counter = 0;
+module memTurn(input logic clk, input logic rst, input logic counter, input logic select, input logic [3:0] state, input logic empty,
+	input logic player, output logic[1:0] x, output logic par, output byte selected1, output byte selected2);
+	
+	byte turnCounter = 0;
 	byte counterJ1 = 0;
 	byte counterJ2 = 0;
 	logic[3:0] v1;
@@ -9,7 +10,7 @@ module memTurn(input logic clk, input logic rst, input logic select, input logic
 	always_ff @(posedge (clk) or negedge rst)
 		if(rst === 1'b0) 
 			begin 
-				counter <= 0;
+				turnCounter <= 0;
 				counterJ1 <= 0;
 				counterJ2 <= 0;
 			end
@@ -17,8 +18,9 @@ module memTurn(input logic clk, input logic rst, input logic select, input logic
 		begin
 			if (select==1 && empty) 
 				begin
-					if(counter >= 1) begin
-						v2 <= counter;
+					if(turnCounter == 1) begin
+						v2 = state;
+						selected2 = counter;
 						
 						// Valida si hay un ganador
 						if((counterJ1 + counterJ2) == 8)
@@ -28,23 +30,28 @@ module memTurn(input logic clk, input logic rst, input logic select, input logic
 							end
 						
 						// Incrementa puntos
-						else if(v1 == v2)
+						else if(v1 === v2)
 							begin
-								if(player == 0) counterJ1 <= counterJ1 + 1;
-								else counterJ2 <= counterJ2 + 1;
+								par=1;
+								if(player == 0) counterJ1 = counterJ1 + 1;
+								else counterJ2 = counterJ2 + 1;
 							end
+						else par=0;
 						
 						x <= 01;
-						counter <= 0;
+						turnCounter <= 0;
 						
 						end
 					else begin 
-						counter <= counter + 1;
-						v1 <= state; 
+						turnCounter <= turnCounter + 1;
+						v1 = state; 
+						selected1 = counter;
 					end
 				end
-			else
+			else begin
+				par = 1;
 				x <= 00;
+			end
 		end
 			
 		

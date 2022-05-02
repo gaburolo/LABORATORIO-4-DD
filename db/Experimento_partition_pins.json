@@ -312,7 +312,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "move",
+					"name" : "clk",
 					"strict" : false
 				},
 				{
@@ -320,7 +320,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "clk",
+					"name" : "move",
 					"strict" : false
 				}
 			]
