@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Experimento
-Sun May  1 18:31:34 2022
+Sun May  1 19:06:53 2022
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -65,13 +65,13 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun May  1 18:31:34 2022       ;
+; Analysis & Synthesis Status     ; Successful - Sun May  1 19:06:53 2022       ;
 ; Quartus Prime Version           ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                   ; Experimento                                 ;
 ; Top-level Entity Name           ; move                                        ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 51                                          ;
+; Total registers                 ; 72                                          ;
 ; Total pins                      ; 80                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
@@ -204,31 +204,31 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+------------------------------+-------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                   ;
-+---------------------------------------------+-----------------+
-; Resource                                    ; Usage           ;
-+---------------------------------------------+-----------------+
-; Estimate of Logic utilization (ALMs needed) ; 80              ;
-;                                             ;                 ;
-; Combinational ALUT usage for logic          ; 119             ;
-;     -- 7 input functions                    ; 0               ;
-;     -- 6 input functions                    ; 41              ;
-;     -- 5 input functions                    ; 35              ;
-;     -- 4 input functions                    ; 12              ;
-;     -- <=3 input functions                  ; 31              ;
-;                                             ;                 ;
-; Dedicated logic registers                   ; 51              ;
-;                                             ;                 ;
-; I/O pins                                    ; 80              ;
-;                                             ;                 ;
-; Total DSP Blocks                            ; 0               ;
-;                                             ;                 ;
-; Maximum fan-out node                        ; counter[2]~reg0 ;
-; Maximum fan-out                             ; 51              ;
-; Total fan-out                               ; 878             ;
-; Average fan-out                             ; 2.66            ;
-+---------------------------------------------+-----------------+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimate of Logic utilization (ALMs needed) ; 120       ;
+;                                             ;           ;
+; Combinational ALUT usage for logic          ; 190       ;
+;     -- 7 input functions                    ; 0         ;
+;     -- 6 input functions                    ; 49        ;
+;     -- 5 input functions                    ; 57        ;
+;     -- 4 input functions                    ; 20        ;
+;     -- <=3 input functions                  ; 64        ;
+;                                             ;           ;
+; Dedicated logic registers                   ; 72        ;
+;                                             ;           ;
+; I/O pins                                    ; 80        ;
+;                                             ;           ;
+; Total DSP Blocks                            ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; rst~input ;
+; Maximum fan-out                             ; 68        ;
+; Total fan-out                               ; 1227      ;
+; Average fan-out                             ; 2.91      ;
++---------------------------------------------+-----------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -236,7 +236,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name   ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------+-------------+--------------+
-; |move                      ; 119 (22)            ; 51 (8)                    ; 0                 ; 0          ; 80   ; 0            ; |move                 ;             ;              ;
+; |move                      ; 190 (21)            ; 72 (8)                    ; 0                 ; 0          ; 80   ; 0            ; |move                 ;             ;              ;
 ;    |MemoryGame:game|       ; 3 (3)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |move|MemoryGame:game ; MemoryGame  ; work         ;
 ;    |casilla:ca10|          ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca10    ; casilla     ; work         ;
 ;    |casilla:ca11|          ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca11    ; casilla     ; work         ;
@@ -254,9 +254,9 @@ https://fpgasoftware.intel.com/eula.
 ;    |casilla:ca7|           ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca7     ; casilla     ; work         ;
 ;    |casilla:ca8|           ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca8     ; casilla     ; work         ;
 ;    |casilla:ca9|           ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |move|casilla:ca9     ; casilla     ; work         ;
-;    |emptyC:eC|             ; 44 (44)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |move|emptyC:eC       ; emptyC      ; work         ;
-;    |memTurn:mt|            ; 13 (13)             ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |move|memTurn:mt      ; memTurn     ; work         ;
-;    |stateMux:st|           ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |move|stateMux:st     ; stateMux    ; work         ;
+;    |emptyC:eC|             ; 74 (74)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |move|emptyC:eC       ; emptyC      ; work         ;
+;    |memTurn:mt|            ; 56 (56)             ; 30 (30)                   ; 0                 ; 0          ; 0    ; 0            ; |move|memTurn:mt      ; memTurn     ; work         ;
+;    |stateMux:st|           ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |move|stateMux:st     ; stateMux    ; work         ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -322,35 +322,26 @@ Encoding Type:  One-Hot
 ; backToWhite:b2w|par3                   ; Stuck at GND due to stuck port data_in   ;
 ; memTurn:mt|selected2[0]                ; Lost fanout                              ;
 ; memTurn:mt|selected1[0]                ; Lost fanout                              ;
-; memTurn:mt|x[1]                        ; Stuck at GND due to stuck port data_in   ;
-; memTurn:mt|counterJ1[0..7]             ; Lost fanout                              ;
-; memTurn:mt|counterJ2[0..7]             ; Lost fanout                              ;
 ; memTurn:mt|par                         ; Lost fanout                              ;
-; memTurn:mt|v1[0..3]                    ; Lost fanout                              ;
 ; MemoryGame:game|estadoActual~4         ; Lost fanout                              ;
 ; MemoryGame:game|estadoActual~5         ; Lost fanout                              ;
 ; MemoryGame:game|estadoActual.100       ; Lost fanout                              ;
 ; MemoryGame:game|estadoActual.010       ; Lost fanout                              ;
 ; MemoryGame:game|estadoActual.011       ; Lost fanout                              ;
-; Total Number of Removed Registers = 91 ;                                          ;
+; Total Number of Removed Registers = 70 ;                                          ;
 +----------------------------------------+------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                             ;
-+--------------------------------+---------------------------+----------------------------------------------------------------------------+
-; Register name                  ; Reason for Removal        ; Registers Removed due to This Register                                     ;
-+--------------------------------+---------------------------+----------------------------------------------------------------------------+
-; memTurn:mt|counterJ1[7]        ; Lost Fanouts              ; memTurn:mt|counterJ1[5], memTurn:mt|counterJ1[4], memTurn:mt|counterJ1[3], ;
-;                                ;                           ; memTurn:mt|counterJ1[2], memTurn:mt|counterJ1[1], memTurn:mt|counterJ1[0], ;
-;                                ;                           ; memTurn:mt|counterJ2[1], memTurn:mt|counterJ2[0]                           ;
-; memTurn:mt|selected2[7]        ; Stuck at GND              ; backToWhite:b2w|par1, backToWhite:b2w|par2, backToWhite:b2w|par3,          ;
-;                                ; due to stuck port data_in ; memTurn:mt|selected2[0], memTurn:mt|selected1[0], memTurn:mt|par           ;
-; memTurn:mt|counterJ2[7]        ; Lost Fanouts              ; memTurn:mt|counterJ2[5], memTurn:mt|counterJ2[4], memTurn:mt|counterJ2[3], ;
-;                                ;                           ; memTurn:mt|counterJ2[2]                                                    ;
-; MemoryGame:game|estadoActual~4 ; Lost Fanouts              ; MemoryGame:game|estadoActual.011                                           ;
-; MemoryGame:game|estadoActual~5 ; Lost Fanouts              ; MemoryGame:game|estadoActual.010                                           ;
-+--------------------------------+---------------------------+----------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                    ;
++--------------------------------+---------------------------+-------------------------------------------------------------------+
+; Register name                  ; Reason for Removal        ; Registers Removed due to This Register                            ;
++--------------------------------+---------------------------+-------------------------------------------------------------------+
+; memTurn:mt|selected2[7]        ; Stuck at GND              ; backToWhite:b2w|par1, backToWhite:b2w|par2, backToWhite:b2w|par3, ;
+;                                ; due to stuck port data_in ; memTurn:mt|selected2[0], memTurn:mt|selected1[0], memTurn:mt|par  ;
+; MemoryGame:game|estadoActual~4 ; Lost Fanouts              ; MemoryGame:game|estadoActual.011                                  ;
+; MemoryGame:game|estadoActual~5 ; Lost Fanouts              ; MemoryGame:game|estadoActual.010                                  ;
++--------------------------------+---------------------------+-------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -358,12 +349,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 51    ;
+; Total registers                              ; 72    ;
 ; Number of registers using Synchronous Clear  ; 16    ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 50    ;
+; Number of registers using Asynchronous Clear ; 66    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 19    ;
+; Number of registers using Clock Enable       ; 38    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -561,25 +552,26 @@ Encoding Type:  One-Hot
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 51                          ;
-;     CLR               ; 32                          ;
-;     ENA               ; 1                           ;
-;     ENA CLR           ; 2                           ;
+; arriav_ff             ; 72                          ;
+;     CLR               ; 34                          ;
+;     ENA               ; 6                           ;
+;     ENA CLR           ; 16                          ;
 ;     ENA CLR SCLR      ; 16                          ;
-; arriav_lcell_comb     ; 119                         ;
-;     arith             ; 16                          ;
-;         1 data inputs ; 16                          ;
-;     normal            ; 103                         ;
+; arriav_lcell_comb     ; 190                         ;
+;     arith             ; 39                          ;
+;         1 data inputs ; 28                          ;
+;         2 data inputs ; 11                          ;
+;     normal            ; 151                         ;
 ;         1 data inputs ; 2                           ;
-;         2 data inputs ; 5                           ;
-;         3 data inputs ; 8                           ;
-;         4 data inputs ; 12                          ;
-;         5 data inputs ; 35                          ;
-;         6 data inputs ; 41                          ;
+;         2 data inputs ; 7                           ;
+;         3 data inputs ; 16                          ;
+;         4 data inputs ; 20                          ;
+;         5 data inputs ; 57                          ;
+;         6 data inputs ; 49                          ;
 ; boundary_port         ; 80                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 5.00                        ;
-; Average LUT depth     ; 3.51                        ;
+; Max LUT depth         ; 6.00                        ;
+; Average LUT depth     ; 3.91                        ;
 +-----------------------+-----------------------------+
 
 
@@ -598,7 +590,7 @@ Encoding Type:  One-Hot
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Sun May  1 18:31:27 2022
+    Info: Processing started: Sun May  1 19:06:46 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Experimento -c Experimento
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -647,28 +639,29 @@ Info (12128): Elaborating entity "MemoryGame" for hierarchy "MemoryGame:game" Fi
 Info (12128): Elaborating entity "casilla" for hierarchy "casilla:ca1" File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/move.sv Line: 81
 Info (12128): Elaborating entity "emptyC" for hierarchy "emptyC:eC" File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/move.sv Line: 133
 Info (12128): Elaborating entity "memTurn" for hierarchy "memTurn:mt" File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/move.sv Line: 136
-Warning (10230): Verilog HDL assignment warning at memTurn.sv(28): truncated value with size 32 to match size of target (2) File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/memTurn.sv Line: 28
-Warning (10230): Verilog HDL assignment warning at memTurn.sv(29): truncated value with size 32 to match size of target (2) File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/memTurn.sv Line: 29
-Warning (10230): Verilog HDL assignment warning at memTurn.sv(36): truncated value with size 32 to match size of target (8) File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/memTurn.sv Line: 36
-Warning (10230): Verilog HDL assignment warning at memTurn.sv(37): truncated value with size 32 to match size of target (8) File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/memTurn.sv Line: 37
-Warning (10230): Verilog HDL assignment warning at memTurn.sv(46): truncated value with size 32 to match size of target (8) File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/memTurn.sv Line: 46
+Warning (10036): Verilog HDL or VHDL warning at memTurn.sv(8): object "flag" assigned a value but never read File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/memTurn.sv Line: 8
+Warning (10230): Verilog HDL assignment warning at memTurn.sv(26): truncated value with size 32 to match size of target (2) File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/memTurn.sv Line: 26
+Warning (10230): Verilog HDL assignment warning at memTurn.sv(27): truncated value with size 32 to match size of target (2) File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/memTurn.sv Line: 27
+Warning (10230): Verilog HDL assignment warning at memTurn.sv(40): truncated value with size 32 to match size of target (8) File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/memTurn.sv Line: 40
+Warning (10230): Verilog HDL assignment warning at memTurn.sv(41): truncated value with size 32 to match size of target (8) File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/memTurn.sv Line: 41
+Warning (10230): Verilog HDL assignment warning at memTurn.sv(50): truncated value with size 32 to match size of target (8) File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/memTurn.sv Line: 50
 Info (12128): Elaborating entity "stateMux" for hierarchy "stateMux:st" File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/move.sv Line: 141
 Info (12128): Elaborating entity "backToWhite" for hierarchy "backToWhite:b2w" File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/move.sv Line: 147
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 28 registers lost all their fanouts during netlist optimizations.
+Info (17049): 8 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/output_files/Experimento.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 231 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 307 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 76 output pins
-    Info (21061): Implemented 151 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 15 warnings
-    Info: Peak virtual memory: 4866 megabytes
-    Info: Processing ended: Sun May  1 18:31:34 2022
+    Info (21061): Implemented 227 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 16 warnings
+    Info: Peak virtual memory: 4870 megabytes
+    Info: Processing ended: Sun May  1 19:06:53 2022
     Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:12
+    Info: Total CPU time (on all processors): 00:00:13
 
 
 +------------------------------------------+

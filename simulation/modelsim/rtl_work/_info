@@ -10,7 +10,7 @@ cModel Technology
 Z0 dC:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/simulation/modelsim
 vbackToWhite
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1651451525
+Z2 !s110 1651453650
 !i10b 1
 !s100 MXl]]MXnZXY1i0A08bd`j0
 IDL0Az4fMcPf_?H7@kg7VA2
@@ -26,7 +26,7 @@ Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z5 !s108 1651451524.000000
+Z5 !s108 1651453649.000000
 !s107 C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/backToWhite.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD|C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/backToWhite.sv|
 !i113 1
@@ -36,7 +36,7 @@ Z8 tCvgOpt 0
 nback@to@white
 vcasilla
 R1
-Z9 !s110 1651451524
+Z9 !s110 1651453649
 !i10b 1
 !s100 7DJ7C9T4JD7lk?KfHK]T03
 ISLiKE3VocdRge3XS6PFN=2
@@ -115,13 +115,13 @@ vmemTurn
 R1
 R9
 !i10b 1
-!s100 VAm8Xnb8<hS`[8k^g>8?I2
-I;0zSm;zd=oGiTB]XRCS3U1
+!s100 ^]dDZ0BS;:m6TSfNXLAEL3
+I^lej>W>Agi=hN7<Fn^C?b3
 R3
 !s105 memTurn_sv_unit
 S1
 R0
-w1651451342
+w1651453604
 8C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/memTurn.sv
 FC:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/memTurn.sv
 L0 1
@@ -166,13 +166,13 @@ vmoveTest
 R1
 R2
 !i10b 1
-!s100 8kL2UoX=9=<Pjmg^:kUEl3
-IcDWMFHN>FHA=RYX<[NQWz1
+!s100 JSNb0CSKdOn]imC8zJSPz3
+IgQH@R3E[ef@M26mO@IA@K0
 R3
 !s105 moveTest_sv_unit
 S1
 R0
-w1651451486
+w1651452841
 8C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/moveTest.sv
 FC:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/moveTest.sv
 L0 1
@@ -180,7 +180,7 @@ R4
 r1
 !s85 0
 31
-!s108 1651451525.000000
+!s108 1651453650.000000
 !s107 C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/moveTest.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD|C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/moveTest.sv|
 !i113 1

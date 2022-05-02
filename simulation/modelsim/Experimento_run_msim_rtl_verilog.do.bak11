@@ -53,9 +53,9 @@ vlog -sv -work work +incdir+C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD {C:/Use
 vlog -sv -work work +incdir+C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD {C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/stateMux.sv}
 vlog -sv -work work +incdir+C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD {C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/backToWhite.sv}
 
-vlog -sv -work work +incdir+C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD {C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/backToWhiteTest.sv}
+vlog -sv -work work +incdir+C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD {C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/moveTest.sv}
 
-vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  b2wTest
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  moveTest
 
 add wave *
 view structure

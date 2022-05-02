@@ -4,6 +4,9 @@ module memTurn(input logic clk, input logic rst, input logic counter, input logi
 	byte turnCounter = 0;
 	byte counterJ1 = 0;
 	byte counterJ2 = 0;
+	
+	logic[3:0] flag;
+	
 	logic[3:0] v1;
 	logic[3:0] v2;
 	
@@ -16,21 +19,22 @@ module memTurn(input logic clk, input logic rst, input logic counter, input logi
 			end
 		else
 		begin
-			if (select==1 && empty) 
+			// Valida si hay un ganador
+			if((counterJ1 + counterJ2) == 8)
+				begin
+					flag = 4'b1010;
+					if(counterJ1 > counterJ2 || counterJ1 < counterJ2) x <= 10;
+					else x <= 11;
+				end
+				
+			else if (select==1 && empty) 
 				begin
 					if(turnCounter == 1) begin
 						v2 = state;
 						selected2 = counter;
 						
-						// Valida si hay un ganador
-						if((counterJ1 + counterJ2) == 8)
-							begin
-								if(counterJ1 > counterJ2 || counterJ1 < counterJ2) x <= 10;
-								else x <= 11;
-							end
-						
 						// Incrementa puntos
-						else if(v1 === v2)
+						if(v1 === v2)
 							begin
 								par=1;
 								if(player == 0) counterJ1 = counterJ1 + 1;
