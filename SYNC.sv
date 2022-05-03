@@ -12,14 +12,31 @@
 
 module SYNC(
 	input logic VGA_CLK_IN,
+	input logic rst,
+	input logic[3:0] block,
+	input logic [3:0] c1,
+	input logic [3:0] c2,
+	input logic [3:0] c3,
+	input logic [3:0] c4,
+	input logic [3:0] c5,
+	input logic [3:0] c6,
+	input logic [3:0] c7,
+	input logic [3:0] c8,
+	input logic [3:0] c9,
+	input logic [3:0] c10,
+	input logic [3:0] c11,
+	input logic [3:0] c12,
+	input logic [3:0] c13,
+	input logic [3:0] c14,
+	input logic [3:0] c15,
+	input logic [3:0] c16,	
 	output logic o_hsync,
 	output logic o_vsync,
 	output logic VGA_CLK_OUT,
 	output logic[7:0] out_R,
 	output logic[7:0] out_B,
-	output logic[7:0] out_G,
-	input logic[3:0] block,
-	input logic player
+	output logic[7:0] out_G
+	
 );
 
 
@@ -176,8 +193,8 @@ module SYNC(
 					{color_R,color_G,color_B} <= `WHITE;
 					end
 			end
-		case(player)
-			1'd0: begin
+		case(block)
+			4'd0000: begin
 				if(squareC01)
 				//1
 					begin

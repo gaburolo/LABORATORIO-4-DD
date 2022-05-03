@@ -4,307 +4,159 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "c1[0]",
+					"name" : "R[0]",
 					"strict" : false
 				},
 				{
-					"name" : "c1[1]",
+					"name" : "R[1]",
 					"strict" : false
 				},
 				{
-					"name" : "c1[2]",
+					"name" : "R[2]",
 					"strict" : false
 				},
 				{
-					"name" : "c1[3]",
+					"name" : "R[3]",
 					"strict" : false
 				},
 				{
-					"name" : "c2[0]",
+					"name" : "R[4]",
 					"strict" : false
 				},
 				{
-					"name" : "c2[1]",
+					"name" : "R[5]",
 					"strict" : false
 				},
 				{
-					"name" : "c2[2]",
+					"name" : "R[6]",
 					"strict" : false
 				},
 				{
-					"name" : "c2[3]",
+					"name" : "R[7]",
 					"strict" : false
 				},
 				{
-					"name" : "c3[0]",
+					"name" : "G[0]",
 					"strict" : false
 				},
 				{
-					"name" : "c3[1]",
+					"name" : "G[1]",
 					"strict" : false
 				},
 				{
-					"name" : "c3[2]",
+					"name" : "G[2]",
 					"strict" : false
 				},
 				{
-					"name" : "c3[3]",
+					"name" : "G[3]",
 					"strict" : false
 				},
 				{
-					"name" : "c4[0]",
+					"name" : "G[4]",
 					"strict" : false
 				},
 				{
-					"name" : "c4[1]",
+					"name" : "G[5]",
 					"strict" : false
 				},
 				{
-					"name" : "c4[2]",
+					"name" : "G[6]",
 					"strict" : false
 				},
 				{
-					"name" : "c4[3]",
+					"name" : "G[7]",
 					"strict" : false
 				},
 				{
-					"name" : "c5[0]",
+					"name" : "B[0]",
 					"strict" : false
 				},
 				{
-					"name" : "c5[1]",
+					"name" : "B[1]",
 					"strict" : false
 				},
 				{
-					"name" : "c5[2]",
+					"name" : "B[2]",
 					"strict" : false
 				},
 				{
-					"name" : "c5[3]",
+					"name" : "B[3]",
 					"strict" : false
 				},
 				{
-					"name" : "c6[0]",
+					"name" : "B[4]",
 					"strict" : false
 				},
 				{
-					"name" : "c6[1]",
+					"name" : "B[5]",
 					"strict" : false
 				},
 				{
-					"name" : "c6[2]",
+					"name" : "B[6]",
 					"strict" : false
 				},
 				{
-					"name" : "c6[3]",
+					"name" : "B[7]",
 					"strict" : false
 				},
 				{
-					"name" : "c7[0]",
+					"name" : "hsync",
 					"strict" : false
 				},
 				{
-					"name" : "c7[1]",
+					"name" : "vsync",
 					"strict" : false
 				},
 				{
-					"name" : "c7[2]",
+					"name" : "vgaclk",
 					"strict" : false
 				},
 				{
-					"name" : "c7[3]",
+					"name" : "player1[0]",
 					"strict" : false
 				},
 				{
-					"name" : "c8[0]",
+					"name" : "player1[2]",
 					"strict" : false
 				},
 				{
-					"name" : "c8[1]",
+					"name" : "player1[3]",
 					"strict" : false
 				},
 				{
-					"name" : "c8[2]",
+					"name" : "player1[4]",
 					"strict" : false
 				},
 				{
-					"name" : "c8[3]",
+					"name" : "player1[5]",
 					"strict" : false
 				},
 				{
-					"name" : "c9[0]",
+					"name" : "player1[6]",
 					"strict" : false
 				},
 				{
-					"name" : "c9[1]",
+					"name" : "player2[0]",
 					"strict" : false
 				},
 				{
-					"name" : "c9[2]",
+					"name" : "player2[2]",
 					"strict" : false
 				},
 				{
-					"name" : "c9[3]",
+					"name" : "player2[3]",
 					"strict" : false
 				},
 				{
-					"name" : "c10[0]",
+					"name" : "player2[4]",
 					"strict" : false
 				},
 				{
-					"name" : "c10[1]",
+					"name" : "player2[5]",
 					"strict" : false
 				},
 				{
-					"name" : "c10[2]",
-					"strict" : false
-				},
-				{
-					"name" : "c10[3]",
-					"strict" : false
-				},
-				{
-					"name" : "c11[0]",
-					"strict" : false
-				},
-				{
-					"name" : "c11[1]",
-					"strict" : false
-				},
-				{
-					"name" : "c11[2]",
-					"strict" : false
-				},
-				{
-					"name" : "c11[3]",
-					"strict" : false
-				},
-				{
-					"name" : "c12[0]",
-					"strict" : false
-				},
-				{
-					"name" : "c12[1]",
-					"strict" : false
-				},
-				{
-					"name" : "c12[2]",
-					"strict" : false
-				},
-				{
-					"name" : "c12[3]",
-					"strict" : false
-				},
-				{
-					"name" : "c13[0]",
-					"strict" : false
-				},
-				{
-					"name" : "c13[1]",
-					"strict" : false
-				},
-				{
-					"name" : "c13[2]",
-					"strict" : false
-				},
-				{
-					"name" : "c13[3]",
-					"strict" : false
-				},
-				{
-					"name" : "c14[0]",
-					"strict" : false
-				},
-				{
-					"name" : "c14[1]",
-					"strict" : false
-				},
-				{
-					"name" : "c14[2]",
-					"strict" : false
-				},
-				{
-					"name" : "c14[3]",
-					"strict" : false
-				},
-				{
-					"name" : "c15[0]",
-					"strict" : false
-				},
-				{
-					"name" : "c15[1]",
-					"strict" : false
-				},
-				{
-					"name" : "c15[2]",
-					"strict" : false
-				},
-				{
-					"name" : "c15[3]",
-					"strict" : false
-				},
-				{
-					"name" : "c16[0]",
-					"strict" : false
-				},
-				{
-					"name" : "c16[1]",
-					"strict" : false
-				},
-				{
-					"name" : "c16[2]",
-					"strict" : false
-				},
-				{
-					"name" : "c16[3]",
-					"strict" : false
-				},
-				{
-					"name" : "counter[0]",
-					"strict" : false
-				},
-				{
-					"name" : "counter[1]",
-					"strict" : false
-				},
-				{
-					"name" : "counter[2]",
-					"strict" : false
-				},
-				{
-					"name" : "counter[3]",
-					"strict" : false
-				},
-				{
-					"name" : "counter[4]",
-					"strict" : false
-				},
-				{
-					"name" : "counter[5]",
-					"strict" : false
-				},
-				{
-					"name" : "counter[6]",
-					"strict" : false
-				},
-				{
-					"name" : "counter[7]",
-					"strict" : false
-				},
-				{
-					"name" : "state[0]",
-					"strict" : false
-				},
-				{
-					"name" : "state[1]",
-					"strict" : false
-				},
-				{
-					"name" : "state[2]",
-					"strict" : false
-				},
-				{
-					"name" : "state[3]",
+					"name" : "player2[6]",
 					"strict" : false
 				},
 				{
@@ -316,11 +168,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "rst",
+					"name" : "move",
 					"strict" : false
 				},
 				{
-					"name" : "move",
+					"name" : "rst",
 					"strict" : false
 				}
 			]

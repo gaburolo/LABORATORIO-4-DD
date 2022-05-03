@@ -1,13 +1,13 @@
-Fitter Status : Successful - Mon May  2 18:06:20 2022
+Fitter Status : Successful - Mon May  2 22:32:07 2022
 Quartus Prime Version : 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 Revision Name : Experimento
-Top-level Entity Name : move
+Top-level Entity Name : main
 Family : Cyclone V
 Device : 5CSEMA5F31C6
 Timing Models : Final
-Logic utilization (in ALMs) : 121 / 32,070 ( < 1 % )
-Total registers : 73
-Total pins : 80 / 457 ( 18 % )
+Logic utilization (in ALMs) : 291 / 32,070 ( < 1 % )
+Total registers : 175
+Total pins : 45 / 457 ( 10 % )
 Total virtual pins : 0
 Total block memory bits : 0 / 4,065,280 ( 0 % )
 Total RAM Blocks : 0 / 397 ( 0 % )

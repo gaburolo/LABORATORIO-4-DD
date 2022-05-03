@@ -7,210 +7,388 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/simulation/modelsim
+Z0 dC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/simulation/modelsim
 vbackToWhite
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1651453650
+Z2 !s110 1651553167
 !i10b 1
 !s100 MXl]]MXnZXY1i0A08bd`j0
-IDL0Az4fMcPf_?H7@kg7VA2
+IC4c?OJMjLfeGh=o7Z8m??1
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 !s105 backToWhite_sv_unit
 S1
 R0
-w1651450947
-8C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/backToWhite.sv
-FC:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/backToWhite.sv
+Z4 w1651535827
+8C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/backToWhite.sv
+FC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/backToWhite.sv
 L0 1
-Z4 OV;L;10.5b;63
+Z5 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z5 !s108 1651453649.000000
-!s107 C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/backToWhite.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD|C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/backToWhite.sv|
+Z6 !s108 1651553167.000000
+!s107 C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/backToWhite.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD|C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/backToWhite.sv|
 !i113 1
-Z6 o-sv -work work
-Z7 !s92 -sv -work work +incdir+C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD
-Z8 tCvgOpt 0
+Z7 o-sv -work work
+Z8 !s92 -sv -work work {+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD}
+Z9 tCvgOpt 0
 nback@to@white
 vcasilla
 R1
-Z9 !s110 1651453649
+Z10 !s110 1651553166
 !i10b 1
 !s100 7DJ7C9T4JD7lk?KfHK]T03
-ISLiKE3VocdRge3XS6PFN=2
+I?WQFVR@`c?Q[GKQCT5Cmk2
 R3
 !s105 casilla_sv_unit
 S1
 R0
-w1651451260
-8C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/casilla.sv
-FC:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/casilla.sv
-L0 1
 R4
+8C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/casilla.sv
+FC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/casilla.sv
+L0 1
+R5
 r1
 !s85 0
 31
-R5
-!s107 C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/casilla.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD|C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/casilla.sv|
+Z11 !s108 1651553166.000000
+!s107 C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/casilla.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD|C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/casilla.sv|
 !i113 1
-R6
 R7
 R8
+R9
+vdebounce
+R1
+R2
+!i10b 1
+!s100 UXKMjP3k`Z:zICN@OdS^d0
+IJVlz6fTO_?g:zUiAbP]Pa1
+R3
+!s105 debounce_sv_unit
+S1
+R0
+w1651547223
+8C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/debounce.sv
+FC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/debounce.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/debounce.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD|C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/debounce.sv|
+!i113 1
+R7
+R8
+R9
+vdeco
+R1
+R2
+!i10b 1
+!s100 5]Fm>ZJP]nlViDk4gzeAS3
+I1jje1k>lQ5VDXeDzn17A61
+R3
+!s105 deco_sv_unit
+S1
+R0
+w1651551528
+8C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/deco.sv
+FC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/deco.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/deco.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD|C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/deco.sv|
+!i113 1
+R7
+R8
+R9
+vdeco1a7
+R1
+R2
+!i10b 1
+!s100 :Hl`j>n<IkQAl]DB?;d003
+IYcB_[[1cPT0oeY]Lj[@0n3
+R3
+!s105 deco1a7_sv_unit
+S1
+R0
+w1651552046
+8C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/deco1a7.sv
+FC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/deco1a7.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/deco1a7.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD|C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/deco1a7.sv|
+!i113 1
+R7
+R8
+R9
+vdividerClock
+R1
+R10
+!i10b 1
+!s100 b4JfYdR48;j50khKL57kl3
+I3d8z5YQ49Lzi1U4n5D9>K1
+R3
+!s105 dividerClock_sv_unit
+S1
+R0
+Z12 w1651535829
+8C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/dividerClock.sv
+FC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/dividerClock.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/dividerClock.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD|C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/dividerClock.sv|
+!i113 1
+R7
+R8
+R9
+ndivider@clock
 vemptyC
 R1
-R9
+R10
 !i10b 1
 !s100 <c<DE_b3le25DOoASJ@0a3
-Ib`F;OQ_R]:MzH]zdMHooH0
+INA<icIL^A17O^]1`0]NjQ0
 R3
 !s105 emptyC_sv_unit
 S1
 R0
-w1651367741
-8C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/emptyC.sv
-FC:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/emptyC.sv
+R12
+8C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/emptyC.sv
+FC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/emptyC.sv
 L0 1
-R4
+R5
 r1
 !s85 0
 31
-R5
-!s107 C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/emptyC.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD|C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/emptyC.sv|
+R11
+!s107 C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/emptyC.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD|C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/emptyC.sv|
 !i113 1
-R6
 R7
 R8
+R9
 nempty@c
+vmain
+R1
+R2
+!i10b 1
+!s100 g8e8aoMBCP@1>Ahj6fDbF1
+I5A^3e:eWE@?8MbGSX?dH41
+R3
+!s105 main_sv_unit
+S1
+R0
+w1651552216
+8C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/main.sv
+FC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/main.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/main.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD|C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/main.sv|
+!i113 1
+R7
+R8
+R9
 vMemoryGame
 R1
-R9
+!s110 1651553165
 !i10b 1
 !s100 em9GkL:EfQd4Dn`BP784V2
-IlVHU_AH;Q^bgEn9GPZ8]f0
+In5Z2RB75I03m8K]2jXKig3
 R3
 !s105 MemoryGame_sv_unit
 S1
 R0
-w1651339487
-8C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/MemoryGame.sv
-FC:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/MemoryGame.sv
-L0 1
 R4
+8C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/MemoryGame.sv
+FC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/MemoryGame.sv
+L0 1
+R5
 r1
 !s85 0
 31
-R5
-!s107 C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/MemoryGame.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD|C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/MemoryGame.sv|
+!s108 1651553165.000000
+!s107 C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/MemoryGame.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD|C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/MemoryGame.sv|
 !i113 1
-R6
 R7
 R8
+R9
 n@memory@game
 vmemTurn
 R1
-R9
+R10
 !i10b 1
 !s100 ^]dDZ0BS;:m6TSfNXLAEL3
-I^lej>W>Agi=hN7<Fn^C?b3
+I;Y`Ak4B3:X]FXzf6G]T0l2
 R3
 !s105 memTurn_sv_unit
 S1
 R0
-w1651453604
-8C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/memTurn.sv
-FC:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/memTurn.sv
+R12
+8C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/memTurn.sv
+FC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/memTurn.sv
 L0 1
-R4
+R5
 r1
 !s85 0
 31
-R5
-!s107 C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/memTurn.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD|C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/memTurn.sv|
+R11
+!s107 C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/memTurn.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD|C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/memTurn.sv|
 !i113 1
-R6
 R7
 R8
+R9
 nmem@turn
 vmove
 R1
-R9
+R10
 !i10b 1
-!s100 lgi4==67eE[[zW2n6?aQI2
-IlQLf=;c;^9nBYVL<fIE3[1
+!s100 ^jnQ1GM2j50U^9AWL^85L0
+I>Wg3077QKSD62o4?<9d>K1
 R3
 !s105 move_sv_unit
 S1
 R0
-w1651450121
-8C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/move.sv
-FC:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/move.sv
+w1651551079
+8C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/move.sv
+FC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/move.sv
 L0 1
-R4
+R5
 r1
 !s85 0
 31
-R5
-!s107 C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/move.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD|C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/move.sv|
+R11
+!s107 C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/move.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD|C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/move.sv|
 !i113 1
-R6
 R7
 R8
+R9
 vmoveTest
 R1
-R2
+!s110 1651553168
 !i10b 1
-!s100 JSNb0CSKdOn]imC8zJSPz3
-IgQH@R3E[ef@M26mO@IA@K0
+!s100 dai00DOOR4HK6J3X]KEIN3
+ITiT=E:Yc]^olfAD1f4<aA0
 R3
 !s105 moveTest_sv_unit
 S1
 R0
-w1651452841
-8C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/moveTest.sv
-FC:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/moveTest.sv
+w1651553110
+8C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/moveTest.sv
+FC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/moveTest.sv
 L0 1
-R4
+R5
 r1
 !s85 0
 31
-!s108 1651453650.000000
-!s107 C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/moveTest.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD|C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/moveTest.sv|
+!s108 1651553168.000000
+!s107 C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/moveTest.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD|C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/moveTest.sv|
 !i113 1
-R6
 R7
 R8
+R9
 nmove@test
 vstateMux
 R1
-R9
+R10
 !i10b 1
 !s100 :H]S?o7>zXeSGXdHc^Th81
-I33hQECGCgEAkRbeORP[IU1
+Ij_djc=cH_0@jiXG;ZzP_i3
 R3
 !s105 stateMux_sv_unit
 S1
 R0
-w1651438639
-8C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/stateMux.sv
-FC:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/stateMux.sv
+w1651535836
+8C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/stateMux.sv
+FC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/stateMux.sv
 L0 1
-R4
+R5
 r1
 !s85 0
 31
-R5
-!s107 C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/stateMux.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD|C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/stateMux.sv|
+R11
+!s107 C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/stateMux.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD|C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/stateMux.sv|
 !i113 1
-R6
 R7
 R8
+R9
 nstate@mux
+vSYNC
+R1
+R10
+!i10b 1
+!s100 SU0M[WL]kdHkAI[F:Pz`m2
+I3IRJ5RJHL3RfYOG`hN_bE0
+R3
+!s105 SYNC_sv_unit
+S1
+R0
+w1651542064
+8C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/SYNC.sv
+FC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/SYNC.sv
+L0 13
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/SYNC.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD|C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/SYNC.sv|
+!i113 1
+R7
+R8
+R9
+n@s@y@n@c
+vVGA
+R1
+R10
+!i10b 1
+!s100 ;DadRUzhCQAn5_57d8T<T1
+I6mWm48897kWd3Lf?GTLiL0
+R3
+!s105 VGA_sv_unit
+S1
+R0
+w1651542067
+8C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/VGA.sv
+FC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/VGA.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/VGA.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD|C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/VGA.sv|
+!i113 1
+R7
+R8
+R9
+n@v@g@a

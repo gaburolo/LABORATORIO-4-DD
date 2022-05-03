@@ -11,10 +11,10 @@
 # vmap altera_ver ./verilog_libs/altera_ver 
 # Copying C:/intelFPGA/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
-# vlog -vlog01compat -work altera_ver {d:/quartus/quartus/eda/sim_lib/altera_primitives.v}
+# vlog -vlog01compat -work altera_ver {c:/intelfpga_lite/21.1/quartus/eda/sim_lib/altera_primitives.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:07:08 on May 01,2022
-# vlog -reportprogress 300 -vlog01compat -work altera_ver d:/quartus/quartus/eda/sim_lib/altera_primitives.v 
+# Start time: 22:45:41 on May 02,2022
+# vlog -reportprogress 300 -vlog01compat -work altera_ver c:/intelfpga_lite/21.1/quartus/eda/sim_lib/altera_primitives.v 
 # -- Compiling module global
 # -- Compiling module carry
 # -- Compiling module cascade
@@ -95,7 +95,7 @@
 # 	alt_iobuf_diff
 # 	alt_bidir_diff
 # 	alt_bidir_buf
-# End time: 19:07:08 on May 01,2022, Elapsed time: 0:00:00
+# End time: 22:45:42 on May 02,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/lpm_ver
@@ -104,10 +104,10 @@
 # Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
 # vmap lpm_ver ./verilog_libs/lpm_ver 
 # Modifying modelsim.ini
-# vlog -vlog01compat -work lpm_ver {d:/quartus/quartus/eda/sim_lib/220model.v}
+# vlog -vlog01compat -work lpm_ver {c:/intelfpga_lite/21.1/quartus/eda/sim_lib/220model.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:07:09 on May 01,2022
-# vlog -reportprogress 300 -vlog01compat -work lpm_ver d:/quartus/quartus/eda/sim_lib/220model.v 
+# Start time: 22:45:43 on May 02,2022
+# vlog -reportprogress 300 -vlog01compat -work lpm_ver c:/intelfpga_lite/21.1/quartus/eda/sim_lib/220model.v 
 # -- Compiling module LPM_MEMORY_INITIALIZATION
 # -- Compiling module LPM_HINT_EVALUATION
 # -- Compiling module LPM_DEVICE_FAMILIES
@@ -170,7 +170,7 @@
 # 	lpm_inpad
 # 	lpm_outpad
 # 	lpm_bipad
-# End time: 19:07:09 on May 01,2022, Elapsed time: 0:00:00
+# End time: 22:45:43 on May 02,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/sgate_ver
@@ -179,10 +179,10 @@
 # Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
 # vmap sgate_ver ./verilog_libs/sgate_ver 
 # Modifying modelsim.ini
-# vlog -vlog01compat -work sgate_ver {d:/quartus/quartus/eda/sim_lib/sgate.v}
+# vlog -vlog01compat -work sgate_ver {c:/intelfpga_lite/21.1/quartus/eda/sim_lib/sgate.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:07:10 on May 01,2022
-# vlog -reportprogress 300 -vlog01compat -work sgate_ver d:/quartus/quartus/eda/sim_lib/sgate.v 
+# Start time: 22:45:44 on May 02,2022
+# vlog -reportprogress 300 -vlog01compat -work sgate_ver c:/intelfpga_lite/21.1/quartus/eda/sim_lib/sgate.v 
 # -- Compiling module oper_add
 # -- Compiling module oper_addsub
 # -- Compiling module mux21
@@ -223,7 +223,7 @@
 # 	oper_decoder
 # 	oper_bus_mux
 # 	oper_latch
-# End time: 19:07:10 on May 01,2022, Elapsed time: 0:00:00
+# End time: 22:45:44 on May 02,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_mf_ver
@@ -232,10 +232,10 @@
 # Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
 # vmap altera_mf_ver ./verilog_libs/altera_mf_ver 
 # Modifying modelsim.ini
-# vlog -vlog01compat -work altera_mf_ver {d:/quartus/quartus/eda/sim_lib/altera_mf.v}
+# vlog -vlog01compat -work altera_mf_ver {c:/intelfpga_lite/21.1/quartus/eda/sim_lib/altera_mf.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:07:11 on May 01,2022
-# vlog -reportprogress 300 -vlog01compat -work altera_mf_ver d:/quartus/quartus/eda/sim_lib/altera_mf.v 
+# Start time: 22:45:44 on May 02,2022
+# vlog -reportprogress 300 -vlog01compat -work altera_mf_ver c:/intelfpga_lite/21.1/quartus/eda/sim_lib/altera_mf.v 
 # -- Compiling module lcell
 # -- Compiling module ALTERA_MF_MEMORY_INITIALIZATION
 # -- Compiling module ALTERA_MF_HINT_EVALUATION
@@ -364,7 +364,7 @@
 # 	alt_fault_injection
 # 	sld_virtual_jtag_basic
 # 	altsource_probe
-# End time: 19:07:16 on May 01,2022, Elapsed time: 0:00:05
+# End time: 22:45:46 on May 02,2022, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_lnsim_ver
@@ -373,10 +373,10 @@
 # Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
 # vmap altera_lnsim_ver ./verilog_libs/altera_lnsim_ver 
 # Modifying modelsim.ini
-# vlog -sv -work altera_lnsim_ver {d:/quartus/quartus/eda/sim_lib/altera_lnsim.sv}
+# vlog -sv -work altera_lnsim_ver {c:/intelfpga_lite/21.1/quartus/eda/sim_lib/altera_lnsim.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:07:18 on May 01,2022
-# vlog -reportprogress 300 -sv -work altera_lnsim_ver d:/quartus/quartus/eda/sim_lib/altera_lnsim.sv 
+# Start time: 22:45:48 on May 02,2022
+# vlog -reportprogress 300 -sv -work altera_lnsim_ver c:/intelfpga_lite/21.1/quartus/eda/sim_lib/altera_lnsim.sv 
 # -- Compiling package altera_lnsim_functions
 # -- Compiling package altera_generic_pll_functions
 # -- Compiling module generic_pll
@@ -458,7 +458,7 @@
 # 	altera_iopll
 # 	fourteennm_altera_iopll
 # 	fourteennm_simple_iopll
-# End time: 19:07:21 on May 01,2022, Elapsed time: 0:00:03
+# End time: 22:45:49 on May 02,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/cyclonev_ver
@@ -467,10 +467,10 @@
 # Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
 # vmap cyclonev_ver ./verilog_libs/cyclonev_ver 
 # Modifying modelsim.ini
-# vlog -vlog01compat -work cyclonev_ver {d:/quartus/quartus/eda/sim_lib/mentor/cyclonev_atoms_ncrypt.v}
+# vlog -vlog01compat -work cyclonev_ver {c:/intelfpga_lite/21.1/quartus/eda/sim_lib/mentor/cyclonev_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:07:21 on May 01,2022
-# vlog -reportprogress 300 -vlog01compat -work cyclonev_ver d:/quartus/quartus/eda/sim_lib/mentor/cyclonev_atoms_ncrypt.v 
+# Start time: 22:45:50 on May 02,2022
+# vlog -reportprogress 300 -vlog01compat -work cyclonev_ver c:/intelfpga_lite/21.1/quartus/eda/sim_lib/mentor/cyclonev_atoms_ncrypt.v 
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
@@ -483,20 +483,20 @@
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 # 
 # Top level modules:
-# End time: 19:07:23 on May 01,2022, Elapsed time: 0:00:02
+# End time: 22:45:53 on May 02,2022, Elapsed time: 0:00:03
 # Errors: 0, Warnings: 20
-# vlog -vlog01compat -work cyclonev_ver {d:/quartus/quartus/eda/sim_lib/mentor/cyclonev_hmi_atoms_ncrypt.v}
+# vlog -vlog01compat -work cyclonev_ver {c:/intelfpga_lite/21.1/quartus/eda/sim_lib/mentor/cyclonev_hmi_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:07:23 on May 01,2022
-# vlog -reportprogress 300 -vlog01compat -work cyclonev_ver d:/quartus/quartus/eda/sim_lib/mentor/cyclonev_hmi_atoms_ncrypt.v 
+# Start time: 22:45:53 on May 02,2022
+# vlog -reportprogress 300 -vlog01compat -work cyclonev_ver c:/intelfpga_lite/21.1/quartus/eda/sim_lib/mentor/cyclonev_hmi_atoms_ncrypt.v 
 # 
 # Top level modules:
-# End time: 19:07:24 on May 01,2022, Elapsed time: 0:00:01
+# End time: 22:45:55 on May 02,2022, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work cyclonev_ver {d:/quartus/quartus/eda/sim_lib/cyclonev_atoms.v}
+# vlog -vlog01compat -work cyclonev_ver {c:/intelfpga_lite/21.1/quartus/eda/sim_lib/cyclonev_atoms.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:07:24 on May 01,2022
-# vlog -reportprogress 300 -vlog01compat -work cyclonev_ver d:/quartus/quartus/eda/sim_lib/cyclonev_atoms.v 
+# Start time: 22:45:55 on May 02,2022
+# vlog -reportprogress 300 -vlog01compat -work cyclonev_ver c:/intelfpga_lite/21.1/quartus/eda/sim_lib/cyclonev_atoms.v 
 # -- Compiling UDP CYCLONEV_PRIM_DFFE
 # -- Compiling UDP CYCLONEV_PRIM_DFFEAS
 # -- Compiling UDP CYCLONEV_PRIM_DFFEAS_HIGH
@@ -635,7 +635,7 @@
 # 	cyclonev_mem_phy
 # 	cyclonev_oscillator
 # 	cyclonev_hps_interface_fpga2sdram
-# End time: 19:07:25 on May 01,2022, Elapsed time: 0:00:01
+# End time: 22:45:56 on May 02,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/cyclonev_hssi_ver
@@ -644,18 +644,18 @@
 # Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
 # vmap cyclonev_hssi_ver ./verilog_libs/cyclonev_hssi_ver 
 # Modifying modelsim.ini
-# vlog -vlog01compat -work cyclonev_hssi_ver {d:/quartus/quartus/eda/sim_lib/mentor/cyclonev_hssi_atoms_ncrypt.v}
+# vlog -vlog01compat -work cyclonev_hssi_ver {c:/intelfpga_lite/21.1/quartus/eda/sim_lib/mentor/cyclonev_hssi_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:07:25 on May 01,2022
-# vlog -reportprogress 300 -vlog01compat -work cyclonev_hssi_ver d:/quartus/quartus/eda/sim_lib/mentor/cyclonev_hssi_atoms_ncrypt.v 
+# Start time: 22:45:57 on May 02,2022
+# vlog -reportprogress 300 -vlog01compat -work cyclonev_hssi_ver c:/intelfpga_lite/21.1/quartus/eda/sim_lib/mentor/cyclonev_hssi_atoms_ncrypt.v 
 # 
 # Top level modules:
-# End time: 19:07:26 on May 01,2022, Elapsed time: 0:00:01
+# End time: 22:46:00 on May 02,2022, Elapsed time: 0:00:03
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work cyclonev_hssi_ver {d:/quartus/quartus/eda/sim_lib/cyclonev_hssi_atoms.v}
+# vlog -vlog01compat -work cyclonev_hssi_ver {c:/intelfpga_lite/21.1/quartus/eda/sim_lib/cyclonev_hssi_atoms.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:07:26 on May 01,2022
-# vlog -reportprogress 300 -vlog01compat -work cyclonev_hssi_ver d:/quartus/quartus/eda/sim_lib/cyclonev_hssi_atoms.v 
+# Start time: 22:46:00 on May 02,2022
+# vlog -reportprogress 300 -vlog01compat -work cyclonev_hssi_ver c:/intelfpga_lite/21.1/quartus/eda/sim_lib/cyclonev_hssi_atoms.v 
 # -- Compiling module cyclonev_hssi_8g_pcs_aggregate
 # -- Compiling module cyclonev_hssi_8g_rx_pcs
 # -- Compiling module cyclonev_hssi_8g_tx_pcs
@@ -754,7 +754,7 @@
 # 	arriav_hssi_avmm_interface
 # 	arriav_hssi_pma_hi_pmaif
 # 	arriav_hssi_pma_hi_xcvrif
-# End time: 19:07:27 on May 01,2022, Elapsed time: 0:00:01
+# End time: 22:46:00 on May 02,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/cyclonev_pcie_hip_ver
@@ -763,10 +763,10 @@
 # Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
 # vmap cyclonev_pcie_hip_ver ./verilog_libs/cyclonev_pcie_hip_ver 
 # Modifying modelsim.ini
-# vlog -vlog01compat -work cyclonev_pcie_hip_ver {d:/quartus/quartus/eda/sim_lib/mentor/cyclonev_pcie_hip_atoms_ncrypt.v}
+# vlog -vlog01compat -work cyclonev_pcie_hip_ver {c:/intelfpga_lite/21.1/quartus/eda/sim_lib/mentor/cyclonev_pcie_hip_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:07:27 on May 01,2022
-# vlog -reportprogress 300 -vlog01compat -work cyclonev_pcie_hip_ver d:/quartus/quartus/eda/sim_lib/mentor/cyclonev_pcie_hip_atoms_ncrypt.v 
+# Start time: 22:46:01 on May 02,2022
+# vlog -reportprogress 300 -vlog01compat -work cyclonev_pcie_hip_ver c:/intelfpga_lite/21.1/quartus/eda/sim_lib/mentor/cyclonev_pcie_hip_atoms_ncrypt.v 
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
@@ -775,18 +775,18 @@
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 # 
 # Top level modules:
-# End time: 19:07:29 on May 01,2022, Elapsed time: 0:00:02
+# End time: 22:46:04 on May 02,2022, Elapsed time: 0:00:03
 # Errors: 0, Warnings: 12
-# vlog -vlog01compat -work cyclonev_pcie_hip_ver {d:/quartus/quartus/eda/sim_lib/cyclonev_pcie_hip_atoms.v}
+# vlog -vlog01compat -work cyclonev_pcie_hip_ver {c:/intelfpga_lite/21.1/quartus/eda/sim_lib/cyclonev_pcie_hip_atoms.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:07:29 on May 01,2022
-# vlog -reportprogress 300 -vlog01compat -work cyclonev_pcie_hip_ver d:/quartus/quartus/eda/sim_lib/cyclonev_pcie_hip_atoms.v 
+# Start time: 22:46:04 on May 02,2022
+# vlog -reportprogress 300 -vlog01compat -work cyclonev_pcie_hip_ver c:/intelfpga_lite/21.1/quartus/eda/sim_lib/cyclonev_pcie_hip_atoms.v 
 # -- Compiling module cyclonev_hd_altpe2_hip_top
 # -- Compiling module arriav_hd_altpe2_hip_top
 # 
 # Top level modules:
 # 	cyclonev_hd_altpe2_hip_top
-# End time: 19:07:29 on May 01,2022, Elapsed time: 0:00:00
+# End time: 22:46:05 on May 02,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # if {[file exists rtl_work]} {
@@ -798,93 +798,166 @@
 # vmap work rtl_work 
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD {C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/MemoryGame.sv}
+# vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 4/LABORATORIO-4-DD {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/MemoryGame.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:07:29 on May 01,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD" C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/MemoryGame.sv 
+# Start time: 22:46:05 on May 02,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD" C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/MemoryGame.sv 
 # -- Compiling module MemoryGame
 # 
 # Top level modules:
 # 	MemoryGame
-# End time: 19:07:29 on May 01,2022, Elapsed time: 0:00:00
+# End time: 22:46:05 on May 02,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD {C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/casilla.sv}
+# vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 4/LABORATORIO-4-DD {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/SYNC.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:07:29 on May 01,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD" C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/casilla.sv 
+# Start time: 22:46:06 on May 02,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD" C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/SYNC.sv 
+# -- Compiling module SYNC
+# ** Warning: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/SYNC.sv(197): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# Top level modules:
+# 	SYNC
+# End time: 22:46:06 on May 02,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 4/LABORATORIO-4-DD {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/dividerClock.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:46:06 on May 02,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD" C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/dividerClock.sv 
+# -- Compiling module dividerClock
+# 
+# Top level modules:
+# 	dividerClock
+# End time: 22:46:06 on May 02,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 4/LABORATORIO-4-DD {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/VGA.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:46:06 on May 02,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD" C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/VGA.sv 
+# -- Compiling module VGA
+# 
+# Top level modules:
+# 	VGA
+# End time: 22:46:06 on May 02,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 4/LABORATORIO-4-DD {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/casilla.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:46:06 on May 02,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD" C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/casilla.sv 
 # -- Compiling module casilla
 # 
 # Top level modules:
 # 	casilla
-# End time: 19:07:29 on May 01,2022, Elapsed time: 0:00:00
+# End time: 22:46:06 on May 02,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD {C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/move.sv}
+# vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 4/LABORATORIO-4-DD {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/move.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:07:29 on May 01,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD" C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/move.sv 
+# Start time: 22:46:06 on May 02,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD" C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/move.sv 
 # -- Compiling module move
 # 
 # Top level modules:
 # 	move
-# End time: 19:07:29 on May 01,2022, Elapsed time: 0:00:00
+# End time: 22:46:06 on May 02,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD {C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/memTurn.sv}
+# vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 4/LABORATORIO-4-DD {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/memTurn.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:07:29 on May 01,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD" C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/memTurn.sv 
+# Start time: 22:46:06 on May 02,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD" C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/memTurn.sv 
 # -- Compiling module memTurn
 # 
 # Top level modules:
 # 	memTurn
-# End time: 19:07:29 on May 01,2022, Elapsed time: 0:00:00
+# End time: 22:46:06 on May 02,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD {C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/emptyC.sv}
+# vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 4/LABORATORIO-4-DD {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/emptyC.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:07:29 on May 01,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD" C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/emptyC.sv 
+# Start time: 22:46:06 on May 02,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD" C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/emptyC.sv 
 # -- Compiling module emptyC
 # 
 # Top level modules:
 # 	emptyC
-# End time: 19:07:29 on May 01,2022, Elapsed time: 0:00:00
+# End time: 22:46:06 on May 02,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD {C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/stateMux.sv}
+# vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 4/LABORATORIO-4-DD {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/stateMux.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:07:29 on May 01,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD" C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/stateMux.sv 
+# Start time: 22:46:06 on May 02,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD" C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/stateMux.sv 
 # -- Compiling module stateMux
 # 
 # Top level modules:
 # 	stateMux
-# End time: 19:07:29 on May 01,2022, Elapsed time: 0:00:00
+# End time: 22:46:06 on May 02,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD {C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/backToWhite.sv}
+# vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 4/LABORATORIO-4-DD {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/backToWhite.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:07:29 on May 01,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD" C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/backToWhite.sv 
+# Start time: 22:46:07 on May 02,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD" C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/backToWhite.sv 
 # -- Compiling module backToWhite
 # 
 # Top level modules:
 # 	backToWhite
-# End time: 19:07:30 on May 01,2022, Elapsed time: 0:00:01
+# End time: 22:46:07 on May 02,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 4/LABORATORIO-4-DD {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/main.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:46:07 on May 02,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD" C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/main.sv 
+# -- Compiling module main
+# 
+# Top level modules:
+# 	main
+# End time: 22:46:07 on May 02,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 4/LABORATORIO-4-DD {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/deco1a7.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:46:07 on May 02,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD" C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/deco1a7.sv 
+# -- Compiling module deco1a7
+# 
+# Top level modules:
+# 	deco1a7
+# End time: 22:46:07 on May 02,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 4/LABORATORIO-4-DD {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/debounce.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:46:07 on May 02,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD" C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/debounce.sv 
+# -- Compiling module debounce
+# 
+# Top level modules:
+# 	debounce
+# End time: 22:46:07 on May 02,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 4/LABORATORIO-4-DD {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/deco.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:46:07 on May 02,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD" C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/deco.sv 
+# -- Compiling module deco
+# 
+# Top level modules:
+# 	deco
+# End time: 22:46:07 on May 02,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vlog -sv -work work +incdir+C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD {C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/moveTest.sv}
+# vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 4/LABORATORIO-4-DD {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/moveTest.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:07:30 on May 01,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD" C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/moveTest.sv 
+# Start time: 22:46:08 on May 02,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD" C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/moveTest.sv 
 # -- Compiling module moveTest
 # 
 # Top level modules:
 # 	moveTest
-# End time: 19:07:30 on May 01,2022, Elapsed time: 0:00:00
+# End time: 22:46:08 on May 02,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  moveTest
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" moveTest 
-# Start time: 19:07:30 on May 01,2022
+# Start time: 22:46:08 on May 02,2022
 # Loading sv_std.std
 # Loading work.moveTest
+# Loading work.main
+# Loading work.debounce
 # Loading work.move
 # Loading work.MemoryGame
 # Loading work.casilla
@@ -892,16 +965,24 @@
 # Loading work.memTurn
 # Loading work.stateMux
 # Loading work.backToWhite
-# ** Warning: (vsim-3017) C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/moveTest.sv(25): [TFMPC] - Too few port connections. Expected 22, found 21.
-#    Time: 0 ps  Iteration: 0  Instance: /moveTest/utt File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/move.sv
-# ** Warning: (vsim-3722) C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/moveTest.sv(25): [TFMPC] - Missing connection for port 'state'.
-# ** Warning: (vsim-3017) C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/move.sv(130): [TFMPC] - Too few port connections. Expected 19, found 18.
-#    Time: 0 ps  Iteration: 0  Instance: /moveTest/utt/eC File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/emptyC.sv
-# ** Warning: (vsim-3722) C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/move.sv(130): [TFMPC] - Missing connection for port 'state'.
-# ** Warning: (vsim-3015) C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/move.sv(135): [PCDPC] - Port size (1) does not match connection size (8) for port 'counter'. The port definition is at: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/memTurn.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /moveTest/utt/mt File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/memTurn.sv
-# ** Warning: (vsim-3839) C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/moveTest.sv(23): Variable '/moveTest/counter', driven via a port connection, is multiply driven. See C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/moveTest.sv(25).
-#    Time: 0 ps  Iteration: 0  Instance: /moveTest File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/moveTest.sv
+# Loading work.deco1a7
+# Loading work.deco
+# Loading work.VGA
+# Loading work.dividerClock
+# Loading work.SYNC
+# ** Warning: (vsim-3017) C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/main.sv(42): [TFMPC] - Too few port connections. Expected 5, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /moveTest/m1/d_move File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/debounce.sv
+# ** Warning: (vsim-3722) C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/main.sv(42): [TFMPC] - Missing connection for port 'PB_down'.
+# ** Warning: (vsim-3722) C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/main.sv(42): [TFMPC] - Missing connection for port 'PB_up'.
+# ** Warning: (vsim-3017) C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/main.sv(47): [TFMPC] - Too few port connections. Expected 5, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /moveTest/m1/d_accpt File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/debounce.sv
+# ** Warning: (vsim-3722) C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/main.sv(47): [TFMPC] - Missing connection for port 'PB_down'.
+# ** Warning: (vsim-3722) C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/main.sv(47): [TFMPC] - Missing connection for port 'PB_up'.
+# ** Warning: (vsim-3017) C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/move.sv(132): [TFMPC] - Too few port connections. Expected 19, found 18.
+#    Time: 0 ps  Iteration: 0  Instance: /moveTest/m1/utt/eC File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/emptyC.sv
+# ** Warning: (vsim-3722) C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/move.sv(132): [TFMPC] - Missing connection for port 'state'.
+# ** Warning: (vsim-3015) C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/move.sv(137): [PCDPC] - Port size (1) does not match connection size (8) for port 'counter'. The port definition is at: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/memTurn.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /moveTest/m1/utt/mt File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/memTurn.sv
 # 
 # add wave *
 # view structure
@@ -909,10 +990,46 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# ** Note: $stop    : C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/moveTest.sv(484)
+# ** Note: $stop    : C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/moveTest.sv(473)
 #    Time: 1345 ps  Iteration: 0  Instance: /moveTest
-# Break in Module moveTest at C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/moveTest.sv line 484
-add wave -position end  sim:/moveTest/utt/mt/flag
-add wave -position end  sim:/moveTest/utt/mt/x
-# End time: 19:09:08 on May 01,2022, Elapsed time: 0:01:38
-# Errors: 0, Warnings: 6
+# Break in Module moveTest at C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/moveTest.sv line 473
+add wave -position end sim:/moveTest/m1/*
+add wave -position end sim:/moveTest/m1/*
+run -all
+add wave -position end sim:/moveTest/m1/*
+# Break key hit
+# Simulation stop requested.
+restart -f
+# ** Warning: (vsim-3017) C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/main.sv(42): [TFMPC] - Too few port connections. Expected 5, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /moveTest/m1/d_move File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/debounce.sv
+# ** Warning: (vsim-3722) C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/main.sv(42): [TFMPC] - Missing connection for port 'PB_down'.
+# ** Warning: (vsim-3722) C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/main.sv(42): [TFMPC] - Missing connection for port 'PB_up'.
+# ** Warning: (vsim-3017) C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/main.sv(47): [TFMPC] - Too few port connections. Expected 5, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /moveTest/m1/d_accpt File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/debounce.sv
+# ** Warning: (vsim-3722) C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/main.sv(47): [TFMPC] - Missing connection for port 'PB_down'.
+# ** Warning: (vsim-3722) C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/main.sv(47): [TFMPC] - Missing connection for port 'PB_up'.
+# ** Warning: (vsim-3017) C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/move.sv(132): [TFMPC] - Too few port connections. Expected 19, found 18.
+#    Time: 0 ps  Iteration: 0  Instance: /moveTest/m1/utt/eC File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/emptyC.sv
+# ** Warning: (vsim-3722) C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/move.sv(132): [TFMPC] - Missing connection for port 'state'.
+# ** Warning: (vsim-3015) C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/move.sv(137): [PCDPC] - Port size (1) does not match connection size (8) for port 'counter'. The port definition is at: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/memTurn.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /moveTest/m1/utt/mt File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/memTurn.sv
+restart -f
+# ** Warning: (vsim-3017) C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/main.sv(42): [TFMPC] - Too few port connections. Expected 5, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /moveTest/m1/d_move File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/debounce.sv
+# ** Warning: (vsim-3722) C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/main.sv(42): [TFMPC] - Missing connection for port 'PB_down'.
+# ** Warning: (vsim-3722) C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/main.sv(42): [TFMPC] - Missing connection for port 'PB_up'.
+# ** Warning: (vsim-3017) C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/main.sv(47): [TFMPC] - Too few port connections. Expected 5, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /moveTest/m1/d_accpt File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/debounce.sv
+# ** Warning: (vsim-3722) C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/main.sv(47): [TFMPC] - Missing connection for port 'PB_down'.
+# ** Warning: (vsim-3722) C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/main.sv(47): [TFMPC] - Missing connection for port 'PB_up'.
+# ** Warning: (vsim-3017) C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/move.sv(132): [TFMPC] - Too few port connections. Expected 19, found 18.
+#    Time: 0 ps  Iteration: 0  Instance: /moveTest/m1/utt/eC File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/emptyC.sv
+# ** Warning: (vsim-3722) C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/move.sv(132): [TFMPC] - Missing connection for port 'state'.
+# ** Warning: (vsim-3015) C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/move.sv(137): [PCDPC] - Port size (1) does not match connection size (8) for port 'counter'. The port definition is at: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/memTurn.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /moveTest/m1/utt/mt File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/memTurn.sv
+run -all
+# ** Note: $stop    : C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/moveTest.sv(473)
+#    Time: 1345 ps  Iteration: 0  Instance: /moveTest
+# Break in Module moveTest at C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/moveTest.sv line 473
+# End time: 22:49:41 on May 02,2022, Elapsed time: 0:03:33
+# Errors: 0, Warnings: 27

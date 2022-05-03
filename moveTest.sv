@@ -1,59 +1,48 @@
 module moveTest();
 	//parameter PERIOD = 1;
-	logic clk;
+	logic CLK50MHZ;
+	//logic clk;
 	logic rst;
 	logic move;
 	logic select;	
-	logic [3:0] c1;
-	logic [3:0] c2;
-	logic [3:0] c3;
-	logic [3:0] c4;
-	logic [3:0] c5;
-	logic [3:0] c6;
-	logic [3:0] c7;
-	logic [3:0] c8;
-	logic [3:0] c9;
-	logic [3:0] c10;
-	logic [3:0] c11;
-	logic [3:0] c12;
-	logic [3:0] c13;
-	logic [3:0] c14;
-	logic [3:0] c15;
-	logic [3:0] c16;
-	byte counter = 0;
 	
-	move utt(
-		.clk(clk),
-		.rst(rst),
-		.move(move),
-		.select(select),
-		.c1(c1),
-		.c2(c2),
-		.c3(c3),
-		.c4(c4),
-		.c5(c5),
-		.c6(c6),
-		.c7(c7),
-		.c8(c8),
-		.c9(c9),
-		.c10(c10),
-		.c11(c11),
-		.c12(c12),
-		.c13(c13),
-		.c14(c14),
-		.c15(c15),
-		.c16(c16),
-		.counter(counter)
-	);
+	
+	
+	
+	
+	logic [7:0] R;
+	logic [7:0] G;
+	logic [7:0] B;
+	logic hsync;
+   logic vsync;
+   logic vgaclk;
+	logic [6:0] player1;
+	logic [6:0] player2;
+
+	
+	main m1(
+	.clk(CLK50MHZ),
+	.rst(rst),
+	.move(!move),
+	.select(!select),
+	.R(R),
+   .G(G),
+   .B(B),
+   .hsync(hsync),
+   .vsync(vsync),
+   .vgaclk(vgaclk),
+	.player1(player1),
+	.player2(player2)
+   );
 	
 	//always #PERIOD clk=~clk;
-	always begin 
-    clk=~clk;#5;
+	always begin
+		CLK50MHZ=~CLK50MHZ;#5;
 	end
 	initial begin
-		 clk=0;
+		 CLK50MHZ=0;
 		 rst=1;
-		 clk=0;
+		 CLK50MHZ=0;
 		 #5;
 		 rst=0;
 		 #5;

@@ -1,0 +1,11 @@
+module dec1a7(input logic player, output logic n_salida);
+	 
+	 always_comb
+	  case (n_entrada)
+		1'b0 : n_salida = 7'b1000000;   
+		1'b1 : n_salida = 7'b1111001;
+		default : n_salida = 7'b1;
+    endcase
+
+										
+endmodule

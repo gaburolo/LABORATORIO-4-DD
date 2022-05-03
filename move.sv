@@ -19,13 +19,15 @@ module move(
 	output logic [3:0] c14,
 	output logic [3:0] c15,
 	output logic [3:0] c16,
-	output byte counter = 0,
+	output byte counter,
+	output logic player,
 	output logic [3:0] state
 	//output logic stop_timer,
 	//output byte won_play [2:0]
 	);
-	logic player;
 	
+	
+	//logic [3:0] state;
 	logic par;
 	//assign par=0;
 	

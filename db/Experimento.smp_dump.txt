@@ -1,5 +1,5 @@
 
-State Machine - |move|MemoryGame:game|estadoActual
+State Machine - |main|move:utt|MemoryGame:game|estadoActual
 Name estadoActual.011 estadoActual.010 estadoActual.001 estadoActual.000 estadoActual.100 
 estadoActual.000 0 0 0 0 0 
 estadoActual.001 0 0 1 1 0 
