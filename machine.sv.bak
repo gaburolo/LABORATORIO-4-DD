@@ -1,0 +1,25 @@
+module machine(input logic clk,input logic rst, input logic [1:0] x, output logic endState, output logic player);
+	
+	
+	byte counter1;
+	
+	always_ff @(posedge clk or negedge rst)
+		if(rst === 1'b0) counter1 <= 0;
+		else
+		begin
+				counter1=counter;
+			end
+		end
+		
+	always_comb begin
+		if(move==1)
+		begin
+			if (counter >= 15) counter <= 0;
+					//aqui
+					else counter <= counter + 1;
+		end
+		
+			
+		
+	
+endmodule

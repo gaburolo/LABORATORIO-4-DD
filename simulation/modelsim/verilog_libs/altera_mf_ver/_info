@@ -9,7 +9,7 @@ z2
 cModel Technology
 dC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/simulation/modelsim
 va_graycounter
-Z0 !s110 1651553146
+Z0 !s110 1651606125
 !i10b 1
 !s100 7RL@7]^Mkb[^0^A4A<DHg3
 IGm[l0nCoQQX>GKo:Ub1V:2
@@ -23,7 +23,7 @@ Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1651553144.000000
+Z7 !s108 1651606123.000000
 Z8 !s107 c:/intelfpga_lite/21.1/quartus/eda/sim_lib/altera_mf.v|
 Z9 !s90 -reportprogress|300|-vlog01compat|-work|altera_mf_ver|c:/intelfpga_lite/21.1/quartus/eda/sim_lib/altera_mf.v|
 !i113 1
@@ -240,7 +240,7 @@ R9
 R10
 R11
 valtaccumulate
-Z12 !s110 1651553145
+Z12 !s110 1651606124
 !i10b 1
 !s100 ]J^>>M@KIe6:;k?@cL6jK0
 I=e<zWgBcTbj9MDBM>a_?g3
@@ -261,7 +261,7 @@ R9
 R10
 R11
 valtclklock
-R12
+R0
 !i10b 1
 !s100 dZP2fY7[X6OBenFPi2M3>2
 IV[h?h_biz`Z1PSiEKZE1:1
@@ -388,7 +388,7 @@ R10
 R11
 n@a@l@t@e@r@a_@d@e@v@i@c@e_@f@a@m@i@l@i@e@s
 vALTERA_MF_HINT_EVALUATION
-R12
+Z13 !s110 1651606123
 !i10b 1
 !s100 PH5i_RH6C@2cMRnc4>ae12
 I0LbICTTQZEDKDbj^H;@KN3
@@ -410,7 +410,7 @@ R10
 R11
 n@a@l@t@e@r@a_@m@f_@h@i@n@t_@e@v@a@l@u@a@t@i@o@n
 vALTERA_MF_MEMORY_INITIALIZATION
-R12
+R13
 !i10b 1
 !s100 nTma^h04MOBz8;HdmmAdW1
 I1?IMXNB?@`>8o@1nHj3Sk0
@@ -516,7 +516,7 @@ R9
 R10
 R11
 valtfp_mult
-R12
+R0
 !i10b 1
 !s100 c9dLG_`KcV2Q;PQb:iUEk1
 Io9EUK@`SU[l959<Ka1]1R1
@@ -600,7 +600,7 @@ R9
 R10
 R11
 valtmult_add
-R12
+R0
 !i10b 1
 !s100 <>@[FFHS;IjA6YnRoVfJm3
 I<Cc`agCUC4T4a2CPYS34O1
@@ -726,7 +726,7 @@ R9
 R10
 R11
 valtsqrt
-R12
+R0
 !i10b 1
 !s100 a[5V9KX9=mLzMafI5YMk83
 IXG2;8mzJa<?cTMaonoZif1
@@ -1230,7 +1230,7 @@ R9
 R10
 R11
 vlcell
-R12
+R13
 !i10b 1
 !s100 5QGV:R[KdXJ5TR1bkQiUU0
 Iom4SznABbQF1Q2PI:keXm1

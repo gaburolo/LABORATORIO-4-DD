@@ -35,9 +35,9 @@ module main(
 	logic player;
 	
 	
-	logic new_move;
+	reg new_move;
 	logic new_accept;
-	
+	byte prueba1;///ss
 	
 	debounce d_move(
 	.clk(clk),
@@ -45,14 +45,19 @@ module main(
 	.PB_state(new_move));
 	
 	debounce d_accpt(
-	.clk(clk),
+	.clk(clk2),
 	.PB(select),
 	.PB_state(new_accept));
+	logic clk2;
+	dividerClock cmh(clk, clk2);
 	
+	machine prueba(.clk(clk2),
+		.rst(rst),
+		.move(!move), .counter2(prueba1));
 	
 	//Inicializa move
 	move utt(
-		.clk(clk),
+		.clk(clk2),
 		.rst(rst),
 		.move(!move),
 		.select(!select),
@@ -79,32 +84,8 @@ module main(
 	
 	
 	deco1a7 d1(.player(c1), .n_salida(player1));
-	deco d2(.player(counter), .n_salida(player2));
-	VGA control(
-		.clk(clk), 
-		.rst(rst),
-		.c1(c1),
-		.c2(c2),
-		.c3(c3),
-		.c4(c4),
-		.c5(c5),
-		.c6(c6),
-		.c7(c7),
-		.c8(c8),
-		.c9(c9),
-		.c10(c10),
-		.c11(c11),
-		.c12(c12),
-		.c13(c13),
-		.c14(c14),
-		.c15(c15),
-		.c16(c16),
-		.Red(R), 
-		.Green(G), 
-		.Blue(B), 
-		.hsync(hsync), 
-		.vsync(vsync), 
-		.vgaclk(vgaclk));
+	deco d2(.player(prueba1), .n_salida(player2));
+	
 	
 	
 endmodule

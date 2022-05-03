@@ -1,3 +1,4 @@
+`timescale 1ns / 1ps
 module moveTest();
 	//parameter PERIOD = 1;
 	logic CLK50MHZ;

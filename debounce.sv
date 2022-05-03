@@ -1,3 +1,8 @@
+//fpga4student.com: FPGA projects, Verilog projects, VHDL projects
+// Verilog code for button debouncing on FPGA
+// debouncing module without creating another clock domain
+// by using clock enable signal 
+
 module debounce(
     input clk,
     input PB,  // "PB" is the glitchy, asynchronous to clk, active low push-button signal
@@ -12,7 +17,7 @@ reg PB_sync_0;  always @(posedge clk) PB_sync_0 <= ~PB;  // invert PB to make PB
 reg PB_sync_1;  always @(posedge clk) PB_sync_1 <= PB_sync_0;
 
 // Next declare a 16-bits counter
-reg [15:0] PB_cnt;
+reg [3:0] PB_cnt;
 
 // When the push-button is pushed or released, we increment the counter
 // The counter has to be maxed out before we decide that the push-button state has changed
@@ -25,7 +30,7 @@ if(PB_idle)
     PB_cnt <= 0;  // nothing's going on
 else
 begin
-    PB_cnt <= PB_cnt + 16'd1;  // something's going on, increment the counter
+    PB_cnt <= PB_cnt + 4'd1;  // something's going on, increment the counter
     if(PB_cnt_max) PB_state <= ~PB_state;  // if the counter is maxed out, PB changed!
 end
 

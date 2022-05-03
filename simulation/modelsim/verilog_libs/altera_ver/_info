@@ -9,7 +9,7 @@ z2
 cModel Technology
 dC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/simulation/modelsim
 valt_bidir_buf
-Z0 !s110 1651553142
+Z0 !s110 1651606121
 !i10b 1
 !s100 `k9N_NNE[omlCfHHm=PO53
 IIm8BM;l4:;:PNbQ?`akn;2
@@ -23,14 +23,14 @@ Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1651553141.000000
+Z7 !s108 1651606120.000000
 Z8 !s107 c:/intelfpga_lite/21.1/quartus/eda/sim_lib/altera_primitives.v|
 Z9 !s90 -reportprogress|300|-vlog01compat|-work|altera_ver|c:/intelfpga_lite/21.1/quartus/eda/sim_lib/altera_primitives.v|
 !i113 1
 Z10 o-vlog01compat -work altera_ver
 Z11 tCvgOpt 0
 valt_bidir_diff
-R0
+Z12 !s110 1651606120
 !i10b 1
 !s100 b]<dU]3hbXWmGOfI]lBn53
 I<8b?Y;;0cB`:L@dGcg^O>1
@@ -51,7 +51,7 @@ R9
 R10
 R11
 valt_inbuf
-R0
+R12
 !i10b 1
 !s100 _H]4>cOVIbRnagZRTG>;X2
 IzLma]>kmMR[=`Y=kLz]2a3
@@ -72,7 +72,7 @@ R9
 R10
 R11
 valt_inbuf_diff
-R0
+R12
 !i10b 1
 !s100 9NOUWQ[mYzAf_zS?1KOzW0
 IKT`=KZU=`?`LEQ66z8EEK0
@@ -93,7 +93,7 @@ R9
 R10
 R11
 valt_iobuf
-R0
+R12
 !i10b 1
 !s100 l?iPFRg@m[n=BFj`BF3mX1
 Ij7nFUcO1fl]]j`L;i;^>=0
@@ -114,7 +114,7 @@ R9
 R10
 R11
 valt_iobuf_diff
-R0
+R12
 !i10b 1
 !s100 3_6OZL9;LQ_K=PXP54c5l1
 I>Xia:TMe15:[00U1:n:CF1
@@ -135,7 +135,7 @@ R9
 R10
 R11
 valt_outbuf
-R0
+R12
 !i10b 1
 !s100 DSz[S>oAL6k5JmP:AMidm3
 Iib?4@3hI?_VldZiQ8;GX93
@@ -156,7 +156,7 @@ R9
 R10
 R11
 valt_outbuf_diff
-R0
+R12
 !i10b 1
 !s100 A]=GAk1_dZ264:0=R47_]0
 I;D6n>J@9^P2blIDKHSKRm1
@@ -177,7 +177,7 @@ R9
 R10
 R11
 valt_outbuf_tri
-R0
+R12
 !i10b 1
 !s100 W_aHHNCIbgFQ2:hmFQcI]3
 IYUn?HDXPVj9gBZb?CD]c;0
@@ -198,7 +198,7 @@ R9
 R10
 R11
 valt_outbuf_tri_diff
-R0
+R12
 !i10b 1
 !s100 0kW<6AW:^CP8R<<d0<l_92
 I?<m=RTiMMP2M`9K4nYU771
@@ -219,7 +219,7 @@ R9
 R10
 R11
 vcarry
-Z12 !s110 1651553141
+R12
 !i10b 1
 !s100 0ICFPGeo=D<cUPW66HGND3
 IfMFI>9e]n=E0m^96W4M[B0
@@ -282,7 +282,7 @@ R9
 R10
 R11
 vclklock
-R0
+R12
 !i10b 1
 !s100 8>?<9H3`ZW;naj50TEClB2
 IX^Do2dPP]7MN]_<C54?1@0
@@ -811,7 +811,7 @@ R9
 R10
 R11
 vsrff
-R0
+R12
 !i10b 1
 !s100 6iMGleC3n4`GNMD4]DD]V3
 I6B84ZW;gRTefazeUf:0;Z2
@@ -832,7 +832,7 @@ R9
 R10
 R11
 vsrffe
-R0
+R12
 !i10b 1
 !s100 dgQW@Xnk`XB>QBaIdL=4b1
 If_o=]2Vh_W<BcT:oMWZcn3
