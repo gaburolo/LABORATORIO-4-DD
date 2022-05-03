@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Experimento
-Sun May  1 19:06:53 2022
+Mon May  2 18:04:57 2022
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun May  1 19:06:53 2022       ;
+; Analysis & Synthesis Status     ; Successful - Mon May  2 18:04:57 2022       ;
 ; Quartus Prime Version           ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                   ; Experimento                                 ;
 ; Top-level Entity Name           ; move                                        ;
@@ -177,31 +177,31 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 12          ;
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 12          ;
+; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-12        ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                    ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                ; Library ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------+---------+
-; MemoryGame.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/MemoryGame.sv  ;         ;
-; casilla.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/casilla.sv     ;         ;
-; move.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/move.sv        ;         ;
-; memTurn.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/memTurn.sv     ;         ;
-; emptyC.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/emptyC.sv      ;         ;
-; stateMux.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/stateMux.sv    ;         ;
-; backToWhite.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/backToWhite.sv ;         ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                   ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                               ; Library ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------+---------+
+; MemoryGame.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/MemoryGame.sv  ;         ;
+; casilla.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/casilla.sv     ;         ;
+; move.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/move.sv        ;         ;
+; memTurn.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/memTurn.sv     ;         ;
+; emptyC.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/emptyC.sv      ;         ;
+; stateMux.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/stateMux.sv    ;         ;
+; backToWhite.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/backToWhite.sv ;         ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -590,67 +590,67 @@ Encoding Type:  One-Hot
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Sun May  1 19:06:46 2022
+    Info: Processing started: Mon May  2 18:04:46 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Experimento -c Experimento
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file memorygame.sv
-    Info (12023): Found entity 1: MemoryGame File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/MemoryGame.sv Line: 1
+    Info (12023): Found entity 1: MemoryGame File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/MemoryGame.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file sync.sv
-    Info (12023): Found entity 1: SYNC File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/SYNC.sv Line: 60
+    Info (12023): Found entity 1: SYNC File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/SYNC.sv Line: 13
 Info (12021): Found 1 design units, including 1 entities, in source file dividerclock.sv
-    Info (12023): Found entity 1: dividerClock File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/dividerClock.sv Line: 1
+    Info (12023): Found entity 1: dividerClock File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/dividerClock.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file vga.sv
-    Info (12023): Found entity 1: VGA File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/VGA.sv Line: 1
+    Info (12023): Found entity 1: VGA File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/VGA.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file vgatest.sv
-    Info (12023): Found entity 1: VGAtest File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/VGAtest.sv Line: 1
+    Info (12023): Found entity 1: VGAtest File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/VGAtest.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file casilla.sv
-    Info (12023): Found entity 1: casilla File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/casilla.sv Line: 1
+    Info (12023): Found entity 1: casilla File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/casilla.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file casillatest.sv
-    Info (12023): Found entity 1: casillaTest File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/casillaTest.sv Line: 1
+    Info (12023): Found entity 1: casillaTest File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/casillaTest.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file move.sv
-    Info (12023): Found entity 1: move File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/move.sv Line: 1
+    Info (12023): Found entity 1: move File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/move.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file movetest.sv
-    Info (12023): Found entity 1: moveTest File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/moveTest.sv Line: 1
+    Info (12023): Found entity 1: moveTest File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/moveTest.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file memorygametest.sv
-    Info (12023): Found entity 1: memoryGameTest File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/memoryGameTest.sv Line: 1
+    Info (12023): Found entity 1: memoryGameTest File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/memoryGameTest.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file memturn.sv
-    Info (12023): Found entity 1: memTurn File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/memTurn.sv Line: 1
+    Info (12023): Found entity 1: memTurn File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/memTurn.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file turntest.sv
-    Info (12023): Found entity 1: turnTest File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/turnTest.sv Line: 1
+    Info (12023): Found entity 1: turnTest File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/turnTest.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file emptyc.sv
-    Info (12023): Found entity 1: emptyC File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/emptyC.sv Line: 1
+    Info (12023): Found entity 1: emptyC File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/emptyC.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file statemux.sv
-    Info (12023): Found entity 1: stateMux File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/stateMux.sv Line: 1
-Warning (10261): Verilog HDL Event Control warning at backToWhite.sv(20): Event Control contains a complex event expression File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/backToWhite.sv Line: 20
+    Info (12023): Found entity 1: stateMux File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/stateMux.sv Line: 1
+Warning (10261): Verilog HDL Event Control warning at backToWhite.sv(20): Event Control contains a complex event expression File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/backToWhite.sv Line: 20
 Info (12021): Found 1 design units, including 1 entities, in source file backtowhite.sv
-    Info (12023): Found entity 1: backToWhite File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/backToWhite.sv Line: 1
+    Info (12023): Found entity 1: backToWhite File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/backToWhite.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file backtowhitetest.sv
-    Info (12023): Found entity 1: backToWhiteTest File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/backToWhiteTest.sv Line: 1
-Warning (10236): Verilog HDL Implicit Net warning at VGA.sv(9): created implicit net for "sync" File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/VGA.sv Line: 9
-Warning (10236): Verilog HDL Implicit Net warning at VGA.sv(13): created implicit net for "clk2" File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/VGA.sv Line: 13
-Warning (10236): Verilog HDL Implicit Net warning at VGAtest.sv(13): created implicit net for "clk" File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/VGAtest.sv Line: 13
-Warning (10236): Verilog HDL Implicit Net warning at VGAtest.sv(13): created implicit net for "clk2" File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/VGAtest.sv Line: 13
+    Info (12023): Found entity 1: backToWhiteTest File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/backToWhiteTest.sv Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at VGA.sv(9): created implicit net for "sync" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/VGA.sv Line: 9
+Warning (10236): Verilog HDL Implicit Net warning at VGA.sv(13): created implicit net for "clk2" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/VGA.sv Line: 13
+Warning (10236): Verilog HDL Implicit Net warning at VGAtest.sv(13): created implicit net for "clk" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/VGAtest.sv Line: 13
+Warning (10236): Verilog HDL Implicit Net warning at VGAtest.sv(13): created implicit net for "clk2" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/VGAtest.sv Line: 13
 Info (12127): Elaborating entity "move" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at move.sv(45): object "counterJ1" assigned a value but never read File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/move.sv Line: 45
-Warning (10036): Verilog HDL or VHDL warning at move.sv(46): object "counterJ2" assigned a value but never read File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/move.sv Line: 46
-Warning (10230): Verilog HDL assignment warning at move.sv(156): truncated value with size 32 to match size of target (8) File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/move.sv Line: 156
-Info (12128): Elaborating entity "MemoryGame" for hierarchy "MemoryGame:game" File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/move.sv Line: 75
-Info (12128): Elaborating entity "casilla" for hierarchy "casilla:ca1" File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/move.sv Line: 81
-Info (12128): Elaborating entity "emptyC" for hierarchy "emptyC:eC" File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/move.sv Line: 133
-Info (12128): Elaborating entity "memTurn" for hierarchy "memTurn:mt" File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/move.sv Line: 136
-Warning (10036): Verilog HDL or VHDL warning at memTurn.sv(8): object "flag" assigned a value but never read File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/memTurn.sv Line: 8
-Warning (10230): Verilog HDL assignment warning at memTurn.sv(26): truncated value with size 32 to match size of target (2) File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/memTurn.sv Line: 26
-Warning (10230): Verilog HDL assignment warning at memTurn.sv(27): truncated value with size 32 to match size of target (2) File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/memTurn.sv Line: 27
-Warning (10230): Verilog HDL assignment warning at memTurn.sv(40): truncated value with size 32 to match size of target (8) File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/memTurn.sv Line: 40
-Warning (10230): Verilog HDL assignment warning at memTurn.sv(41): truncated value with size 32 to match size of target (8) File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/memTurn.sv Line: 41
-Warning (10230): Verilog HDL assignment warning at memTurn.sv(50): truncated value with size 32 to match size of target (8) File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/memTurn.sv Line: 50
-Info (12128): Elaborating entity "stateMux" for hierarchy "stateMux:st" File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/move.sv Line: 141
-Info (12128): Elaborating entity "backToWhite" for hierarchy "backToWhite:b2w" File: C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/move.sv Line: 147
+Warning (10036): Verilog HDL or VHDL warning at move.sv(45): object "counterJ1" assigned a value but never read File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/move.sv Line: 45
+Warning (10036): Verilog HDL or VHDL warning at move.sv(46): object "counterJ2" assigned a value but never read File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/move.sv Line: 46
+Warning (10230): Verilog HDL assignment warning at move.sv(156): truncated value with size 32 to match size of target (8) File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/move.sv Line: 156
+Info (12128): Elaborating entity "MemoryGame" for hierarchy "MemoryGame:game" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/move.sv Line: 75
+Info (12128): Elaborating entity "casilla" for hierarchy "casilla:ca1" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/move.sv Line: 81
+Info (12128): Elaborating entity "emptyC" for hierarchy "emptyC:eC" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/move.sv Line: 133
+Info (12128): Elaborating entity "memTurn" for hierarchy "memTurn:mt" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/move.sv Line: 136
+Warning (10036): Verilog HDL or VHDL warning at memTurn.sv(8): object "flag" assigned a value but never read File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/memTurn.sv Line: 8
+Warning (10230): Verilog HDL assignment warning at memTurn.sv(26): truncated value with size 32 to match size of target (2) File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/memTurn.sv Line: 26
+Warning (10230): Verilog HDL assignment warning at memTurn.sv(27): truncated value with size 32 to match size of target (2) File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/memTurn.sv Line: 27
+Warning (10230): Verilog HDL assignment warning at memTurn.sv(40): truncated value with size 32 to match size of target (8) File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/memTurn.sv Line: 40
+Warning (10230): Verilog HDL assignment warning at memTurn.sv(41): truncated value with size 32 to match size of target (8) File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/memTurn.sv Line: 41
+Warning (10230): Verilog HDL assignment warning at memTurn.sv(50): truncated value with size 32 to match size of target (8) File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/memTurn.sv Line: 50
+Info (12128): Elaborating entity "stateMux" for hierarchy "stateMux:st" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/move.sv Line: 141
+Info (12128): Elaborating entity "backToWhite" for hierarchy "backToWhite:b2w" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/move.sv Line: 147
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 8 registers lost all their fanouts during netlist optimizations.
-Info (144001): Generated suppressed messages file C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/output_files/Experimento.map.smsg
+Info (144001): Generated suppressed messages file C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/output_files/Experimento.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Info (21057): Implemented 307 device resources after synthesis - the final resource count might be different
@@ -658,15 +658,15 @@ Info (21057): Implemented 307 device resources after synthesis - the final resou
     Info (21059): Implemented 76 output pins
     Info (21061): Implemented 227 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 16 warnings
-    Info: Peak virtual memory: 4870 megabytes
-    Info: Processing ended: Sun May  1 19:06:53 2022
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:13
+    Info: Peak virtual memory: 4829 megabytes
+    Info: Processing ended: Mon May  2 18:04:57 2022
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:24
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/Admin/Desktop/lab4/LABORATORIO-4-DD/output_files/Experimento.map.smsg.
+The suppressed messages can be found in C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/output_files/Experimento.map.smsg.
 
 
