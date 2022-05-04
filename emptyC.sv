@@ -45,7 +45,7 @@ module emptyC(input byte counter,input logic [3:0] c1,
 	
 	assign empty = (currentState === 4'b0000) || (currentState === 4'b1111);
 
-	assign state = currentState;
+	//assign state = currentState;
 	
 	
 	

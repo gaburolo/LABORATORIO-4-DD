@@ -112,8 +112,8 @@ counter2[7] <= counter1[7].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |main|move:utt
-clk => clk.IN16
-rst => rst.IN16
+clk => clk.IN17
+rst => rst.IN17
 move => counter[0]~reg0.CLK
 move => counter[1]~reg0.CLK
 move => counter[2]~reg0.CLK
@@ -122,7 +122,7 @@ move => counter[4]~reg0.CLK
 move => counter[5]~reg0.CLK
 move => counter[6]~reg0.CLK
 move => counter[7]~reg0.CLK
-select => select.IN15
+select => select.IN16
 c1[0] <= c1[0].DB_MAX_OUTPUT_PORT_TYPE
 c1[1] <= c1[1].DB_MAX_OUTPUT_PORT_TYPE
 c1[2] <= c1[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -200,6 +200,7 @@ state[0] <= stateMux:st.state
 state[1] <= stateMux:st.state
 state[2] <= stateMux:st.state
 state[3] <= stateMux:st.state
+empty <= emptyC:eC.empty
 
 
 |main|move:utt|MemoryGame:game
@@ -1301,10 +1302,10 @@ c16[1] => Selector2.IN33
 c16[2] => Selector1.IN33
 c16[3] => Selector0.IN33
 empty <= empty.DB_MAX_OUTPUT_PORT_TYPE
-state[0] <= Selector3.DB_MAX_OUTPUT_PORT_TYPE
-state[1] <= Selector2.DB_MAX_OUTPUT_PORT_TYPE
-state[2] <= Selector1.DB_MAX_OUTPUT_PORT_TYPE
-state[3] <= Selector0.DB_MAX_OUTPUT_PORT_TYPE
+state[0] <= <GND>
+state[1] <= <GND>
+state[2] <= <GND>
+state[3] <= <GND>
 
 
 |main|move:utt|memTurn:mt

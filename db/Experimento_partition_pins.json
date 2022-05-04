@@ -32,10 +32,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "player2[2]",
-					"strict" : false
-				},
-				{
 					"name" : "player2[3]",
 					"strict" : false
 				},
@@ -45,10 +41,6 @@
 				},
 				{
 					"name" : "player2[5]",
-					"strict" : false
-				},
-				{
-					"name" : "player2[6]",
 					"strict" : false
 				},
 				{

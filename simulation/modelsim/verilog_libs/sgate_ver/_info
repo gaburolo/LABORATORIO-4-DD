@@ -9,12 +9,12 @@ z2
 cModel Technology
 dC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/simulation/modelsim
 vio_buf_opdrn
-Z0 !s110 1651606123
+Z0 !s110 1651701574
 !i10b 1
 !s100 VhizJG_UoJ<b<SS=?:bCT2
 I8n^`e2NeOb`WzQ2SV=KF32
 Z1 VDg1SIo80bB@j0V0VzS_@n1
-Z2 dC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/simulation/modelsim
+Z2 dC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/simulation/modelsim
 Z3 w1634873065
 Z4 8c:/intelfpga_lite/21.1/quartus/eda/sim_lib/sgate.v
 Z5 Fc:/intelfpga_lite/21.1/quartus/eda/sim_lib/sgate.v
@@ -23,7 +23,7 @@ Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1651606122.000000
+Z7 !s108 1651701574.000000
 Z8 !s107 c:/intelfpga_lite/21.1/quartus/eda/sim_lib/sgate.v|
 Z9 !s90 -reportprogress|300|-vlog01compat|-work|sgate_ver|c:/intelfpga_lite/21.1/quartus/eda/sim_lib/sgate.v|
 !i113 1

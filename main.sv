@@ -36,7 +36,7 @@ module main(
 	
 	
 	reg new_move;
-	logic new_accept;
+	byte cable;
 	byte prueba1;///ss
 	
 	logic clk2;
@@ -71,11 +71,11 @@ module main(
 		.counter(counter),
 		.player(player),
 		.state(state),
-		
+		.empty(empty)
 	);
 	
 	
-	deco d2(.player(prueba1), .n_salida(player2));
+	deco d2(.player(empty), .n_salida(player2));
 	deco1a7 d1(.player(c1), .n_salida(player1));
 	
 	

@@ -21,7 +21,8 @@ module move(
 	output logic [3:0] c16,
 	output byte counter,
 	output logic player,
-	output logic [3:0] state
+	output logic [3:0] state,
+	output logic empty
 	//output logic stop_timer,
 	//output byte won_play [2:0]
 	);
@@ -32,7 +33,7 @@ module move(
 	
 	byte selected1 = 16; byte selected2 = 16;
 	
-	logic par1 = 1; logic par2; logic par3; logic par4;
+	logic par1; logic par2; logic par3; logic par4;
 	logic par5; logic par6; logic par7; logic par8;
 	logic par9; logic par10; logic par11; logic par12;
 	logic par13; logic par14; logic par15; logic par16;

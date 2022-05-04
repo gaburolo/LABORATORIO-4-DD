@@ -45,11 +45,22 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
-vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 4/LABORATORIO-4-DD {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/debounce.sv}
+vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 4\ Nuevo/LABORATORIO-4-DD {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/MemoryGame.sv}
+vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 4\ Nuevo/LABORATORIO-4-DD {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/casilla.sv}
+vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 4\ Nuevo/LABORATORIO-4-DD {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/move.sv}
+vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 4\ Nuevo/LABORATORIO-4-DD {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/memTurn.sv}
+vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 4\ Nuevo/LABORATORIO-4-DD {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/emptyC.sv}
+vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 4\ Nuevo/LABORATORIO-4-DD {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/stateMux.sv}
+vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 4\ Nuevo/LABORATORIO-4-DD {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/backToWhite.sv}
+vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 4\ Nuevo/LABORATORIO-4-DD {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/main.sv}
+vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 4\ Nuevo/LABORATORIO-4-DD {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/deco1a7.sv}
+vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 4\ Nuevo/LABORATORIO-4-DD {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/deco.sv}
+vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 4\ Nuevo/LABORATORIO-4-DD {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/machine.sv}
+vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 4\ Nuevo/LABORATORIO-4-DD {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/Clock_Regulator.sv}
 
-vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 4/LABORATORIO-4-DD {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/debounceTest.sv}
+vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 4\ Nuevo/LABORATORIO-4-DD {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4 Nuevo/LABORATORIO-4-DD/moveTest.sv}
 
-vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  debounceTest
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  moveTest
 
 add wave *
 view structure
