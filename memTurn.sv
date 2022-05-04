@@ -16,6 +16,7 @@ module memTurn(input logic clk, input logic rst, input byte counter, input logic
 				turnCounter <= 0;
 				counterJ1 <= 0;
 				counterJ2 <= 0;
+				par <= 1;
 			end
 		else
 		begin
@@ -29,7 +30,7 @@ module memTurn(input logic clk, input logic rst, input byte counter, input logic
 				
 			else if (select==1 && empty) 
 				begin
-					if(turnCounter == 1) begin
+					if(turnCounter == 2) begin
 						v2 = state;
 						selected2 = counter;
 						
@@ -49,7 +50,7 @@ module memTurn(input logic clk, input logic rst, input byte counter, input logic
 						
 						end
 					else begin 
-						turnCounter <= turnCounter + 1;
+						turnCounter = turnCounter + 1;
 						v1 = state; 
 						selected1 = counter;
 					end

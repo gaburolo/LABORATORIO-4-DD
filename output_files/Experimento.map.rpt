@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Experimento
-Tue May  3 17:10:37 2022
+Tue May  3 21:08:21 2022
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -17,8 +17,8 @@ Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
   9. Registers Removed During Synthesis
  10. Removed Registers Triggering Further Register Optimizations
  11. General Register Statistics
- 12. Multiplexer Restructuring Statistics (Restructuring Performed)
- 13. Parameter Settings for User Entity Instance: dividerClock:cmh
+ 12. Inverted Register Statistics
+ 13. Multiplexer Restructuring Statistics (Restructuring Performed)
  14. Port Connectivity Checks: "move:utt|emptyC:eC"
  15. Port Connectivity Checks: "move:utt|casilla:ca16"
  16. Port Connectivity Checks: "move:utt|casilla:ca15"
@@ -37,12 +37,10 @@ Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
  29. Port Connectivity Checks: "move:utt|casilla:ca2"
  30. Port Connectivity Checks: "move:utt|casilla:ca1"
  31. Port Connectivity Checks: "move:utt"
- 32. Port Connectivity Checks: "debounce:d_accpt"
- 33. Port Connectivity Checks: "debounce:d_move"
- 34. Post-Synthesis Netlist Statistics for Top Partition
- 35. Elapsed Time Per Partition
- 36. Analysis & Synthesis Messages
- 37. Analysis & Synthesis Suppressed Messages
+ 32. Post-Synthesis Netlist Statistics for Top Partition
+ 33. Elapsed Time Per Partition
+ 34. Analysis & Synthesis Messages
+ 35. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -69,13 +67,13 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue May  3 17:10:37 2022       ;
+; Analysis & Synthesis Status     ; Successful - Tue May  3 21:08:21 2022       ;
 ; Quartus Prime Version           ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                   ; Experimento                                 ;
 ; Top-level Entity Name           ; main                                        ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 104                                         ;
+; Total registers                 ; 118                                         ;
 ; Total pins                      ; 45                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
@@ -181,98 +179,98 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 12          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 2           ;
+; Maximum used               ; 12          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
+;     Processors 2-12        ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                    ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                ; Library ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------+---------+
-; MemoryGame.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/MemoryGame.sv   ;         ;
-; dividerClock.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/dividerClock.sv ;         ;
-; casilla.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/casilla.sv      ;         ;
-; move.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/move.sv         ;         ;
-; memTurn.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/memTurn.sv      ;         ;
-; emptyC.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/emptyC.sv       ;         ;
-; stateMux.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/stateMux.sv     ;         ;
-; backToWhite.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/backToWhite.sv  ;         ;
-; main.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/main.sv         ;         ;
-; deco1a7.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/deco1a7.sv      ;         ;
-; debounce.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/debounce.sv     ;         ;
-; deco.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/deco.sv         ;         ;
-; machine.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/machine.sv      ;         ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                          ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                      ; Library ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------+---------+
+; MemoryGame.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/MemoryGame.sv      ;         ;
+; casilla.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/casilla.sv         ;         ;
+; move.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/move.sv            ;         ;
+; memTurn.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/memTurn.sv         ;         ;
+; emptyC.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/emptyC.sv          ;         ;
+; stateMux.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/stateMux.sv        ;         ;
+; backToWhite.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/backToWhite.sv     ;         ;
+; main.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/main.sv            ;         ;
+; deco1a7.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/deco1a7.sv         ;         ;
+; deco.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/deco.sv            ;         ;
+; machine.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/machine.sv         ;         ;
+; Clock_Regulator.sv               ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/Clock_Regulator.sv ;         ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary             ;
-+---------------------------------------------+-----------+
-; Resource                                    ; Usage     ;
-+---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 148       ;
-;                                             ;           ;
-; Combinational ALUT usage for logic          ; 241       ;
-;     -- 7 input functions                    ; 0         ;
-;     -- 6 input functions                    ; 55        ;
-;     -- 5 input functions                    ; 55        ;
-;     -- 4 input functions                    ; 23        ;
-;     -- <=3 input functions                  ; 108       ;
-;                                             ;           ;
-; Dedicated logic registers                   ; 104       ;
-;                                             ;           ;
-; I/O pins                                    ; 45        ;
-;                                             ;           ;
-; Total DSP Blocks                            ; 0         ;
-;                                             ;           ;
-; Maximum fan-out node                        ; rst~input ;
-; Maximum fan-out                             ; 71        ;
-; Total fan-out                               ; 1360      ;
-; Average fan-out                             ; 3.13      ;
-+---------------------------------------------+-----------+
++-------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                             ;
++---------------------------------------------+---------------------------+
+; Resource                                    ; Usage                     ;
++---------------------------------------------+---------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 195                       ;
+;                                             ;                           ;
+; Combinational ALUT usage for logic          ; 299                       ;
+;     -- 7 input functions                    ; 3                         ;
+;     -- 6 input functions                    ; 85                        ;
+;     -- 5 input functions                    ; 68                        ;
+;     -- 4 input functions                    ; 15                        ;
+;     -- <=3 input functions                  ; 128                       ;
+;                                             ;                           ;
+; Dedicated logic registers                   ; 118                       ;
+;                                             ;                           ;
+; I/O pins                                    ; 45                        ;
+;                                             ;                           ;
+; Total DSP Blocks                            ; 0                         ;
+;                                             ;                           ;
+; Maximum fan-out node                        ; Clock_Regulator:cmh|C_1Hz ;
+; Maximum fan-out                             ; 85                        ;
+; Total fan-out                               ; 1683                      ;
+; Average fan-out                             ; 3.32                      ;
++---------------------------------------------+---------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------+--------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name            ; Entity Name  ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------+--------------+--------------+
-; |main                      ; 241 (0)             ; 104 (0)                   ; 0                 ; 0          ; 45   ; 0            ; |main                          ; main         ; work         ;
-;    |deco1a7:d1|            ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|deco1a7:d1               ; deco1a7      ; work         ;
-;    |deco:d2|               ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|deco:d2                  ; deco         ; work         ;
-;    |dividerClock:cmh|      ; 42 (42)             ; 29 (29)                   ; 0                 ; 0          ; 0    ; 0            ; |main|dividerClock:cmh         ; dividerClock ; work         ;
-;    |machine:prueba|        ; 3 (3)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |main|machine:prueba           ; machine      ; work         ;
-;    |move:utt|              ; 188 (19)            ; 72 (8)                    ; 0                 ; 0          ; 0    ; 0            ; |main|move:utt                 ; move         ; work         ;
-;       |MemoryGame:game|    ; 3 (3)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |main|move:utt|MemoryGame:game ; MemoryGame   ; work         ;
-;       |casilla:ca10|       ; 1 (1)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |main|move:utt|casilla:ca10    ; casilla      ; work         ;
-;       |casilla:ca11|       ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |main|move:utt|casilla:ca11    ; casilla      ; work         ;
-;       |casilla:ca12|       ; 1 (1)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |main|move:utt|casilla:ca12    ; casilla      ; work         ;
-;       |casilla:ca13|       ; 1 (1)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |main|move:utt|casilla:ca13    ; casilla      ; work         ;
-;       |casilla:ca14|       ; 1 (1)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |main|move:utt|casilla:ca14    ; casilla      ; work         ;
-;       |casilla:ca15|       ; 1 (1)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |main|move:utt|casilla:ca15    ; casilla      ; work         ;
-;       |casilla:ca16|       ; 1 (1)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |main|move:utt|casilla:ca16    ; casilla      ; work         ;
-;       |casilla:ca1|        ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |main|move:utt|casilla:ca1     ; casilla      ; work         ;
-;       |casilla:ca2|        ; 1 (1)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |main|move:utt|casilla:ca2     ; casilla      ; work         ;
-;       |casilla:ca3|        ; 1 (1)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |main|move:utt|casilla:ca3     ; casilla      ; work         ;
-;       |casilla:ca4|        ; 1 (1)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |main|move:utt|casilla:ca4     ; casilla      ; work         ;
-;       |casilla:ca5|        ; 1 (1)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |main|move:utt|casilla:ca5     ; casilla      ; work         ;
-;       |casilla:ca6|        ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |main|move:utt|casilla:ca6     ; casilla      ; work         ;
-;       |casilla:ca7|        ; 4 (4)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |main|move:utt|casilla:ca7     ; casilla      ; work         ;
-;       |casilla:ca8|        ; 1 (1)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |main|move:utt|casilla:ca8     ; casilla      ; work         ;
-;       |casilla:ca9|        ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |main|move:utt|casilla:ca9     ; casilla      ; work         ;
-;       |emptyC:eC|          ; 82 (82)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|move:utt|emptyC:eC       ; emptyC       ; work         ;
-;       |memTurn:mt|         ; 56 (56)             ; 30 (30)                   ; 0                 ; 0          ; 0    ; 0            ; |main|move:utt|memTurn:mt      ; memTurn      ; work         ;
-;       |stateMux:st|        ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|move:utt|stateMux:st     ; stateMux     ; work         ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------+--------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                   ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------+-----------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name            ; Entity Name     ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------+-----------------+--------------+
+; |main                      ; 299 (0)             ; 118 (0)                   ; 0                 ; 0          ; 45   ; 0            ; |main                          ; main            ; work         ;
+;    |Clock_Regulator:cmh|   ; 34 (34)             ; 26 (26)                   ; 0                 ; 0          ; 0    ; 0            ; |main|Clock_Regulator:cmh      ; Clock_Regulator ; work         ;
+;    |deco1a7:d1|            ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|deco1a7:d1               ; deco1a7         ; work         ;
+;    |deco:d2|               ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|deco:d2                  ; deco            ; work         ;
+;    |machine:prueba|        ; 3 (3)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |main|machine:prueba           ; machine         ; work         ;
+;    |move:utt|              ; 254 (26)            ; 89 (8)                    ; 0                 ; 0          ; 0    ; 0            ; |main|move:utt                 ; move            ; work         ;
+;       |MemoryGame:game|    ; 3 (3)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |main|move:utt|MemoryGame:game ; MemoryGame      ; work         ;
+;       |backToWhite:b2w|    ; 14 (14)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|move:utt|backToWhite:b2w ; backToWhite     ; work         ;
+;       |casilla:ca10|       ; 6 (6)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |main|move:utt|casilla:ca10    ; casilla         ; work         ;
+;       |casilla:ca11|       ; 6 (6)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |main|move:utt|casilla:ca11    ; casilla         ; work         ;
+;       |casilla:ca12|       ; 8 (8)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |main|move:utt|casilla:ca12    ; casilla         ; work         ;
+;       |casilla:ca13|       ; 4 (4)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |main|move:utt|casilla:ca13    ; casilla         ; work         ;
+;       |casilla:ca14|       ; 6 (6)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |main|move:utt|casilla:ca14    ; casilla         ; work         ;
+;       |casilla:ca15|       ; 7 (7)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |main|move:utt|casilla:ca15    ; casilla         ; work         ;
+;       |casilla:ca16|       ; 5 (5)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |main|move:utt|casilla:ca16    ; casilla         ; work         ;
+;       |casilla:ca1|        ; 6 (6)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |main|move:utt|casilla:ca1     ; casilla         ; work         ;
+;       |casilla:ca2|        ; 5 (5)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |main|move:utt|casilla:ca2     ; casilla         ; work         ;
+;       |casilla:ca3|        ; 4 (4)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |main|move:utt|casilla:ca3     ; casilla         ; work         ;
+;       |casilla:ca4|        ; 7 (7)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |main|move:utt|casilla:ca4     ; casilla         ; work         ;
+;       |casilla:ca5|        ; 6 (6)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |main|move:utt|casilla:ca5     ; casilla         ; work         ;
+;       |casilla:ca6|        ; 6 (6)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |main|move:utt|casilla:ca6     ; casilla         ; work         ;
+;       |casilla:ca7|        ; 5 (5)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |main|move:utt|casilla:ca7     ; casilla         ; work         ;
+;       |casilla:ca8|        ; 3 (3)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |main|move:utt|casilla:ca8     ; casilla         ; work         ;
+;       |casilla:ca9|        ; 5 (5)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |main|move:utt|casilla:ca9     ; casilla         ; work         ;
+;       |emptyC:eC|          ; 55 (55)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|move:utt|emptyC:eC       ; emptyC          ; work         ;
+;       |memTurn:mt|         ; 61 (61)             ; 47 (47)                   ; 0                 ; 0          ; 0    ; 0            ; |main|move:utt|memTurn:mt      ; memTurn         ; work         ;
+;       |stateMux:st|        ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|move:utt|stateMux:st     ; stateMux        ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------+-----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -318,48 +316,23 @@ Encoding Type:  One-Hot
 ; move:utt|casilla:ca12|actual_state[1,3]   ; Merged with move:utt|casilla:ca12|actual_state[0] ;
 ; move:utt|casilla:ca13|actual_state[1,2]   ; Merged with move:utt|casilla:ca13|actual_state[0] ;
 ; move:utt|casilla:ca14|actual_state[2,3]   ; Merged with move:utt|casilla:ca14|actual_state[1] ;
-; move:utt|backToWhite:b2w|par1             ; Stuck at GND due to stuck port data_in            ;
-; move:utt|backToWhite:b2w|par2             ; Stuck at GND due to stuck port data_in            ;
-; move:utt|backToWhite:b2w|par3             ; Stuck at GND due to stuck port data_in            ;
-; move:utt|backToWhite:b2w|par4             ; Stuck at GND due to stuck port data_in            ;
-; move:utt|backToWhite:b2w|par5             ; Stuck at GND due to stuck port data_in            ;
-; move:utt|backToWhite:b2w|par6             ; Stuck at GND due to stuck port data_in            ;
-; move:utt|backToWhite:b2w|par7             ; Stuck at GND due to stuck port data_in            ;
-; move:utt|backToWhite:b2w|par8             ; Stuck at GND due to stuck port data_in            ;
-; move:utt|backToWhite:b2w|par9             ; Stuck at GND due to stuck port data_in            ;
-; move:utt|backToWhite:b2w|par10            ; Stuck at GND due to stuck port data_in            ;
-; move:utt|backToWhite:b2w|par11            ; Stuck at GND due to stuck port data_in            ;
-; move:utt|backToWhite:b2w|par12            ; Stuck at GND due to stuck port data_in            ;
-; move:utt|backToWhite:b2w|par13            ; Stuck at GND due to stuck port data_in            ;
-; move:utt|backToWhite:b2w|par14            ; Stuck at GND due to stuck port data_in            ;
-; move:utt|backToWhite:b2w|par15            ; Stuck at GND due to stuck port data_in            ;
-; move:utt|backToWhite:b2w|par16            ; Stuck at GND due to stuck port data_in            ;
-; move:utt|memTurn:mt|selected2[0..7]       ; Lost fanout                                       ;
-; move:utt|memTurn:mt|selected1[0..7]       ; Lost fanout                                       ;
-; move:utt|memTurn:mt|par                   ; Lost fanout                                       ;
 ; move:utt|MemoryGame:game|estadoActual~4   ; Lost fanout                                       ;
 ; move:utt|MemoryGame:game|estadoActual~5   ; Lost fanout                                       ;
 ; move:utt|MemoryGame:game|estadoActual.100 ; Lost fanout                                       ;
 ; move:utt|MemoryGame:game|estadoActual.010 ; Lost fanout                                       ;
 ; move:utt|MemoryGame:game|estadoActual.011 ; Lost fanout                                       ;
-; Total Number of Removed Registers = 75    ;                                                   ;
+; Total Number of Removed Registers = 42    ;                                                   ;
 +-------------------------------------------+---------------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                               ;
-+-----------------------------------------+---------------------------+---------------------------------------------------------------------+
-; Register name                           ; Reason for Removal        ; Registers Removed due to This Register                              ;
-+-----------------------------------------+---------------------------+---------------------------------------------------------------------+
-; move:utt|backToWhite:b2w|par1           ; Stuck at GND              ; move:utt|memTurn:mt|selected2[7], move:utt|memTurn:mt|selected2[6], ;
-;                                         ; due to stuck port data_in ; move:utt|memTurn:mt|selected2[5], move:utt|memTurn:mt|selected2[4], ;
-;                                         ;                           ; move:utt|memTurn:mt|selected2[3], move:utt|memTurn:mt|selected1[7], ;
-;                                         ;                           ; move:utt|memTurn:mt|selected1[6], move:utt|memTurn:mt|selected1[5], ;
-;                                         ;                           ; move:utt|memTurn:mt|selected1[4], move:utt|memTurn:mt|selected1[3], ;
-;                                         ;                           ; move:utt|memTurn:mt|selected1[2], move:utt|memTurn:mt|par           ;
-; move:utt|MemoryGame:game|estadoActual~4 ; Lost Fanouts              ; move:utt|MemoryGame:game|estadoActual.011                           ;
-; move:utt|MemoryGame:game|estadoActual~5 ; Lost Fanouts              ; move:utt|MemoryGame:game|estadoActual.010                           ;
-+-----------------------------------------+---------------------------+---------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                              ;
++-----------------------------------------+--------------------+-------------------------------------------+
+; Register name                           ; Reason for Removal ; Registers Removed due to This Register    ;
++-----------------------------------------+--------------------+-------------------------------------------+
+; move:utt|MemoryGame:game|estadoActual~4 ; Lost Fanouts       ; move:utt|MemoryGame:game|estadoActual.011 ;
+; move:utt|MemoryGame:game|estadoActual~5 ; Lost Fanouts       ; move:utt|MemoryGame:game|estadoActual.010 ;
++-----------------------------------------+--------------------+-------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -367,14 +340,24 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 104   ;
-; Number of registers using Synchronous Clear  ; 44    ;
+; Total registers                              ; 118   ;
+; Number of registers using Synchronous Clear  ; 41    ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 69    ;
+; Number of registers using Asynchronous Clear ; 70    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 38    ;
+; Number of registers using Clock Enable       ; 54    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; move:utt|memTurn:mt|par                ; 17      ;
+; Total number of inverted registers = 1 ;         ;
++----------------------------------------+---------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -382,18 +365,8 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output         ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------+
-; 17:1               ; 4 bits    ; 44 LEs        ; 44 LEs               ; 0 LEs                  ; No         ; |main|move:utt|emptyC:eC|Selector2 ;
+; 17:1               ; 4 bits    ; 44 LEs        ; 44 LEs               ; 0 LEs                  ; No         ; |main|move:utt|emptyC:eC|Selector1 ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------+
-
-
-+-----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: dividerClock:cmh   ;
-+----------------+------------------------------+-----------------+
-; Parameter Name ; Value                        ; Type            ;
-+----------------+------------------------------+-----------------+
-; DIVISOR        ; 0000100110001001011010000000 ; Unsigned Binary ;
-+----------------+------------------------------+-----------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------+
@@ -601,56 +574,36 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "debounce:d_accpt"                                                                                            ;
-+----------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; Port     ; Type   ; Severity ; Details                                                                                                  ;
-+----------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; PB_state ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                      ;
-; PB_down  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-; PB_up    ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-+----------+--------+----------+----------------------------------------------------------------------------------------------------------+
-
-
-+-----------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "debounce:d_move"                                                                                             ;
-+----------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; Port     ; Type   ; Severity ; Details                                                                                                  ;
-+----------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; PB_state ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                      ;
-; PB_down  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-; PB_up    ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-+----------+--------+----------+----------------------------------------------------------------------------------------------------------+
-
-
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 104                         ;
-;     CLR               ; 37                          ;
-;     ENA               ; 6                           ;
+; arriav_ff             ; 118                         ;
+;     CLR               ; 38                          ;
+;     ENA               ; 22                          ;
 ;     ENA CLR           ; 16                          ;
 ;     ENA CLR SCLR      ; 16                          ;
-;     SCLR              ; 28                          ;
+;     SCLR              ; 25                          ;
 ;     plain             ; 1                           ;
-; arriav_lcell_comb     ; 245                         ;
-;     arith             ; 67                          ;
-;         1 data inputs ; 56                          ;
+; arriav_lcell_comb     ; 304                         ;
+;     arith             ; 64                          ;
+;         1 data inputs ; 53                          ;
 ;         2 data inputs ; 11                          ;
-;     normal            ; 178                         ;
+;     extend            ; 3                           ;
+;         7 data inputs ; 3                           ;
+;     normal            ; 237                         ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 5                           ;
-;         2 data inputs ; 11                          ;
-;         3 data inputs ; 28                          ;
-;         4 data inputs ; 23                          ;
-;         5 data inputs ; 55                          ;
-;         6 data inputs ; 55                          ;
+;         1 data inputs ; 7                           ;
+;         2 data inputs ; 25                          ;
+;         3 data inputs ; 36                          ;
+;         4 data inputs ; 15                          ;
+;         5 data inputs ; 68                          ;
+;         6 data inputs ; 85                          ;
 ; boundary_port         ; 45                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 6.00                        ;
-; Average LUT depth     ; 3.53                        ;
+; Average LUT depth     ; 4.32                        ;
 +-----------------------+-----------------------------+
 
 
@@ -669,135 +622,139 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Tue May  3 17:10:24 2022
+    Info: Processing started: Tue May  3 21:08:14 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Experimento -c Experimento
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file memorygame.sv
-    Info (12023): Found entity 1: MemoryGame File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/MemoryGame.sv Line: 1
+    Info (12023): Found entity 1: MemoryGame File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/MemoryGame.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file sync.sv
-    Info (12023): Found entity 1: SYNC File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/SYNC.sv Line: 13
+    Info (12023): Found entity 1: SYNC File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/SYNC.sv Line: 13
 Info (12021): Found 1 design units, including 1 entities, in source file dividerclock.sv
-    Info (12023): Found entity 1: dividerClock File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/dividerClock.sv Line: 1
+    Info (12023): Found entity 1: dividerClock File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/dividerClock.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file vga.sv
-    Info (12023): Found entity 1: VGA File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/VGA.sv Line: 1
+    Info (12023): Found entity 1: VGA File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/VGA.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file vgatest.sv
-    Info (12023): Found entity 1: VGAtest File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/VGAtest.sv Line: 1
+    Info (12023): Found entity 1: VGAtest File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/VGAtest.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file casilla.sv
-    Info (12023): Found entity 1: casilla File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/casilla.sv Line: 1
+    Info (12023): Found entity 1: casilla File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/casilla.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file casillatest.sv
-    Info (12023): Found entity 1: casillaTest File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/casillaTest.sv Line: 1
+    Info (12023): Found entity 1: casillaTest File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/casillaTest.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file move.sv
-    Info (12023): Found entity 1: move File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/move.sv Line: 1
+    Info (12023): Found entity 1: move File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/move.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file movetest.sv
-    Info (12023): Found entity 1: moveTest File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/moveTest.sv Line: 2
+    Info (12023): Found entity 1: moveTest File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/moveTest.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file memorygametest.sv
-    Info (12023): Found entity 1: memoryGameTest File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/memoryGameTest.sv Line: 1
+    Info (12023): Found entity 1: memoryGameTest File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/memoryGameTest.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file memturn.sv
-    Info (12023): Found entity 1: memTurn File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/memTurn.sv Line: 1
+    Info (12023): Found entity 1: memTurn File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/memTurn.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file turntest.sv
-    Info (12023): Found entity 1: turnTest File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/turnTest.sv Line: 1
+    Info (12023): Found entity 1: turnTest File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/turnTest.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file emptyc.sv
-    Info (12023): Found entity 1: emptyC File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/emptyC.sv Line: 1
+    Info (12023): Found entity 1: emptyC File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/emptyC.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file statemux.sv
-    Info (12023): Found entity 1: stateMux File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/stateMux.sv Line: 1
-Warning (10261): Verilog HDL Event Control warning at backToWhite.sv(20): Event Control contains a complex event expression File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/backToWhite.sv Line: 20
+    Info (12023): Found entity 1: stateMux File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/stateMux.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file backtowhite.sv
-    Info (12023): Found entity 1: backToWhite File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/backToWhite.sv Line: 1
+    Info (12023): Found entity 1: backToWhite File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/backToWhite.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file backtowhitetest.sv
-    Info (12023): Found entity 1: backToWhiteTest File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/backToWhiteTest.sv Line: 1
+    Info (12023): Found entity 1: backToWhiteTest File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/backToWhiteTest.sv Line: 1
+Warning (10275): Verilog HDL Module Instantiation warning at main.sv(75): ignored dangling comma in List of Port Connections File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/main.sv Line: 75
 Info (12021): Found 1 design units, including 1 entities, in source file main.sv
-    Info (12023): Found entity 1: main File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/main.sv Line: 1
+    Info (12023): Found entity 1: main File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/main.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file deco1a7.sv
-    Info (12023): Found entity 1: deco1a7 File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/deco1a7.sv Line: 1
+    Info (12023): Found entity 1: deco1a7 File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/deco1a7.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file debounce.sv
-    Info (12023): Found entity 1: debounce File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/debounce.sv Line: 6
+    Info (12023): Found entity 1: debounce File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/debounce.sv Line: 6
 Info (12021): Found 1 design units, including 1 entities, in source file deco.sv
-    Info (12023): Found entity 1: deco File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/deco.sv Line: 1
+    Info (12023): Found entity 1: deco File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/deco.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file machine.sv
-    Info (12023): Found entity 1: machine File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/machine.sv Line: 1
+    Info (12023): Found entity 1: machine File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/machine.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file debouncetest.sv
-    Info (12023): Found entity 1: debounceTest File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/debounceTest.sv Line: 3
-Warning (10236): Verilog HDL Implicit Net warning at VGA.sv(28): created implicit net for "sync" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/VGA.sv Line: 28
-Warning (10236): Verilog HDL Implicit Net warning at VGA.sv(32): created implicit net for "clk2" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/VGA.sv Line: 32
+    Info (12023): Found entity 1: debounceTest File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/debounceTest.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file clock_regulator.sv
+    Info (12023): Found entity 1: Clock_Regulator File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/Clock_Regulator.sv Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at VGA.sv(28): created implicit net for "sync" File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/VGA.sv Line: 28
+Warning (10236): Verilog HDL Implicit Net warning at VGA.sv(32): created implicit net for "clk2" File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/VGA.sv Line: 32
+Warning (10236): Verilog HDL Implicit Net warning at move.sv(72): created implicit net for "finish" File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/move.sv Line: 72
+Warning (10236): Verilog HDL Implicit Net warning at move.sv(131): created implicit net for "empty" File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/move.sv Line: 131
 Info (12127): Elaborating entity "main" for the top level hierarchy
-Warning (10034): Output port "R" at main.sv(6) has no driver File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/main.sv Line: 6
-Warning (10034): Output port "G" at main.sv(7) has no driver File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/main.sv Line: 7
-Warning (10034): Output port "B" at main.sv(8) has no driver File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/main.sv Line: 8
-Warning (10034): Output port "hsync" at main.sv(9) has no driver File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/main.sv Line: 9
-Warning (10034): Output port "vsync" at main.sv(10) has no driver File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/main.sv Line: 10
-Warning (10034): Output port "vgaclk" at main.sv(11) has no driver File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/main.sv Line: 11
-Info (12128): Elaborating entity "debounce" for hierarchy "debounce:d_move" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/main.sv Line: 45
-Info (12128): Elaborating entity "dividerClock" for hierarchy "dividerClock:cmh" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/main.sv Line: 52
-Info (12128): Elaborating entity "machine" for hierarchy "machine:prueba" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/main.sv Line: 56
-Info (12128): Elaborating entity "move" for hierarchy "move:utt" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/main.sv Line: 83
-Warning (10036): Verilog HDL or VHDL warning at move.sv(47): object "counterJ1" assigned a value but never read File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/move.sv Line: 47
-Warning (10036): Verilog HDL or VHDL warning at move.sv(48): object "counterJ2" assigned a value but never read File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/move.sv Line: 48
-Warning (10230): Verilog HDL assignment warning at move.sv(158): truncated value with size 32 to match size of target (8) File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/move.sv Line: 158
-Info (12128): Elaborating entity "MemoryGame" for hierarchy "move:utt|MemoryGame:game" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/move.sv Line: 77
-Info (12128): Elaborating entity "casilla" for hierarchy "move:utt|casilla:ca1" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/move.sv Line: 83
-Info (12128): Elaborating entity "emptyC" for hierarchy "move:utt|emptyC:eC" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/move.sv Line: 135
-Info (12128): Elaborating entity "memTurn" for hierarchy "move:utt|memTurn:mt" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/move.sv Line: 138
-Warning (10036): Verilog HDL or VHDL warning at memTurn.sv(8): object "flag" assigned a value but never read File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/memTurn.sv Line: 8
-Warning (10230): Verilog HDL assignment warning at memTurn.sv(26): truncated value with size 32 to match size of target (2) File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/memTurn.sv Line: 26
-Warning (10230): Verilog HDL assignment warning at memTurn.sv(27): truncated value with size 32 to match size of target (2) File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/memTurn.sv Line: 27
-Warning (10230): Verilog HDL assignment warning at memTurn.sv(42): truncated value with size 32 to match size of target (8) File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/memTurn.sv Line: 42
-Warning (10230): Verilog HDL assignment warning at memTurn.sv(43): truncated value with size 32 to match size of target (8) File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/memTurn.sv Line: 43
-Warning (10230): Verilog HDL assignment warning at memTurn.sv(52): truncated value with size 32 to match size of target (8) File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/memTurn.sv Line: 52
-Info (12128): Elaborating entity "stateMux" for hierarchy "move:utt|stateMux:st" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/move.sv Line: 143
-Info (12128): Elaborating entity "backToWhite" for hierarchy "move:utt|backToWhite:b2w" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/move.sv Line: 149
-Info (12128): Elaborating entity "deco1a7" for hierarchy "deco1a7:d1" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/main.sv Line: 86
-Info (12128): Elaborating entity "deco" for hierarchy "deco:d2" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/main.sv Line: 87
-Warning (12241): 3 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (10034): Output port "R" at main.sv(6) has no driver File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/main.sv Line: 6
+Warning (10034): Output port "G" at main.sv(7) has no driver File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/main.sv Line: 7
+Warning (10034): Output port "B" at main.sv(8) has no driver File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/main.sv Line: 8
+Warning (10034): Output port "hsync" at main.sv(9) has no driver File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/main.sv Line: 9
+Warning (10034): Output port "vsync" at main.sv(10) has no driver File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/main.sv Line: 10
+Warning (10034): Output port "vgaclk" at main.sv(11) has no driver File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/main.sv Line: 11
+Info (12128): Elaborating entity "Clock_Regulator" for hierarchy "Clock_Regulator:cmh" File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/main.sv Line: 43
+Warning (10230): Verilog HDL assignment warning at Clock_Regulator.sv(11): truncated value with size 32 to match size of target (25) File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/Clock_Regulator.sv Line: 11
+Info (12128): Elaborating entity "machine" for hierarchy "machine:prueba" File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/main.sv Line: 47
+Info (12128): Elaborating entity "move" for hierarchy "move:utt" File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/main.sv Line: 75
+Warning (10036): Verilog HDL or VHDL warning at move.sv(44): object "counterJ1" assigned a value but never read File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/move.sv Line: 44
+Warning (10036): Verilog HDL or VHDL warning at move.sv(45): object "counterJ2" assigned a value but never read File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/move.sv Line: 45
+Warning (10230): Verilog HDL assignment warning at move.sv(155): truncated value with size 32 to match size of target (8) File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/move.sv Line: 155
+Info (12128): Elaborating entity "MemoryGame" for hierarchy "move:utt|MemoryGame:game" File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/move.sv Line: 74
+Info (12128): Elaborating entity "casilla" for hierarchy "move:utt|casilla:ca1" File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/move.sv Line: 80
+Info (12128): Elaborating entity "emptyC" for hierarchy "move:utt|emptyC:eC" File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/move.sv Line: 132
+Info (12128): Elaborating entity "memTurn" for hierarchy "move:utt|memTurn:mt" File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/move.sv Line: 135
+Warning (10036): Verilog HDL or VHDL warning at memTurn.sv(8): object "flag" assigned a value but never read File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/memTurn.sv Line: 8
+Warning (10230): Verilog HDL assignment warning at memTurn.sv(27): truncated value with size 32 to match size of target (2) File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/memTurn.sv Line: 27
+Warning (10230): Verilog HDL assignment warning at memTurn.sv(28): truncated value with size 32 to match size of target (2) File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/memTurn.sv Line: 28
+Warning (10230): Verilog HDL assignment warning at memTurn.sv(43): truncated value with size 32 to match size of target (8) File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/memTurn.sv Line: 43
+Warning (10230): Verilog HDL assignment warning at memTurn.sv(44): truncated value with size 32 to match size of target (8) File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/memTurn.sv Line: 44
+Warning (10230): Verilog HDL assignment warning at memTurn.sv(53): truncated value with size 32 to match size of target (8) File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/memTurn.sv Line: 53
+Info (12128): Elaborating entity "stateMux" for hierarchy "move:utt|stateMux:st" File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/move.sv Line: 140
+Info (12128): Elaborating entity "backToWhite" for hierarchy "move:utt|backToWhite:b2w" File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/move.sv Line: 146
+Info (12128): Elaborating entity "deco" for hierarchy "deco:d2" File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/main.sv Line: 78
+Info (12128): Elaborating entity "deco1a7" for hierarchy "deco1a7:d1" File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/main.sv Line: 79
+Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "R[0]" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/main.sv Line: 6
-    Warning (13410): Pin "R[1]" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/main.sv Line: 6
-    Warning (13410): Pin "R[2]" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/main.sv Line: 6
-    Warning (13410): Pin "R[3]" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/main.sv Line: 6
-    Warning (13410): Pin "R[4]" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/main.sv Line: 6
-    Warning (13410): Pin "R[5]" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/main.sv Line: 6
-    Warning (13410): Pin "R[6]" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/main.sv Line: 6
-    Warning (13410): Pin "R[7]" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/main.sv Line: 6
-    Warning (13410): Pin "G[0]" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/main.sv Line: 7
-    Warning (13410): Pin "G[1]" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/main.sv Line: 7
-    Warning (13410): Pin "G[2]" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/main.sv Line: 7
-    Warning (13410): Pin "G[3]" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/main.sv Line: 7
-    Warning (13410): Pin "G[4]" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/main.sv Line: 7
-    Warning (13410): Pin "G[5]" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/main.sv Line: 7
-    Warning (13410): Pin "G[6]" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/main.sv Line: 7
-    Warning (13410): Pin "G[7]" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/main.sv Line: 7
-    Warning (13410): Pin "B[0]" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/main.sv Line: 8
-    Warning (13410): Pin "B[1]" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/main.sv Line: 8
-    Warning (13410): Pin "B[2]" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/main.sv Line: 8
-    Warning (13410): Pin "B[3]" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/main.sv Line: 8
-    Warning (13410): Pin "B[4]" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/main.sv Line: 8
-    Warning (13410): Pin "B[5]" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/main.sv Line: 8
-    Warning (13410): Pin "B[6]" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/main.sv Line: 8
-    Warning (13410): Pin "B[7]" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/main.sv Line: 8
-    Warning (13410): Pin "hsync" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/main.sv Line: 9
-    Warning (13410): Pin "vsync" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/main.sv Line: 10
-    Warning (13410): Pin "vgaclk" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/main.sv Line: 11
-    Warning (13410): Pin "player1[2]" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/main.sv Line: 12
-    Warning (13410): Pin "player2[1]" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/main.sv Line: 14
+    Warning (13410): Pin "R[0]" is stuck at GND File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/main.sv Line: 6
+    Warning (13410): Pin "R[1]" is stuck at GND File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/main.sv Line: 6
+    Warning (13410): Pin "R[2]" is stuck at GND File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/main.sv Line: 6
+    Warning (13410): Pin "R[3]" is stuck at GND File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/main.sv Line: 6
+    Warning (13410): Pin "R[4]" is stuck at GND File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/main.sv Line: 6
+    Warning (13410): Pin "R[5]" is stuck at GND File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/main.sv Line: 6
+    Warning (13410): Pin "R[6]" is stuck at GND File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/main.sv Line: 6
+    Warning (13410): Pin "R[7]" is stuck at GND File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/main.sv Line: 6
+    Warning (13410): Pin "G[0]" is stuck at GND File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/main.sv Line: 7
+    Warning (13410): Pin "G[1]" is stuck at GND File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/main.sv Line: 7
+    Warning (13410): Pin "G[2]" is stuck at GND File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/main.sv Line: 7
+    Warning (13410): Pin "G[3]" is stuck at GND File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/main.sv Line: 7
+    Warning (13410): Pin "G[4]" is stuck at GND File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/main.sv Line: 7
+    Warning (13410): Pin "G[5]" is stuck at GND File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/main.sv Line: 7
+    Warning (13410): Pin "G[6]" is stuck at GND File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/main.sv Line: 7
+    Warning (13410): Pin "G[7]" is stuck at GND File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/main.sv Line: 7
+    Warning (13410): Pin "B[0]" is stuck at GND File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/main.sv Line: 8
+    Warning (13410): Pin "B[1]" is stuck at GND File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/main.sv Line: 8
+    Warning (13410): Pin "B[2]" is stuck at GND File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/main.sv Line: 8
+    Warning (13410): Pin "B[3]" is stuck at GND File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/main.sv Line: 8
+    Warning (13410): Pin "B[4]" is stuck at GND File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/main.sv Line: 8
+    Warning (13410): Pin "B[5]" is stuck at GND File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/main.sv Line: 8
+    Warning (13410): Pin "B[6]" is stuck at GND File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/main.sv Line: 8
+    Warning (13410): Pin "B[7]" is stuck at GND File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/main.sv Line: 8
+    Warning (13410): Pin "hsync" is stuck at GND File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/main.sv Line: 9
+    Warning (13410): Pin "vsync" is stuck at GND File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/main.sv Line: 10
+    Warning (13410): Pin "vgaclk" is stuck at GND File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/main.sv Line: 11
+    Warning (13410): Pin "player1[2]" is stuck at GND File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/main.sv Line: 12
+    Warning (13410): Pin "player2[1]" is stuck at GND File: C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/main.sv Line: 14
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 22 registers lost all their fanouts during netlist optimizations.
-Info (144001): Generated suppressed messages file C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/output_files/Experimento.map.smsg
+Info (17049): 5 registers lost all their fanouts during netlist optimizations.
+Info (144001): Generated suppressed messages file C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/output_files/Experimento.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 301 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 393 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 41 output pins
-    Info (21061): Implemented 256 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 50 warnings
-    Info: Peak virtual memory: 4839 megabytes
-    Info: Processing ended: Tue May  3 17:10:37 2022
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:27
+    Info (21061): Implemented 348 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 53 warnings
+    Info: Peak virtual memory: 4877 megabytes
+    Info: Processing ended: Tue May  3 21:08:21 2022
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:13
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/LABORATORIO-4-DD/output_files/Experimento.map.smsg.
+The suppressed messages can be found in C:/Users/Admin/Desktop/lab4_2/LABORATORIO-4-DD/output_files/Experimento.map.smsg.
 
 

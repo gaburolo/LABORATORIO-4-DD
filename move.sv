@@ -28,17 +28,14 @@ module move(
 	
 	
 	//logic [3:0] state;
-	logic par;
-	//assign par=0;
+	logic par = 0;
 	
-	byte selected1; byte selected2;
+	byte selected1 = 16; byte selected2 = 16;
 	
-	logic par1; logic par2; logic par3; logic par4;
+	logic par1 = 1; logic par2; logic par3; logic par4;
 	logic par5; logic par6; logic par7; logic par8;
 	logic par9; logic par10; logic par11; logic par12;
 	logic par13; logic par14; logic par15; logic par16;
-	logic finish;
-	logic empty;
 	
 	//assign player=1;
 	//assign finish=0;
@@ -138,7 +135,7 @@ module move(
 	.player(player), .x(x), .par(par), .selected1(selected1), .selected2(selected2));
 	
 	stateMux st(.counter(counter),.c1(l1),.c2(l2),.c3(l3),.c4(l4), .c5(l5),
-	.c6(l6), .c7(l7), .c8(l8),	.c9(l9),	.c10(l10), .c11(l11), .c12(l12), 
+	.c6(l6), .c7(l7), .c8(l8),	.c9(l9),	.c10(l10), .c11(l11), .c12(l12),
 	.c13(l13), .c14(l14), .c15(l15), .c16(l16), .state(state)
 	);
 	

@@ -19,7 +19,7 @@ module casilla(input logic clk_Temp, input logic counter, input logic[3:0] label
 			//4'b1001: new_state=4'b1001;
 			//4'b1010: new_state=4'b1010;
 			
-			default:new_state=4'b0000;
+			default:new_state=label;
 			
 		endcase 
 	end	

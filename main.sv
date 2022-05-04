@@ -39,17 +39,8 @@ module main(
 	logic new_accept;
 	byte prueba1;///ss
 	
-	debounce d_move(
-	.clk(clk),
-	.PB(move),
-	.PB_state(new_move));
-	
-	debounce d_accpt(
-	.clk(clk2),
-	.PB(select),
-	.PB_state(new_accept));
 	logic clk2;
-	dividerClock cmh(clk, clk2);
+	Clock_Regulator cmh(clk, clk2);
 	
 	machine prueba(.clk(clk2),
 		.rst(rst),
@@ -79,13 +70,13 @@ module main(
 		.c16(c16),
 		.counter(counter),
 		.player(player),
-		.state(state)
+		.state(state),
+		
 	);
 	
 	
-	deco1a7 d1(.player(c1), .n_salida(player1));
 	deco d2(.player(prueba1), .n_salida(player2));
-	
+	deco1a7 d1(.player(c1), .n_salida(player1));
 	
 	
 endmodule
