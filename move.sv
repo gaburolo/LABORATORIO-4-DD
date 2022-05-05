@@ -22,14 +22,14 @@ module move(
 	output byte counter,
 	output logic player,
 	output logic [3:0] state,
-	output logic empty
+	output logic [2:0] gameState
 	//output logic stop_timer,
 	//output byte won_play [2:0]
 	);
 	
 	
 	//logic [3:0] state;
-	logic par = 0;
+	logic par = 0; logic empty;
 	
 	byte selected1 = 16; byte selected2 = 16;
 	
@@ -71,7 +71,8 @@ module move(
 		.rst(rst),
 		.x(x),
 		.endState(finish),
-		.player(player)
+		.player(player),
+		.gameState(gameState)
 	);
 	
 	

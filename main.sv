@@ -33,18 +33,11 @@ module main(
 	
 	byte counter;
 	logic player;
-	
-	
-	reg new_move;
-	byte cable;
-	byte prueba1;///ss
+	logic [2:0] block;
 	
 	logic clk2;
 	Clock_Regulator cmh(clk, clk2);
 	
-	machine prueba(.clk(clk2),
-		.rst(rst),
-		.move(!move), .counter2(prueba1));
 	
 	//Inicializa move
 	move utt(
@@ -71,17 +64,19 @@ module main(
 		.counter(counter),
 		.player(player),
 		.state(state),
-		.empty(empty)
+		.gameState(block)
 	);
 	
 	
 	deco d2(.player(empty), .n_salida(player2));
-	deco1a7 d1(.player(c1), .n_salida(player1));
+	//deco1a7 d1(.player(c1), .n_salida(player1));
+	deco d1(.player(player), .n_salida(player1));
 	
 	
 	VGA control(
 		.clk(clk), 
 		.rst(rst),
+		.block(block),
 		.c1(c1),
 		.c2(c2),
 		.c3(c3),

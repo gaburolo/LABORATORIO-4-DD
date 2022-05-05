@@ -1,4 +1,4 @@
-module MemoryGame (input logic clk,input logic rst, input logic [1:0] x, output logic endState, output logic player);
+module MemoryGame (input logic clk,input logic rst, input logic [1:0] x, output logic endState, output logic player, output logic [2:0] gameState);
 
 
 	logic [2:0] estadoActual, estadoSiguiente;
@@ -39,5 +39,6 @@ module MemoryGame (input logic clk,input logic rst, input logic [1:0] x, output 
 	end
 	assign endState = (estadoActual == 3'b010) || (estadoActual == 3'b011) || (estadoActual == 3'b100);
 	assign player = (estadoActual == 3'b001);
+	assign gameState = estadoActual;
 	
 endmodule

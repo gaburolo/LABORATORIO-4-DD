@@ -116,10 +116,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "player1[1]",
-					"strict" : false
-				},
-				{
 					"name" : "player1[3]",
 					"strict" : false
 				},
@@ -132,26 +128,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "player1[6]",
-					"strict" : false
-				},
-				{
-					"name" : "player2[0]",
-					"strict" : false
-				},
-				{
-					"name" : "player2[3]",
-					"strict" : false
-				},
-				{
-					"name" : "player2[4]",
-					"strict" : false
-				},
-				{
-					"name" : "player2[5]",
-					"strict" : false
-				},
-				{
 					"name" : "select",
 					"strict" : false
 				},
@@ -160,11 +136,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "move",
+					"name" : "rst",
 					"strict" : false
 				},
 				{
-					"name" : "rst",
+					"name" : "move",
 					"strict" : false
 				}
 			]

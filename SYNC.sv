@@ -13,7 +13,7 @@
 module SYNC(
 	input logic VGA_CLK_IN,
 	input logic rst,
-	input logic[3:0] block,
+	input logic[2:0] block,
 	input logic [3:0] c1,
 	input logic [3:0] c2,
 	input logic [3:0] c3,
@@ -56,6 +56,8 @@ module SYNC(
 	logic square5; logic square6; logic square7;logic square8;
 	logic square9; logic square10; logic square11;logic square12;
 	logic square13; logic square14; logic square15;logic square16;
+	logic jugador1; logic jugador20; logic jugador21; logic jugador22; 
+	logic jugador23; logic jugador24; logic empate; logic win;
 	//Contadores para coordenadas
 	reg[9:0] sx=0;
 	reg[9:0] sy=0;
@@ -88,6 +90,16 @@ module SYNC(
 		
 	
 	always_comb begin
+		jugador1 = (sx > 200 && sx < 215) && (sy > 130 && sy < 200);
+		jugador20 = (sx > 700 && sx < 740) && (sy > 130 && sy < 140);
+		jugador21 = (sx > 730 && sx < 740) && (sy > 140 && sy < 160);
+		jugador22 = (sx > 700 && sx < 740) && (sy > 160 && sy < 170);
+		jugador23 = (sx > 700 && sx < 710) && (sy > 170 && sy < 190);
+		jugador24 = (sx > 700 && sx < 740) && (sy > 190 && sy < 200);
+		
+		empate = (sx > 700 && sx < 710) && (sy > 140 && sy < 160);
+		win = (sx > 730 && sx < 740) && (sy > 170 && sy < 190);
+		
 		figureC01 = (sx > 320+28 && sx < 390-28)  && (sy > 130 && sy < 200);
 		figureC02 = (sx > 320 && sx < 390)  && (sy > 130+28 && sy <205-28 );
 		square1 = (sx > 320+28 && sx < 390-28)  && (sy > 130+28 && sy <205-28 );
@@ -217,7 +229,111 @@ module SYNC(
 					end
 			end
 			
-			
+		case(block)
+			3'b000: begin
+				if(jugador1)
+				begin
+						{color_R,color_G,color_B} <= `BLACK;
+				end  
+			end
+			3'b001:begin
+				if(jugador20)
+				begin
+						{color_R,color_G,color_B} <= `BLACK;
+				end  
+				else if(jugador21)
+				begin
+						{color_R,color_G,color_B} <= `BLACK;
+				end  
+				else if(jugador22)
+				begin
+						{color_R,color_G,color_B} <= `BLACK;
+				end
+				else if(jugador23)
+				begin
+						{color_R,color_G,color_B} <= `BLACK;
+				end 
+				else if(jugador24)
+					begin
+							{color_R,color_G,color_B} <= `BLACK;
+					end 	
+			end
+			3'b100:begin
+					if(jugador20)
+						begin
+								{color_R,color_G,color_B} <= `BLACK;
+						end  
+					else if(empate)
+						begin
+								{color_R,color_G,color_B} <= `BLACK;
+						end  
+					else if(jugador22)
+						begin
+								{color_R,color_G,color_B} <= `BLACK;
+						end
+					else if(jugador23)
+						begin
+								{color_R,color_G,color_B} <= `BLACK;
+						end 
+					else if(jugador24)
+						begin
+								{color_R,color_G,color_B} <= `BLACK;
+						end 	
+				end
+				3'b010:begin
+					if(jugador20)
+						begin
+								{color_R,color_G,color_B} <= `BLACK;
+						end  
+					else if(empate)
+						begin
+								{color_R,color_G,color_B} <= `BLACK;
+						end  
+					else if(jugador22)
+						begin
+								{color_R,color_G,color_B} <= `BLACK;
+						end
+					else if(jugador23)
+						begin
+								{color_R,color_G,color_B} <= `BLACK;
+						end 
+					else if(jugador24)
+						begin
+								{color_R,color_G,color_B} <= `BLACK;
+						end
+					else if(win)
+						begin
+								{color_R,color_G,color_B} <= `BLACK;
+						end
+					end
+				3'b011:begin
+					if(jugador20)
+						begin
+								{color_R,color_G,color_B} <= `BLACK;
+						end  
+					else if(empate)
+						begin
+								{color_R,color_G,color_B} <= `BLACK;
+						end  
+					else if(jugador22)
+						begin
+								{color_R,color_G,color_B} <= `BLACK;
+						end
+					else if(jugador23)
+						begin
+								{color_R,color_G,color_B} <= `BLACK;
+						end 
+					else if(jugador24)
+						begin
+								{color_R,color_G,color_B} <= `BLACK;
+						end
+					else if(win)
+						begin
+								{color_R,color_G,color_B} <= `BLACK;
+						end
+					end
+
+		endcase
 		case(c1)
 			4'b0000: begin 
 					if(figureC01)//1
@@ -410,7 +526,7 @@ module SYNC(
 									{color_R,color_G,color_B} <= `BLACK;
 							end
 					end
-			4'b0101:begin
+			4'b0111:begin
 							if(figureC61)
 								begin
 										{color_R,color_G,color_B} <= `ORANGE;

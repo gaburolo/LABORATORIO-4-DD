@@ -1,4 +1,4 @@
-module VGA(input logic clk, rst,
+module VGA(input logic clk, rst, input logic [2:0] block,
 	input logic [3:0] c1,
 	input logic [3:0] c2,
 	input logic [3:0] c3,
@@ -27,7 +27,7 @@ module VGA(input logic clk, rst,
 //	assign B=8'h55;
 	assign sync=1'b0;
 	
-	logic [3:0] block = 4'b0000;
+	//logic [3:0] block = 4'b0000;
 	
 	dividerClock cmh(clk, clk2);
 	SYNC s1(.VGA_CLK_IN(clk2), 
@@ -54,7 +54,7 @@ module VGA(input logic clk, rst,
 		.VGA_CLK_OUT(vgaclk),
 		.out_R(Red),
 		.out_B(Blue),
-		.out_G(Green) 
+		.out_G(Green)
 		
 		);
 		
