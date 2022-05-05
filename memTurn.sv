@@ -1,11 +1,9 @@
-module memTurn(input logic clk, input logic rst, input byte counter, input logic select, input logic [3:0] state, input logic empty,
+module memTurn(input logic clk, input logic timeUp, input logic rst, input byte counter, input logic select, input logic [3:0] state, input logic empty,
 	input logic player, output logic[1:0] x, output logic par, output byte selected1, output byte selected2);
 	
 	byte turnCounter = 0;
 	byte counterJ1 = 0;
 	byte counterJ2 = 0;
-	
-	logic[3:0] flag;
 	
 	logic[3:0] v1;
 	logic[3:0] v2;
@@ -28,7 +26,7 @@ module memTurn(input logic clk, input logic rst, input byte counter, input logic
 					else x <= 11;
 				end
 				
-			else if (select==1 )//&& empty) 
+			else if (select==1 || timeUp)//&& empty) 
 				begin
 					if(turnCounter == 1) begin
 						v2 = state;
@@ -37,8 +35,6 @@ module memTurn(input logic clk, input logic rst, input byte counter, input logic
 						// Incrementa puntos
 						if(v1 === v2)
 							begin
-								flag = 4'b1010;
-								
 								par=1;
 								if(player == 0) counterJ1 <= counterJ1 + 1;
 								else counterJ2 <= counterJ2 + 1;

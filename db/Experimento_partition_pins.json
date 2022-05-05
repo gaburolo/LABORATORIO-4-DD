@@ -112,22 +112,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "player1[0]",
-					"strict" : false
-				},
-				{
-					"name" : "player1[3]",
-					"strict" : false
-				},
-				{
-					"name" : "player1[4]",
-					"strict" : false
-				},
-				{
-					"name" : "player1[5]",
-					"strict" : false
-				},
-				{
 					"name" : "select",
 					"strict" : false
 				},
@@ -136,11 +120,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "rst",
+					"name" : "move",
 					"strict" : false
 				},
 				{
-					"name" : "move",
+					"name" : "rst",
 					"strict" : false
 				}
 			]

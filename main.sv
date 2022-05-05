@@ -34,14 +34,18 @@ module main(
 	byte counter;
 	logic player;
 	logic [2:0] block;
+	logic timeUp;
 	
 	logic clk2;
 	Clock_Regulator cmh(clk, clk2);
 	
+	logic clk3;
+	timer tmp(clk, clk3, timeUp);
 	
 	//Inicializa move
 	move utt(
 		.clk(clk2),
+		.timeUp(timeUp),
 		.rst(rst),
 		.move(!move),
 		.select(!select),
@@ -66,11 +70,6 @@ module main(
 		.state(state),
 		.gameState(block)
 	);
-	
-	
-	deco d2(.player(empty), .n_salida(player2));
-	//deco1a7 d1(.player(c1), .n_salida(player1));
-	deco d1(.player(player), .n_salida(player1));
 	
 	
 	VGA control(

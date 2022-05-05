@@ -157,4 +157,5 @@ set_global_assignment -name EDA_TEST_BENCH_FILE memoryGameTest.sv -section_id me
 set_global_assignment -name EDA_TEST_BENCH_FILE turnTest.sv -section_id turnTest
 set_global_assignment -name EDA_TEST_BENCH_FILE backToWhiteTest.sv -section_id b2wTest
 set_global_assignment -name EDA_TEST_BENCH_FILE debounceTest.sv -section_id debounceTest
+set_global_assignment -name SYSTEMVERILOG_FILE timer.sv
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
