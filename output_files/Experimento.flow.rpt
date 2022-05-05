@@ -1,5 +1,5 @@
 Flow report for Experimento
-Wed May  4 17:07:13 2022
+Wed May  4 20:00:31 2022
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -41,15 +41,15 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Wed May  4 17:07:13 2022       ;
+; Flow Status                     ; Successful - Wed May  4 20:00:31 2022       ;
 ; Quartus Prime Version           ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                   ; Experimento                                 ;
 ; Top-level Entity Name           ; main                                        ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CSEMA5F31C6                                ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 190 / 32,070 ( < 1 % )                      ;
-; Total registers                 ; 115                                         ;
+; Logic utilization (in ALMs)     ; 450 / 32,070 ( 1 % )                        ;
+; Total registers                 ; 205                                         ;
 ; Total pins                      ; 45 / 457 ( 10 % )                           ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0 / 4,065,280 ( 0 % )                       ;
@@ -68,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/04/2022 17:04:46 ;
+; Start date & time ; 05/04/2022 19:57:05 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Experimento         ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID                ; 84440849251880.165170548615008         ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID                ; 84440849251880.165171582508348         ; --            ; --          ; --                                ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; moveTest                          ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; memoryTest                        ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; vgaTest                           ;
@@ -134,12 +134,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:15     ; 1.0                     ; 4810 MB             ; 00:00:28                           ;
-; Fitter               ; 00:01:50     ; 1.0                     ; 6139 MB             ; 00:02:56                           ;
-; Assembler            ; 00:00:07     ; 1.0                     ; 4883 MB             ; 00:00:07                           ;
-; Timing Analyzer      ; 00:00:08     ; 1.1                     ; 5137 MB             ; 00:00:08                           ;
-; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4728 MB             ; 00:00:01                           ;
-; Total                ; 00:02:22     ; --                      ; --                  ; 00:03:40                           ;
+; Analysis & Synthesis ; 00:00:22     ; 1.0                     ; 4811 MB             ; 00:00:34                           ;
+; Fitter               ; 00:02:42     ; 1.0                     ; 6163 MB             ; 00:04:22                           ;
+; Assembler            ; 00:00:07     ; 1.0                     ; 4882 MB             ; 00:00:07                           ;
+; Timing Analyzer      ; 00:00:08     ; 1.2                     ; 5145 MB             ; 00:00:09                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4731 MB             ; 00:00:01                           ;
+; Total                ; 00:03:21     ; --                      ; --                  ; 00:05:13                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

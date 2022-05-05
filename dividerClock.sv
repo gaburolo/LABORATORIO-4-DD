@@ -3,7 +3,7 @@ module dividerClock(ci, co);
 	input ci;
 	output reg co;
 	reg[27:0] counter=28'd0;
-	parameter DIVISOR = 28'd10000000;
+	parameter DIVISOR = 28'd2;
 	
 	always @(posedge ci)
 		begin

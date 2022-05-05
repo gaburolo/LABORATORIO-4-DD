@@ -79,4 +79,30 @@ module main(
 	deco1a7 d1(.player(c1), .n_salida(player1));
 	
 	
+	VGA control(
+		.clk(clk), 
+		.rst(rst),
+		.c1(c1),
+		.c2(c2),
+		.c3(c3),
+		.c4(c4),
+		.c5(c5),
+		.c6(c6),
+		.c7(c7),
+		.c8(c8),
+		.c9(c9),
+		.c10(c10),
+		.c11(c11),
+		.c12(c12),
+		.c13(c13),
+		.c14(c14),
+		.c15(c15),
+		.c16(c16),
+		.Red(R), 
+		.Green(G), 
+		.Blue(B), 
+		.hsync(hsync), 
+		.vsync(vsync), 
+		.vgaclk(vgaclk));
+	
 endmodule

@@ -28,7 +28,7 @@ module memTurn(input logic clk, input logic rst, input byte counter, input logic
 					else x <= 11;
 				end
 				
-			else if (select==1 && empty) 
+			else if (select==1 )//&& empty) 
 				begin
 					if(turnCounter == 1) begin
 						v2 = state;
