@@ -26,6 +26,7 @@ module moveTest();
 	byte counter = 0;
 	logic player;
 	logic [3:0] state;
+	logic [2:0] gameState;
 	move utt(
 		.clk(CLK50MHZ),
 		.rst(rst),
@@ -49,7 +50,8 @@ module moveTest();
 		.c16(c16),
 		.counter(counter),
 		.player(player),
-		.state(state)
+		.state(state),
+		.gameState(gameState)
 	);
 	
 	
@@ -70,17 +72,13 @@ module moveTest();
 		 rst=1;
 		 #5;
 		 select=1;
-		 #20;
+		 #10;
 		 select=0;
 		 #20;
 		 move=1; // c02
 		 #5;
 		 move=0; 
 		 #5;
-		 select=1;
-		 #20;
-		 select=0;
-		 #20;
 		 move=1; // c03
 		 #5;
 		 move=0; 

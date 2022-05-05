@@ -9,7 +9,7 @@ z2
 cModel Technology
 dC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 4/simulation/modelsim
 va_graycounter
-Z0 !s110 1651701576
+Z0 !s110 1651739827
 !i10b 1
 !s100 7RL@7]^Mkb[^0^A4A<DHg3
 IGm[l0nCoQQX>GKo:Ub1V:2
@@ -23,7 +23,7 @@ Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1651701574.000000
+Z7 !s108 1651739824.000000
 Z8 !s107 c:/intelfpga_lite/21.1/quartus/eda/sim_lib/altera_mf.v|
 Z9 !s90 -reportprogress|300|-vlog01compat|-work|altera_mf_ver|c:/intelfpga_lite/21.1/quartus/eda/sim_lib/altera_mf.v|
 !i113 1
@@ -240,7 +240,7 @@ R9
 R10
 R11
 valtaccumulate
-Z12 !s110 1651701575
+Z12 !s110 1651739825
 !i10b 1
 !s100 ]J^>>M@KIe6:;k?@cL6jK0
 I=e<zWgBcTbj9MDBM>a_?g3
@@ -261,7 +261,7 @@ R9
 R10
 R11
 valtclklock
-R0
+Z13 !s110 1651739826
 !i10b 1
 !s100 dZP2fY7[X6OBenFPi2M3>2
 IV[h?h_biz`Z1PSiEKZE1:1
@@ -282,7 +282,7 @@ R9
 R10
 R11
 valtddio_bidir
-R0
+R13
 !i10b 1
 !s100 d6h;ie5E87J34ZiR_`WGP0
 IiK8g[@cj>bBX7Q_BFHU150
@@ -303,7 +303,7 @@ R9
 R10
 R11
 valtddio_in
-R0
+R13
 !i10b 1
 !s100 RYI1C30fJj7N8Y0J5dRbG3
 I>8iE=B>P1i:Gi:b:<eKIj0
@@ -324,7 +324,7 @@ R9
 R10
 R11
 valtddio_out
-R0
+R13
 !i10b 1
 !s100 S];mG5k@6gz9bKEQ>6@]V2
 Iz6A=ZJ;M4?DhZJ2F?V8o40
@@ -345,7 +345,7 @@ R9
 R10
 R11
 valtdpram
-R0
+R13
 !i10b 1
 !s100 BE726jY[MoUWTU>>?R`hZ1
 I`6g?SRL=9>jlLQkE;PSkd2
@@ -410,7 +410,7 @@ R10
 R11
 n@a@l@t@e@r@a_@m@f_@h@i@n@t_@e@v@a@l@u@a@t@i@o@n
 vALTERA_MF_MEMORY_INITIALIZATION
-Z13 !s110 1651701574
+Z14 !s110 1651739824
 !i10b 1
 !s100 nTma^h04MOBz8;HdmmAdW1
 I1?IMXNB?@`>8o@1nHj3Sk0
@@ -516,7 +516,7 @@ R9
 R10
 R11
 valtfp_mult
-R0
+R13
 !i10b 1
 !s100 c9dLG_`KcV2Q;PQb:iUEk1
 Io9EUK@`SU[l959<Ka1]1R1
@@ -600,7 +600,7 @@ R9
 R10
 R11
 valtmult_add
-R0
+R13
 !i10b 1
 !s100 <>@[FFHS;IjA6YnRoVfJm3
 I<Cc`agCUC4T4a2CPYS34O1
@@ -726,7 +726,7 @@ R9
 R10
 R11
 valtsqrt
-R0
+R13
 !i10b 1
 !s100 a[5V9KX9=mLzMafI5YMk83
 IXG2;8mzJa<?cTMaonoZif1
@@ -789,7 +789,7 @@ R9
 R10
 R11
 valtsyncram
-R0
+R13
 !i10b 1
 !s100 K:Qc=Y0o3h>fB?4Q3W7c?1
 I6^hbeH2h7iaZMI2XdAWXR2
@@ -1230,7 +1230,7 @@ R9
 R10
 R11
 vlcell
-R13
+R14
 !i10b 1
 !s100 5QGV:R[KdXJ5TR1bkQiUU0
 Iom4SznABbQF1Q2PI:keXm1
